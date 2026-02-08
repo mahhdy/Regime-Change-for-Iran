@@ -56,7 +56,7 @@
 
 \begin{table}[H]
 \centering
-\caption{ماتریس مقایسه‌ای پنج سناریوی اصلی گذار}
+\caption{\rl{ماتریس مقایسه‌ای پنج سناریوی اصلی گذار}}
 \begin{tabular}{|R{3.5cm}|C{2.5cm}|C{2.5cm}|C{2.5cm}|C{3.5cm}|}
 \hline
 \rowcolor{iranblue!20}
@@ -135,18 +135,18 @@
         width=10cm,
         height=8cm,
         xbar,
-        xlabel={امتیاز (از ۱۰)},
-        symbolic y coords={ریسک,هزینه,احتمال موفقیت,سرعت,پایداری نتیجه},
+        xlabel={\rl{امتیاز (از ۱۰)}},
+        symbolic y coords={\rl{ریسک},\rl{هزینه},\rl{احتمال موفقیت},\rl{سرعت},\rl{پایداری نتیجه}},
         ytick=data,
         nodes near coords,
         nodes near coords align={horizontal},
         bar width=15pt,
         y dir=reverse,
     ]
-    \addplot coordinates {(7,ریسک) (6,هزینه) (6,احتمال موفقیت) (5,سرعت) (7,پایداری نتیجه)};
+    \addplot coordinates {(7,\rl{ریسک}) (6,\rl{هزینه}) (6,\rl{احتمال موفقیت}) (5,\rl{سرعت}) (7,\rl{پایداری نتیجه})};
     \end{axis}
 \end{tikzpicture}
-\captionof{figure}{ارزیابی کلی سناریوی ترکیبی (واقع‌بینانه‌ترین مسیر)}
+\captionof{figure}{\rl{ارزیابی کلی سناریوی ترکیبی (واقع‌بینانه‌ترین مسیر)}}
 \end{center}
 
 \newpage
@@ -171,5 +171,5 @@
 \rl{شهروندان عادی} & \rl{فصل ۱ و خلاصه‌های هر فصل کافی است} \\
 \hline
 \end{tabular}
-\caption{راهنمای استفاده برای مخاطبان مختلف}
+\caption{\rl{راهنمای استفاده برای مخاطبان مختلف}}
 \end{table}

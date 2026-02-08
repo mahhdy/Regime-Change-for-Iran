@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.1) (preloaded format=xelatex 2026.2.7)  8 FEB 2026 10:41
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.1) (preloaded format=xelatex 2026.2.7)  8 FEB 2026 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1375,17 +1375,13 @@ or XeTeX engine
 )
 (main.aux (chapters/ch00-executive-summary.aux) (chapters/ch01-introduction.aux
 ) (chapters/ch02-regime-analysis.aux) (chapters/ch03-opposition-mapping.aux)
-(chapters/ch04-transition-scenarios.aux)
-
-LaTeX Warning: Label `ch:transition-scenarios' multiply defined.
-
-(chapters/ch05-international.aux) (chapters/ch06-strengthening.aux)
-(chapters/ch07-transition-mgmt.aux) (chapters/ch08-risk-analysis.aux)
-(chapters/ch09-roadmap.aux) (chapters/ch10-conclusion.aux)
-(appendices/app-A-theories.aux) (appendices/app-B-case-studies.aux)
-(appendices/app-C-power-structure.aux) (appendices/app-D-movements-history.aux)
-(appendices/app-E-data-statistics.aux) (appendices/app-F-human-rights.aux)
-(appendices/app-G-bibliography.aux))
+(chapters/ch04-transition-scenarios.aux) (chapters/ch05-international.aux)
+(chapters/ch06-strengthening.aux) (chapters/ch07-transition-mgmt.aux)
+(chapters/ch08-risk-analysis.aux) (chapters/ch09-roadmap.aux)
+(chapters/ch10-conclusion.aux) (appendices/app-A-theories.aux)
+(appendices/app-B-case-studies.aux) (appendices/app-C-power-structure.aux)
+(appendices/app-D-movements-history.aux) (appendices/app-E-data-statistics.aux)
+(appendices/app-F-human-rights.aux) (appendices/app-G-bibliography.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1590,11 +1586,7 @@ LaTeX Font Info:    Font shape `TU/XBZar(0)/b/n' will be
 
 
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-[3]
+] [2]
 Package pgfplots info on input line 145: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
 
@@ -1606,8 +1598,8 @@ See the caption package documentation for explanation.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-[5]) [6]
+ [3]
+[4]) [5]
 \openout2 = `chapters/ch01-introduction.aux'.
 
  (chapters/ch01-introduction.tex
@@ -1617,7 +1609,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 25.
 See the caption package documentation for explanation.
 
-[7
+[6
 
 
 
@@ -1631,7 +1623,12 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 75.
 See the caption package documentation for explanation.
 
-[8] [9]) [10]
+[7] [8]
+Overfull \hbox (6.58644pt too wide) in paragraph at lines 154--168
+ [][][][] 
+ []
+
+) [9]
 \openout2 = `chapters/ch02-regime-analysis.aux'.
 
  (chapters/ch02-regime-analysis.tex
@@ -1649,7 +1646,7 @@ See the caption package documentation for explanation.
 
 Underfull \vbox (badness 3098) has occurred while \output is active []
 
- [11
+ [10
 
 
 
@@ -1669,23 +1666,12 @@ Underfull \vbox (badness 5064) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 16.10544pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.10544pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.10544pt}.
-
-[12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 16.55809pt, for example:
 (fancyhdr)                \setlength{\headheight}{16.55809pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.55809pt}.
 
-[13]
+[11]
 Package pgfplots info on input line 171: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
 
@@ -1695,17 +1681,13 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-Underfull \vbox (badness 6412) has occurred while \output is active []
-
-
-
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 16.10544pt, for example:
 (fancyhdr)                \setlength{\headheight}{16.10544pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.10544pt}.
 
-[14]
+[12]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 236.
@@ -1718,11 +1700,9 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.55809pt}.
 
-[15]
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 290.
-See the caption package documentation for explanation.
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1731,13 +1711,17 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.11925pt}.
 
-[16]
+[14]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 290.
+See the caption package documentation for explanation.
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 335.
 See the caption package documentation for explanation.
 
-)
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 16.55809pt, for example:
@@ -1745,7 +1729,15 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.55809pt}.
 
-[17]
+[15])
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 16.38902pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.38902pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.38902pt}.
+
+[16]
 \openout2 = `chapters/ch03-opposition-mapping.aux'.
 
  (chapters/ch03-opposition-mapping.tex
@@ -1763,7 +1755,7 @@ See the caption package documentation for explanation.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [17
 
 
 
@@ -1771,15 +1763,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
-[][]\TU/XBZar(0)/m/n/12 موضع «نه سلطنت، نه[]
- []
-
-[20] [21]
+ [18]
+[19] [20]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 251.
+See the caption package documentation for explanation.
+
+[21]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 310.
 See the caption package documentation for explanation.
 
 
@@ -1792,20 +1786,14 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 [22]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 310.
-See the caption package documentation for explanation.
-
-[23]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 340.
 See the caption package documentation for explanation.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24])
-[25]
+ [23])
+[24]
 \openout2 = `chapters/ch04-transition-scenarios.aux'.
 
  (chapters/ch04-transition-scenarios.tex
@@ -1820,7 +1808,7 @@ See the caption package documentation for explanation.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26
+ [25
 
 
 
@@ -1831,6 +1819,43 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 79.
 See the caption package documentation for explanation.
 
+[26]
+
+! Package xcolor Error: Undefined color `'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \begin{scenariobox}{iranblue}
+                                  {سناریوی ۱: انقلاب مردمی}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \begin{scenariobox}{iranblue}
+                                  {سناریوی ۱: انقلاب مردمی}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \begin{scenariobox}{iranblue}
+                                  {سناریوی ۱: انقلاب مردمی}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 16.60265pt, for example:
@@ -1838,7 +1863,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
 
-[27]
+[27] [28]
 
 ! Package xcolor Error: Undefined color `'.
 
@@ -1846,8 +1871,8 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 \begin{scenariobox}{iranblue}
-                                  {سناریوی ۱: انقلاب مردمی}
+l.155 \begin{scenariobox}{iranred}
+                                  {سناریوی ۲: مقاومت مسلحانه}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1858,8 +1883,8 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 \begin{scenariobox}{iranblue}
-                                  {سناریوی ۱: انقلاب مردمی}
+l.155 \begin{scenariobox}{iranred}
+                                  {سناریوی ۲: مقاومت مسلحانه}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1870,12 +1895,51 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 \begin{scenariobox}{iranblue}
-                                  {سناریوی ۱: انقلاب مردمی}
+l.155 \begin{scenariobox}{iranred}
+                                  {سناریوی ۲: مقاومت مسلحانه}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[28]
+
+! Package xcolor Error: Undefined color `'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \begin{scenariobox}{irangold}
+                                   {سناریوی ۳: کودتای نظامی}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \begin{scenariobox}{irangold}
+                                   {سناریوی ۳: کودتای نظامی}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \begin{scenariobox}{irangold}
+                                   {سناریوی ۳: کودتای نظامی}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 16.60265pt, for example:
@@ -1891,8 +1955,8 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 \begin{scenariobox}{iranred}
-                                  {سناریوی ۲: مقاومت مسلحانه}
+l.234 \begin{scenariobox}{olgoogreen}
+                                     {سناریوی ۴: فروپاشی}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1903,8 +1967,8 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 \begin{scenariobox}{iranred}
-                                  {سناریوی ۲: مقاومت مسلحانه}
+l.234 \begin{scenariobox}{olgoogreen}
+                                     {سناریوی ۴: فروپاشی}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1915,44 +1979,8 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 \begin{scenariobox}{iranred}
-                                  {سناریوی ۲: مقاومت مسلحانه}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 \begin{scenariobox}{irangold}
-                                   {سناریوی ۳: کودتای نظامی}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 \begin{scenariobox}{irangold}
-                                   {سناریوی ۳: کودتای نظامی}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 \begin{scenariobox}{irangold}
-                                   {سناریوی ۳: کودتای نظامی}
+l.234 \begin{scenariobox}{olgoogreen}
+                                     {سناریوی ۴: فروپاشی}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1962,60 +1990,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 16.10544pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.10544pt}.
+(fancyhdr)                Make it at least 16.44852pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.44852pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.10544pt}.
+(fancyhdr)                \addtolength{\topmargin}{-1.44852pt}.
 
 [30]
-
-! Package xcolor Error: Undefined color `'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.234 \begin{scenariobox}{olgoogreen}
-                                     {سناریوی ۴: فروپاشی}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.234 \begin{scenariobox}{olgoogreen}
-                                     {سناریوی ۴: فروپاشی}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.234 \begin{scenariobox}{olgoogreen}
-                                     {سناریوی ۴: فروپاشی}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 16.60265pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.60265pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
-
-[31]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 259.
@@ -2059,23 +2039,23 @@ If that doesn't work, type  X <return>  to quit.
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 16.10544pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.10544pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.10544pt}.
-
-[32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 16.60265pt, for example:
 (fancyhdr)                \setlength{\headheight}{16.60265pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
 
-[33]
+[31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 18.31767pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.31767pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.31767pt}.
+
+[32]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 352.
@@ -2087,13 +2067,9 @@ Overfull \hbox (0.71811pt too wide) in paragraph at lines 328--352
  []
 
 
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 16.7321pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.7321pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.7321pt}.
+Underfull \vbox (badness 4328) has occurred while \output is active []
 
-[34])
+
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 16.60265pt, for example:
@@ -2101,7 +2077,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
 
-[35]
+[33]) [34]
 \openout2 = `chapters/ch05-international.aux'.
 
  (chapters/ch05-international.tex
@@ -2114,7 +2090,7 @@ See the caption package documentation for explanation.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36
+ [35
 
 
 
@@ -2122,12 +2098,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 16.60265pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.60265pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
+
+[36])
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 15.88077pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.88077pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.88077pt}.
 
-[37]) [38]
+[37]
 \openout2 = `chapters/ch06-strengthening.aux'.
 
  (chapters/ch06-strengthening.tex
@@ -2185,7 +2169,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 25.
 See the caption package documentation for explanation.
 
-[39
+[38
 
 
 
@@ -2206,14 +2190,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 121.
 See the caption package documentation for explanation.
 
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 16.60265pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.60265pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
-
-[40] [41]) [42]
+[39] [40]) [41]
 \openout2 = `chapters/ch07-transition-mgmt.aux'.
 
  (chapters/ch07-transition-mgmt.tex
@@ -2223,7 +2200,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 28.
 See the caption package documentation for explanation.
 
-[43
+[42
 
 
 
@@ -2245,15 +2222,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
 
-[44])
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 16.60265pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.60265pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
-
-[45]
+[43]) [44]
 \openout2 = `chapters/ch08-risk-analysis.aux'.
 
  (chapters/ch08-risk-analysis.tex
@@ -2271,7 +2240,7 @@ See the caption package documentation for explanation.
 
 Underfull \vbox (badness 6032) has occurred while \output is active []
 
- [46
+ [45
 
 
 
@@ -2284,10 +2253,10 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.11925pt}.
 
-[47]
+[46]
 Underfull \vbox (badness 7221) has occurred while \output is active []
 
- [48])
+
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 16.11925pt, for example:
@@ -2295,7 +2264,15 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.11925pt}.
 
-[49]
+[47])
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 16.11925pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.11925pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.11925pt}.
+
+[48]
 \openout2 = `chapters/ch09-roadmap.aux'.
 
  (chapters/ch09-roadmap.tex
@@ -2357,7 +2334,7 @@ See the caption package documentation for explanation.
 <recently read> \square 
                         
 l.35 $\square
-             $ & تشکیل کمیته هماهنگی موقت & رهبران \\
+             $ & \rl{تشکیل کمیته هماهنگی موقت} & \rl{رهبران} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2368,7 +2345,7 @@ and I'll forget about whatever was undefined.
 <recently read> \square 
                         
 l.37 $\square
-             $ & تعیین سخنگوی واحد & کمیته \\
+             $ & \rl{تعیین سخنگوی واحد} & \rl{کمیته} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2379,7 +2356,7 @@ and I'll forget about whatever was undefined.
 <recently read> \square 
                         
 l.39 $\square
-             $ & راه‌اندازی کانال‌های ارتباطی امن & فنی \\
+             $ & \rl{راه‌اندازی کانال‌های ارتباطی امن} & \rl{فنی} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2390,7 +2367,7 @@ and I'll forget about whatever was undefined.
 <recently read> \square 
                         
 l.41 $\square
-             $ & تدوین بیانیه اصول مشترک & همه \\
+             $ & \rl{تدوین بیانیه اصول مشترک} & \rl{همه} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2407,7 +2384,7 @@ Overfull \hbox (80.81097pt too wide) in paragraph at lines 50--60
  [][][][][] 
  []
 
-[50
+[49
 
 
 
@@ -2418,15 +2395,14 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 125.
 See the caption package documentation for explanation.
 
-[51])
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 18.31767pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.31767pt}.
+(fancyhdr)                Make it at least 16.10544pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.10544pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-3.31767pt}.
+(fancyhdr)                \addtolength{\topmargin}{-1.10544pt}.
 
-[52]
+[50]) [51]
 \openout2 = `chapters/ch10-conclusion.aux'.
 
  (chapters/ch10-conclusion.tex
@@ -2436,12 +2412,12 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 20.
 See the caption package documentation for explanation.
 
-[53
+[52
 
 
 
 
-] [54])
+]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 16.38902pt, for example:
@@ -2449,7 +2425,15 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.38902pt}.
 
-[55]
+[53])
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 17.37663pt, for example:
+(fancyhdr)                \setlength{\headheight}{17.37663pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.37663pt}.
+
+[54]
 \openout2 = `appendices/app-A-theories.aux'.
 
  (appendices/app-A-theories.tex
@@ -2495,27 +2479,31 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 20.
 See the caption package documentation for explanation.
 
-[56
+[55
 
 
 
 
 ]
+Overfull \hbox (6.58643pt too wide) in paragraph at lines 52--68
+ [][][][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 16.60265pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.60265pt}.
+(fancyhdr)                Make it at least 17.37663pt, for example:
+(fancyhdr)                \setlength{\headheight}{17.37663pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.37663pt}.
 
-[57]
+[56]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 101.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (75.48712pt too wide) in paragraph at lines 91--101
+Overfull \hbox (32.80798pt too wide) in paragraph at lines 91--101
  [][][][][] 
  []
 
@@ -2527,7 +2515,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.60265pt}.
 
-[58]
+[57]
 \openout2 = `appendices/app-B-case-studies.aux'.
 
  (appendices/app-B-case-studies.tex
@@ -2573,12 +2561,12 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 18.
 See the caption package documentation for explanation.
 
-[59
+[58
 
 
 
 
-] [60]) [61]
+] [59]) [60]
 \openout2 = `appendices/app-C-power-structure.aux'.
 
  (appendices/app-C-power-structure.tex
@@ -2629,20 +2617,12 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 54.
 See the caption package documentation for explanation.
 
-[62
+[61
 
 
 
 
-] [63])
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 15.4876pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.4876pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.4876pt}.
-
-[64]
+] [62]) [63]
 \openout2 = `appendices/app-D-movements-history.aux'.
 
  (appendices/app-D-movements-history.tex
@@ -2717,12 +2697,12 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 44.
 See the caption package documentation for explanation.
 
-[65
+[64
 
 
 
 
-] [66])
+]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 15.79605pt, for example:
@@ -2730,7 +2710,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.79605pt}.
 
-[67]
+[65]) [66]
 \openout2 = `appendices/app-E-data-statistics.aux'.
 
  (appendices/app-E-data-statistics.tex
@@ -2748,15 +2728,13 @@ See the caption package documentation for explanation.
 
 Underfull \vbox (badness 6252) has occurred while \output is active []
 
- [68
+ [67
 
 
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[68])
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 15.4876pt, for example:
@@ -2764,7 +2742,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.4876pt}.
 
-[69]) [70]
+[69]
 \openout2 = `appendices/app-F-human-rights.aux'.
 
  (appendices/app-F-human-rights.tex
@@ -2810,7 +2788,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 18.
 See the caption package documentation for explanation.
 
-[71
+[70
 
 
 
@@ -2821,25 +2799,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 17.41531pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.41531pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.41531pt}.
-
-[72])
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 15.79605pt, for example:
 (fancyhdr)                \setlength{\headheight}{15.79605pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.79605pt}.
 
-[73]
+[71])
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 16.13913pt, for example:
+(fancyhdr)                \setlength{\headheight}{16.13913pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.13913pt}.
+
+[72]
 \openout2 = `appendices/app-G-bibliography.aux'.
 
  (appendices/app-G-bibliography.tex
 پیوست چ.
-[74
+[73
 
 
 
@@ -2854,12 +2832,12 @@ Overfull \hbox (4.74202pt too wide) in paragraph at lines 61--62
 )
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 16.13913pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.13913pt}.
+(fancyhdr)                Make it at least 17.89871pt, for example:
+(fancyhdr)                \setlength{\headheight}{17.89871pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.13913pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.89871pt}.
 
-[75] (main.aux (chapters/ch00-executive-summary.aux)
+[74] (main.aux (chapters/ch00-executive-summary.aux)
 (chapters/ch01-introduction.aux) (chapters/ch02-regime-analysis.aux)
 (chapters/ch03-opposition-mapping.aux) (chapters/ch04-transition-scenarios.aux)
 (chapters/ch05-international.aux) (chapters/ch06-strengthening.aux)
@@ -2873,26 +2851,16 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 9D5249B1FB2989A5E115719793385AF7;34256
-(rerunfilecheck)             After:  77D6D21670976939B348F902494FCDD7;31649.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 77D6D21670976939B348F902494FCDD7;31649.
  ) 
 Here is how much of TeX's memory you used:
- 45358 strings out of 402982
- 1116707 string characters out of 5452821
- 1691236 words of memory out of 5000000
- 73218 multiletter control sequences out of 15000+600000
+ 45355 strings out of 402982
+ 1116695 string characters out of 5452821
+ 1688546 words of memory out of 5000000
+ 73215 multiletter control sequences out of 15000+600000
  632011 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,17n,111p,1200b,2305s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (87 pages).
+Output written on main.pdf (86 pages).
