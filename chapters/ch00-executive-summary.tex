@@ -10,13 +10,14 @@
     \draw[background_rect] (-6, 2) rectangle (6, -6);
     
     % Main Goal
-    \node[concept] (goal) at (0,0) {گذار به\\دموکراسی};
+    \node[concept] (goal) at (0,0) {\rl{گذار به}};
+    \node[below=0.2cm] at (goal.center) {\rl{دموکراسی}};
     
     % Pillars
-    \node[step] (p1) at (-4, 1) {\keyword{ائتلاف سیاسی}};
-    \node[step] (p2) at (4, 1) {\keyword{بسیج مردمی}};
-    \node[step] (p3) at (-4, -4) {\keyword{حمایت جهانی}};
-    \node[step] (p4) at (4, -4) {\keyword{مدیریت بحران}};
+    \node[step] (p1) at (-4, 1) {\keyword{\rl{ائتلاف سیاسی}}};
+    \node[step] (p2) at (4, 1) {\keyword{\rl{بسیج مردمی}}};
+    \node[step] (p3) at (-4, -4) {\keyword{\rl{حمایت جهانی}}};
+    \node[step] (p4) at (4, -4) {\keyword{\rl{مدیریت بحران}}};
     
     % Connections
     \draw[connection] (goal) -- (p1);
@@ -24,15 +25,15 @@
     \draw[connection] (goal) -- (p3);
     \draw[connection] (goal) -- (p4);
     
-    % Icons/Symbols (Simplified representation)
+    % Icons
     \node[icon] at (-4, 1.8) {🤝};
     \node[icon] at (4, 1.8) {✊};
     \node[icon] at (-4, -4.8) {🌐};
     \node[icon] at (4, -4.8) {🛡️};
     
-    \node[below=2.5cm of goal, align=center, font= \itshape \color{iranblue!70}] {ساختار چهارگانه استراتژی گذار};
+    \node[below=2.5cm of goal, align=center, font= \itshape \color{iranblue!70}] {\rl{ساختار چهارگانه استراتژی گذار}};
 \end{tikzpicture}
-\captionof{figure}{ارکان اصلی استراتژی گذار}
+\captionof{figure}{\rl{ارکان اصلی استراتژی گذار}}
 \end{center}
 
 \section*{چکیده وضعیت}
@@ -56,20 +57,20 @@
 \begin{table}[H]
 \centering
 \caption{ماتریس مقایسه‌ای پنج سناریوی اصلی گذار}
-\begin{tabular}{|R{2.5cm}|C{2cm}|C{2cm}|C{2cm}|C{2.5cm}|}
+\begin{tabular}{|R{3.5cm}|C{2.5cm}|C{2.5cm}|C{2.5cm}|C{3.5cm}|}
 \hline
 \rowcolor{iranblue!20}
-\textbf{سناریو} & \textbf{احتمال} & \textbf{هزینه} & \textbf{مدت} & \textbf{ریسک اصلی} \\
+\textbf{\rl{سناریو}} & \textbf{\rl{احتمال}} & \textbf{\rl{هزینه}} & \textbf{\rl{مدت}} & \textbf{\rl{ریسک اصلی}} \\
 \hline
-انقلاب خشونت‌پرهیز & متوسط (۳۵٪) & متوسط & ۶-۱۸ ماه & سرکوب خونین \\
+\rl{انقلاب خشونت‌پرهیز} & \rl{متوسط (۳۵٪)} & \rl{متوسط} & \rl{۶-۱۸ ماه} & \rl{سرکوب خونین} \\
 \hline
-مقاومت مسلحانه & پایین (۱۵٪) & بسیار بالا & نامشخص & جنگ داخلی \\
+\rl{مقاومت مسلحانه} & \rl{پایین (۱۵٪)} & \rl{بسیار بالا} & \rl{نامشخص} & \rl{جنگ داخلی} \\
 \hline
-کودتای نظامی & پایین (۱۰٪) & متوسط & سریع & دیکتاتوری جدید \\
+\rl{کودتای نظامی} & \rl{پایین (۱۰٪)} & \rl{متوسط} & \rl{سریع} & \rl{دیکتاتوری جدید} \\
 \hline
-فروپاشی از درون & متوسط (۲۵٪) & بالا & متغیر & هرج‌ومرج \\
+\rl{فروپاشی از درون} & \rl{متوسط (۲۵٪)} & \rl{بالا} & \rl{متغیر} & \rl{هرج‌ومرج} \\
 \hline
-گذار مذاکره‌ای & پایین (۱۵٪) & پایین & طولانی & تداوم استبداد \\
+\rl{گذار مذاکره‌ای} & \rl{پایین (۱۵٪)} & \rl{پایین} & \rl{طولانی} & \rl{تداوم استبداد} \\
 \hline
 \end{tabular}
 \end{table}
@@ -79,25 +80,25 @@
 \begin{center}
 \begin{tikzpicture}[node distance=2cm, scale=0.9, transform shape]
     % Starting point
-    \node[block, fill=iranblue!30] (start) {وضعیت کنونی};
+    \node[block, fill=iranblue!30] (start) {\rl{وضعیت کنونی}};
     
     % Decision nodes
-    \node[decision, below=of start] (d1) {آیا ائتلاف ممکن است؟};
-    \node[process, below left=2cm and 2cm of d1] (eattelaf) {تشکیل ائتلاف فراگیر};
-    \node[process, below right=2cm and 2cm of d1] (taksar) {ادامه فعالیت مستقل};
+    \node[decision, below=of start] (d1) {\rl{آیا ائتلاف ممکن است؟}};
+    \node[process, below left=2cm and 2cm of d1] (eattelaf) {\rl{تشکیل ائتلاف فراگیر}};
+    \node[process, below right=2cm and 2cm of d1] (taksar) {\rl{ادامه فعالیت مستقل}};
     
     % Second level
-    \node[decision, below=of eattelaf] (d2) {آیا بسیج کافی است؟};
-    \node[block, fill=olgoogreen, below left=of d2] (action) {اقدام هماهنگ};
-    \node[process, below right=of d2] (build) {ظرفیت‌سازی};
+    \node[decision, below=of eattelaf] (d2) {\rl{آیا بسیج کافی است؟}};
+    \node[block, fill=olgoogreen, below left=of d2] (action) {\rl{اقدام هماهنگ}};
+    \node[process, below right=of d2] (build) {\rl{ظرفیت‌سازی}};
     
     % Arrows
     \draw[arrow] (start) -- (d1);
-    \draw[arrow] (d1) -- node[above left] {بله} (eattelaf);
-    \draw[arrow] (d1) -- node[above right] {خیر} (taksar);
+    \draw[arrow] (d1) -- node[above left] {\rl{بله}} (eattelaf);
+    \draw[arrow] (d1) -- node[above right] {\rl{خیر}} (taksar);
     \draw[arrow] (eattelaf) -- (d2);
-    \draw[arrow] (d2) -- node[above left] {بله} (action);
-    \draw[arrow] (d2) -- node[above right] {خیر} (build);
+    \draw[arrow] (d2) -- node[above left] {\rl{بله}} (action);
+    \draw[arrow] (d2) -- node[above right] {\rl{خیر}} (build);
     \draw[arrow] (build.south) |- ++(-3,-1) |- (d2.east);
 \end{tikzpicture}
 \end{center}
@@ -154,20 +155,20 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|L{9cm}|}
+\begin{tabular}{|R{4cm}|R{11cm}|}
 \hline
 \rowcolor{iranblue!20}
-\textbf{مخاطب} & \textbf{توصیه کلیدی} \\
+\textbf{\rl{مخاطب}} & \textbf{\rl{توصیه کلیدی}} \\
 \hline
-رهبران اپوزیسیون & فصول ۴، ۶ و ۹ را با دقت بخوانید. اولویت: ائتلاف‌سازی \\
+\rl{رهبران اپوزیسیون} & \rl{فصول ۴، ۶ و ۹ را با دقت بخوانید. اولویت: ائتلاف‌سازی} \\
 \hline
-فعالان داخل کشور & فصول ۲، ۶ و ۸ را مطالعه کنید. امنیت شخصی را جدی بگیرید \\
+\rl{فعالان داخل کشور} & \rl{فصول ۲، ۶ و ۸ را مطالعه کنید. امنیت شخصی را جدی بگیرید} \\
 \hline
-دیپلمات‌ها و سیاستگذاران & فصول ۵ و ۷ مرجع اصلی شماست \\
+\rl{دیپلمات‌ها و سیاستگذاران} & \rl{فصول ۵ و ۷ مرجع اصلی شماست} \\
 \hline
-پژوهشگران & پیوست‌ها منابع غنی نظری و تجربی ارائه می‌دهند \\
+\rl{پژوهشگران} & \rl{پیوست‌ها منابع غنی نظری و تجربی ارائه می‌دهند} \\
 \hline
-شهروندان عادی & فصل ۱ و خلاصه‌های هر فصل کافی است \\
+\rl{شهروندان عادی} & \rl{فصل ۱ و خلاصه‌های هر فصل کافی است} \\
 \hline
 \end{tabular}
 \caption{راهنمای استفاده برای مخاطبان مختلف}

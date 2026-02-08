@@ -5,10 +5,20 @@
 \label{app:power-structure}
 
 \begin{center}
-    \includegraphics[width=0.8\textwidth]{images/diagrams/power-structure.png}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    \node[concept] (core) at (0,0) {\rl{هسته قدرت}};
+    \node[step] (s1) at (-4, 2) {\rl{نهادهای انتصابی}};
+    \node[step] (s2) at (4, 2) {\rl{نهادهای امنیتی}};
+    \node[step] (s3) at (0, -3) {\rl{امپراتوری مالی}};
+    
+    \draw[connection] (core) -- (s1);
+    \draw[connection] (core) -- (s2);
+    \draw[connection] (core) -- (s3);
+\end{tikzpicture}
+\captionof{figure}{\rl{ساختار درونی و شبکه‌وار قدرت}}
 \end{center}
 
-\section{نمودار سازمانی}
+\section{\rl{نمودار سازمانی}}
 
 \begin{center}
 \begin{tikzpicture}[
@@ -16,20 +26,20 @@
     scale=0.8, transform shape
 ]
     % Top - Leader
-    \node[org, fill=iranred!40] (leader) at (0, 0) {رهبر};
+    \node[org, fill=iranred!40] (leader) at (0, 0) {\rl{رهبر}};
     
     % Second level
-    \node[org, fill=iranblue!30] (sepah) at (-5, -2) {سپاه};
-    \node[org, fill=iranblue!30] (judiciary) at (-2, -2) {قوه قضائیه};
-    \node[org, fill=irangold!30] (expediency) at (2, -2) {مجمع تشخیص};
-    \node[org, fill=irangold!30] (guardian) at (5, -2) {شورای نگهبان};
+    \node[org, fill=iranblue!30] (sepah) at (-5, -2) {\rl{سپاه}};
+    \node[org, fill=iranblue!30] (judiciary) at (-2, -2) {\rl{قوه قضائیه}};
+    \node[org, fill=irangold!30] (expediency) at (2, -2) {\rl{مجمع تشخیص}};
+    \node[org, fill=irangold!30] (guardian) at (5, -2) {\rl{شورای نگهبان}};
     
     % President path
-    \node[org, fill=olgoogreen!30] (president) at (0, -4) {رئیس‌جمهور};
-    \node[org, fill=olgoogreen!20] (cabinet) at (0, -5.5) {هیئت دولت};
+    \node[org, fill=olgoogreen!30] (president) at (0, -4) {\rl{رئیس‌جمهور}};
+    \node[org, fill=olgoogreen!20] (cabinet) at (0, -5.5) {\rl{هیئت دولت}};
     
     % Parliament
-    \node[org, fill=empirepurple!30] (majlis) at (-5, -4) {مجلس};
+    \node[org, fill=empirepurple!30] (majlis) at (-5, -4) {\rl{مجلس}};
     
     % Connections
     \draw[thick, ->] (leader) -- (sepah);
@@ -41,7 +51,7 @@
     \draw[thick, dashed, ->] (guardian) -- (majlis);
     \draw[thick, dashed, ->] (guardian) -- (president);
 \end{tikzpicture}
-\captionof{figure}{ساختار قدرت رسمی}
+\captionof{figure}{\rl{ساختار قدرت رسمی}}
 \end{center}
 
 \section{بیت رهبری}
@@ -58,24 +68,24 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|L{8cm}|}
+\begin{tabular}{|R{4cm}|R{11cm}|}
 \hline
 \rowcolor{iranred!20}
-\textbf{بخش} & \textbf{وظیفه} \\
+\textbf{\rl{بخش}} & \textbf{\rl{وظیفه}} \\
 \hline
-نیروی زمینی & کنترل داخلی، سرکوب \\
+\rl{نیروی زمینی} & \rl{کنترل داخلی، سرکوب} \\
 \hline
-نیروی دریایی & خلیج فارس \\
+\rl{نیروی دریایی} & \rl{خلیج فارس} \\
 \hline
-نیروی هوافضا & موشک‌ها، پهپادها \\
+\rl{نیروی هوافضا} & \rl{موشک‌ها، پهپادها} \\
 \hline
-نیروی قدس & عملیات خارجی، نیروهای نیابتی \\
+\rl{نیروی قدس} & \rl{عملیات خارجی، نیروهای نیابتی} \\
 \hline
-بسیج & سرکوب داخلی، جاسوسی \\
+\rl{بسیج} & \rl{سرکوب داخلی، جاسوسی} \\
 \hline
-اطلاعات سپاه & جاسوسی، ضداطلاعات \\
+\rl{اطلاعات سپاه} & \rl{جاسوسی، ضداطلاعات} \\
 \hline
-خاتم‌الانبیا & امپراتوری اقتصادی \\
+\rl{خاتم‌الانبیا} & \rl{امپراتوری اقتصادی} \\
 \hline
 \end{tabular}
 \caption{بخش‌های سپاه پاسداران}

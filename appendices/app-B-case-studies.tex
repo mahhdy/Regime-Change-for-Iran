@@ -1,120 +1,130 @@
 % app-B-case-studies.tex
 % پیوست ب: مطالعات موردی
 
-\chapter{مطالعات موردی}
+\chapter{\rl{مطالعات موردی}}
 \label{app:case-studies}
 
 \begin{center}
-    \includegraphics[width=0.6\textwidth]{images/diagrams/case-studies.png}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    \node[concept] (base) at (0,0) {\rl{مدل‌های گذار}};
+    \node[step, fill=irangreen!20] (m1) at (-4, 2) {\rl{لهستان: همبستگی}};
+    \node[step, fill=iranblue!20] (m2) at (4, 2) {\rl{چک: انقلاب مخملی}};
+    \node[step, fill=iranred!20] (m3) at (0, -3) {\rl{سوریه: جنگ داخلی}};
+    
+    \draw[connection] (base) -- (m1);
+    \draw[connection] (base) -- (m2);
+    \draw[connection] (base) -- (m3);
+\end{tikzpicture}
+\captionof{figure}{\rl{توزیع الگوهای موفق و ناموفق گذار در جهان}}
 \end{center}
 
-\section{نمونه‌های موفق}
+\section{\rl{نمونه‌های موفق}}
 
-\subsection{لهستان: جنبش همبستگی (۱۹۸۰-۱۹۸۹)}
+\subsection{\rl{لهستان: جنبش همبستگی (۱۹۸۰-۱۹۸۹)}}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|L{9cm}|}
+\begin{tabular}{|R{4cm}|R{11cm}|}
 \hline
 \rowcolor{olgoogreen!30}
-\textbf{عامل} & \textbf{توضیح} \\
+\textbf{\rl{عامل}} & \textbf{\rl{توضیح}} \\
 \hline
-رهبری & لخ والسا - کارگر کاریزماتیک \\
+\rl{رهبری} & \rl{لخ والسا - کارگر کاریزماتیک} \\
 \hline
-سازمان & اتحادیه کارگری ۱۰ میلیونی \\
+\rl{سازمان} & \rl{اتحادیه کارگری ۱۰ میلیونی} \\
 \hline
-حمایت & کلیسای کاتولیک، غرب \\
+\rl{حمایت} & \rl{کلیسای کاتولیک، غرب} \\
 \hline
-تاکتیک & اعتصاب، مذاکره \\
+\rl{تاکتیک} & \rl{اعتصاب، مذاکره} \\
 \hline
-نتیجه & انتخابات آزاد ۱۹۸۹ \\
+\rl{نتیجه} & \rl{انتخابات آزاد ۱۹۸۹} \\
 \hline
 \end{tabular}
-\caption{خلاصه تجربه لهستان}
+\caption{\rl{خلاصه تجربه لهستان}}
 \end{table}
 
-\textbf{درس برای ایران:} اهمیت سازمان‌دهی کارگری و حمایت نهاد مذهبی (که در ایران وجود ندارد).
+\textbf{\rl{درس برای ایران:}} \rl{اهمیت سازمان‌دهی کارگری و حمایت نهاد مذهبی (که در ایران وجود ندارد).}
 
-\subsection{چکسلواکی: انقلاب مخملی (۱۹۸۹)}
+\subsection{\rl{چکسلواکی: انقلاب مخملی (۱۹۸۹)}}
 
 \begin{itemize}
-    \item مدت: تنها ۱۰ روز
-    \item تاکتیک: تظاهرات مسالمت‌آمیز گسترده
-    \item رهبری: واسلاو هاول - نمایشنامه‌نویس
-    \item کلید: اعتصاب عمومی + ترک حزب کمونیست
+    \item \rl{مدت: تنها ۱۰ روز}
+    \item \rl{تاکتیک: تظاهرات مسالمت‌آمیز گسترده}
+    \item \rl{رهبری: واسلاو هاول - نمایشنامه‌نویس}
+    \item \rl{کلید: اعتصاب عمومی + ترک حزب کمونیست}
 \end{itemize}
 
-\subsection{آفریقای جنوبی (۱۹۹۰-۱۹۹۴)}
+\subsection{\rl{آفریقای جنوبی (۱۹۹۰-۱۹۹۴)}}
 
-\begin{olgoobox}[title=درس‌های کلیدی]
+\begin{olgoobox}[title=\rl{درس‌های کلیدی}]
 \begin{itemize}
-    \item مذاکره ممکن است حتی با رژیم سرکوبگر
-    \item عدالت انتقالی بدون انتقام (کمیسیون حقیقت)
-    \item رهبری اخلاقی ماندلا
-    \item فشار تحریم‌های بین‌المللی
+    \item \rl{مذاکره ممکن است حتی با رژیم سرکوبگر}
+    \item \rl{عدالت انتقالی بدون انتقام (کمیسیون حقیقت)}
+    \item \rl{رهبری اخلاقی ماندلا}
+    \item \rl{فشار تحریم‌های بین‌المللی}
 \end{itemize}
 \end{olgoobox}
 
-\subsection{پرتغال: انقلاب میخک (۱۹۷۴)}
+\subsection{\rl{پرتغال: انقلاب میخک (۱۹۷۴)}}
 
-کودتای نظامی چپ‌گرا که به دموکراسی منجر شد. نشان‌دهنده امکان گذار از طریق نظامیان.
+\rl{کودتای نظامی چپ‌گرا که به دموکراسی منجر شد. نشان‌دهنده امکان گذار از طریق نظامیان.}
 
-\section{نمونه‌های ناموفق}
+\section{\rl{نمونه‌های ناموفق}}
 
-\subsection{سوریه (۲۰۱۱-حال)}
+\subsection{\rl{سوریه (۲۰۱۱-حال)}}
 
-\begin{enghelabbox}[title=چرا شکست خورد؟]
+\begin{enghelabbox}[title=\rl{چرا شکست خورد؟}]
 \begin{itemize}
-    \item تفرقه شدید اپوزیسیون
-    \item مسلح شدن زودهنگام
-    \item مداخله روسیه و ایران
-    \item فقدان حمایت غربی مؤثر
-    \item شکاف‌های فرقه‌ای و قومی
+    \item \rl{تفرقه شدید اپوزیسیون}
+    \item \rl{مسلح شدن زودهنگام}
+    \item \rl{مداخله روسیه و ایران}
+    \item \rl{فقدان حمایت غربی مؤثر}
+    \item \rl{شکاف‌های فرقه‌ای و قومی}
 \end{itemize}
 \end{enghelabbox}
 
-\textbf{درس:} اجتناب از مسلح شدن + وحدت اپوزیسیون
+\textbf{\rl{درس:}} \rl{اجتناب از مسلح شدن + وحدت اپوزیسیون}
 
-\subsection{ونزوئلا}
+\subsection{\rl{ونزوئلا}}
 
-علی‌رغم فشار بین‌المللی و اپوزیسیون قوی، نظام مادورو دوام آورد:
+\rl{علی‌رغم فشار بین‌المللی و اپوزیسیون قوی، نظام مادورو دوام آورد:}
 \begin{itemize}
-    \item حمایت روسیه و چین
-    \item کنترل نظامیان بر اقتصاد
-    \item سرکوب مؤثر
+    \item \rl{حمایت روسیه و چین}
+    \item \rl{کنترل نظامیان بر اقتصاد}
+    \item \rl{سرکوب مؤثر}
 \end{itemize}
 
-\section{جدول مقایسه‌ای}
+\section{\rl{جدول مقایسه‌ای}}
 
 \begin{table}[H]
 \centering
 \resizebox{\textwidth}{!}{
-\begin{tabular}{|R{2.5cm}|C{1.5cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|}
+\begin{tabular}{|R{3.5cm}|C{2.5cm}|C{2.5cm}|C{3cm}|C{2.5cm}|C{2.5cm}|}
 \hline
 \rowcolor{iranblue!20}
-\textbf{کشور} & \textbf{مدت} & \textbf{روش} & \textbf{حمایت خارجی} & \textbf{وحدت} & \textbf{نتیجه} \\
+\textbf{\rl{کشور}} & \textbf{\rl{مدت}} & \textbf{\rl{روش}} & \textbf{\rl{حمایت خارجی}} & \textbf{\rl{وحدت}} & \textbf{\rl{نتیجه}} \\
 \hline
-لهستان & ۹ سال & غیرخشن & غرب & بالا & موفق \\
+\rl{لهستان} & \rl{۹ سال} & \rl{غیرخشن} & \rl{غرب} & \rl{بالا} & \rl{موفق} \\
 \hline
-چک & ۱۰ روز & غیرخشن & غرب & بالا & موفق \\
+\rl{چک} & \rl{۱۰ روز} & \rl{غیرخشن} & \rl{غرب} & \rl{بالا} & \rl{موفق} \\
 \hline
-آفریقای جنوبی & ۴ سال & مذاکره & غرب & بالا & موفق \\
+\rl{آفریقای جنوبی} & \rl{۴ سال} & \rl{مذاکره} & \rl{غرب} & \rl{بالا} & \rl{موفق} \\
 \hline
-سوریه & ۱۳+ سال & مسلح & محدود & پایین & شکست \\
+\rl{سوریه} & \rl{۱۳+ سال} & \rl{مسلح} & \rl{محدود} & \rl{پایین} & \rl{شکست} \\
 \hline
-ونزوئلا & ۶+ سال & مختلط & غرب & متوسط & جاری \\
+\rl{ونزوئلا} & \rl{۶+ سال} & \rl{مختلط} & \rl{غرب} & \rl{متوسط} & \rl{جاری} \\
 \hline
-\textbf{ایران} & - & \textbf{؟} & \textbf{بالقوه} & \textbf{پایین} & \textbf{؟} \\
+\textbf{\rl{ایران}} & - & \textbf{؟} & \textbf{\rl{بالقوه}} & \textbf{\rl{پایین}} & \textbf{؟} \\
 \hline
 \end{tabular}
 }
-\caption{مقایسه نمونه‌ها با ایران}
+\caption{\rl{مقایسه نمونه‌ها با ایران}}
 \end{table}
 
-\section{نتیجه‌گیری}
+\section{\rl{نتیجه‌گیری}}
 
 \begin{empirebox}
-عوامل کلیدی موفقیت:
+\rl{عوامل کلیدی موفقیت:}
 \begin{enumerate}
     \item وحدت اپوزیسیون
     \item خشونت‌پرهیزی

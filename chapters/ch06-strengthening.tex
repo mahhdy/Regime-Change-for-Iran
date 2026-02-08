@@ -7,22 +7,22 @@
 \begin{center}
 \begin{tikzpicture}[scale=0.9, transform shape]
     % Strengthening the fist (symbolic)
-    \node[concept, scale=1.2, fill=iranblue!20] (fist) at (0,0) {اتحاد و\\قدرت};
+    \node[concept, scale=1.2, fill=iranblue!20] (fist) at (0,0) {\rl{اتحاد و قدرت}};
     
     % Layers of strengthening
-    \node[step] (s1) at (-4, 2) {آموزش و تخصص};
-    \node[step] (s2) at (4, 2) {منابع و لجستیک};
-    \node[step] (s3) at (-4, -2) {رسانه و تبلیغات};
-    \node[step] (s4) at (4, -2) {امنیت و حفاظت};
+    \node[step] (s1) at (-4, 2) {\rl{آموزش و تخصص}};
+    \node[step] (s2) at (4, 2) {\rl{منابع و لجستیک}};
+    \node[step] (s3) at (-4, -2) {\rl{رسانه و تبلیغات}};
+    \node[step] (s4) at (4, -2) {\rl{امنیت و حفاظت}};
     
     \draw[connection] (s1) -- (fist);
     \draw[connection] (s2) -- (fist);
     \draw[connection] (s3) -- (fist);
     \draw[connection] (s4) -- (fist);
     
-    \node[below=2.5cm of fist, align=center, font= \small \color{iranblue!70}] {ارکان تقویت نیروهای اپوزیسیون};
+    \node[below=2.5cm of fist, align=center, font= \small \color{iranblue!70}] {\rl{ارکان تقویت نیروهای اپوزیسیون}};
 \end{tikzpicture}
-\captionof{figure}{مدل ارتقای توانمندی‌های مبارزاتی}
+\captionof{figure}{\rl{مدل ارتقای توانمندی‌های مبارزاتی}}
 \end{center}
 
 \begin{naghlbox}
@@ -44,36 +44,36 @@
 
 \begin{center}
 \begin{tikzpicture}[node distance=2cm]
-    \node[block, fill=iranblue!30] (min) {توافق حداقلی};
-    \node[block, fill=iranblue!40, right=of min] (struct) {ساختارسازی};
-    \node[block, fill=iranblue!50, right=of struct] (coord) {هماهنگی عملی};
-    \node[block, fill=olgoogreen!50, right=of coord] (action) {اقدام مشترک};
+    \node[block, fill=iranblue!30] (min) {\rl{توافق حداقلی}};
+    \node[block, fill=iranblue!40, right=of min] (struct) {\rl{ساختارسازی}};
+    \node[block, fill=iranblue!50, right=of struct] (coord) {\rl{هماهنگی عملی}};
+    \node[block, fill=olgoogreen!50, right=of coord] (action) {\rl{اقدام مشترک}};
     
     \draw[arrow] (min) -- (struct);
     \draw[arrow] (struct) -- (coord);
     \draw[arrow] (coord) -- (action);
 \end{tikzpicture}
-\captionof{figure}{مسیر ائتلاف‌سازی}
+\captionof{figure}{\rl{مسیر ائتلاف‌سازی}}
 \end{center}
 
 \subsection{ساختارسازی سازمانی}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|L{9cm}|}
+\begin{tabular}{|R{4cm}|R{11cm}|}
 \hline
 \rowcolor{iranblue!20}
-\textbf{نهاد پیشنهادی} & \textbf{وظیفه} \\
+\textbf{\rl{نهاد پیشنهادی}} & \textbf{\rl{وظیفه}} \\
 \hline
-شورای هماهنگی & تصمیم‌گیری کلان، نمایندگی بین‌المللی \\
+\rl{شورای هماهنگی} & \rl{تصمیم‌گیری کلان، نمایندگی بین‌المللی} \\
 \hline
-کمیته رسانه & هماهنگی پیام‌رسانی، مبارزه با تحریف \\
+\rl{کمیته رسانه} & \rl{هماهنگی پیام‌رسانی، مبارزه با تحریف} \\
 \hline
-کمیته حقوقی & مستندسازی، عدالت انتقالی \\
+\rl{کمیته حقوقی} & \rl{مستندسازی، عدالت انتقالی} \\
 \hline
-کمیته ارتباط با داخل & شبکه‌سازی امن، انتقال اطلاعات \\
+\rl{کمیته ارتباط با داخل} & \rl{شبکه‌سازی امن، انتقال اطلاعات} \\
 \hline
-کمیته منابع & جذب و مدیریت شفاف منابع مالی \\
+\rl{کمیته منابع} & \rl{جذب و مدیریت شفاف منابع مالی} \\
 \hline
 \end{tabular}
 \caption{ساختار پیشنهادی اپوزیسیون متحد}
@@ -105,10 +105,10 @@
     \draw[fill=iranred!30] (9,0) rectangle (11,4);
     
     % Labels
-    \node[font=\small, rotate=90] at (1, 2) {نظامی-امنیتی};
-    \node[font=\small, rotate=90] at (4, 2) {ایدئولوژیک};
-    \node[font=\small, rotate=90] at (7, 2) {اقتصادی};
-    \node[font=\small, rotate=90] at (10, 2) {بین‌المللی};
+    \node[font=\small, rotate=90] at (1, 2) {\rl{نظامی-امنیتی}};
+    \node[font=\small, rotate=90] at (4, 2) {\rl{ایدئولوژیک}};
+    \node[font=\small, rotate=90] at (7, 2) {\rl{اقتصادی}};
+    \node[font=\small, rotate=90] at (10, 2) {\rl{بین‌المللی}};
     
     % Cracks
     \draw[thick, white, decorate, decoration={zigzag, segment length=4mm, amplitude=2mm}] (1, 0.5) -- (1, 3.5);
@@ -116,9 +116,9 @@
     
     % Roof
     \draw[fill=iranblue!30] (-0.5, 4) -- (5.5, 5) -- (11.5, 4) -- cycle;
-    \node at (5.5, 4.5) {نظام};
+    \node at (5.5, 4.5) {\rl{نظام}};
 \end{tikzpicture}
-\captionof{figure}{ستون‌های قدرت نظام}
+\captionof{figure}{\rl{ستون‌های قدرت نظام}}
 \end{center}
 
 \subsection{نافرمانی مدنی}
@@ -137,16 +137,16 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{2.5cm}|L{5cm}|L{4.5cm}|}
+\begin{tabular}{|R{3cm}|R{6cm}|R{6cm}|}
 \hline
 \rowcolor{irangold!20}
-\textbf{پلتفرم} & \textbf{کاربرد} & \textbf{چالش} \\
+\textbf{\rl{پلتفرم}} & \textbf{\rl{کاربرد}} & \textbf{\rl{چالش}} \\
 \hline
-تلویزیون ماهواره‌ای & دسترسی گسترده، اخبار & هزینه بالا \\
+\rl{تلویزیون ماهواره‌ای} & \rl{دسترسی گسترده، اخبار} & \rl{هزینه بالا} \\
 \hline
-شبکه‌های اجتماعی & بسیج سریع، ویدئو & فیلترینگ \\
+\rl{شبکه‌های اجتماعی} & \rl{بسیج سریع، ویدئو} & \rl{فیلترینگ} \\
 \hline
-پیام‌رسان‌ها & ارتباط مستقیم & نظارت امنیتی \\
+\rl{پیام‌رسان‌ها} & \rl{ارتباط مستقیم} & \rl{نظارت امنیتی} \\
 \hline
 \end{tabular}
 \caption{ابزارهای ارتباطی}
@@ -165,20 +165,20 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|C{1cm}|L{6cm}|C{2cm}|C{2cm}|}
+\begin{tabular}{|C{1.5cm}|R{8cm}|C{2.5cm}|C{2.5cm}|}
 \hline
 \rowcolor{olgoogreen!30}
-\textbf{\#} & \textbf{اقدام} & \textbf{فوریت} & \textbf{تأثیر} \\
+\textbf{\rl{\#}} & \textbf{\rl{اقدام}} & \textbf{\rl{فوریت}} & \textbf{\rl{تأثیر}} \\
 \hline
-۱ & ائتلاف‌سازی & بالا & بالا \\
+\rl{۱} & \rl{ائتلاف‌سازی} & \rl{بالا} & \rl{بالا} \\
 \hline
-۲ & ساختارسازی & بالا & بالا \\
+\rl{۲} & \rl{ساختارسازی} & \rl{بالا} & \rl{بالا} \\
 \hline
-۳ & ارتباط با داخل & بالا & متوسط \\
+\rl{۳} & \rl{ارتباط با داخل} & \rl{بالا} & \rl{متوسط} \\
 \hline
-۴ & دیپلماسی & متوسط & بالا \\
+\rl{۴} & \rl{دیپلماسی} & \rl{متوسط} & \rl{بالا} \\
 \hline
-۵ & جذب منابع & متوسط & متوسط \\
+\rl{۵} & \rl{جذب منابع} & \rl{متوسط} & \rl{متوسط} \\
 \hline
 \end{tabular}
 \caption{ماتریس اولویت‌بندی}

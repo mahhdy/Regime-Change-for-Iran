@@ -12,18 +12,18 @@
     \fill[irangold!20] (3,3) rectangle (6,6); % High impact, low probability
     \fill[irangreen!20] (3,0) rectangle (6,3); % Low impact, low probability
     
-    \draw[thick, <->] (0, 0) -- (6.5, 0) node[right] {احتمال};
-    \draw[thick, <->] (0, 0) -- (0, 6.5) node[above] {تأثیر};
+    \draw[thick, <->] (0, 0) -- (6.5, 0) node[right] {\rl{احتمال}};
+    \draw[thick, <->] (0, 0) -- (0, 6.5) node[above] {\rl{تأثیر}};
     
     % Points
-    \node[circle, fill=iranred, inner sep=2pt, label=right:\tiny{سرکوب}] at (2, 5.5) {};
-    \node[circle, fill=iranred!70, inner sep=2pt, label=right:\tiny{جنگ داخلی}] at (1, 5) {};
-    \node[circle, fill=irangold, inner sep=2pt, label=right:\tiny{تجزیه}] at (0.5, 5.8) {};
-    \node[circle, fill=irangreen, inner sep=2pt, label=right:\tiny{اقتصاد}] at (4, 2) {};
+    \node[circle, fill=iranred, inner sep=2pt, label=right:\tiny{\rl{سرکوب}}] at (2, 5.5) {};
+    \node[circle, fill=iranred!70, inner sep=2pt, label=right:\tiny{\rl{جنگ داخلی}}] at (1, 5) {};
+    \node[circle, fill=irangold, inner sep=2pt, label=right:\tiny{\rl{تجزیه}}] at (0.5, 5.8) {};
+    \node[circle, fill=irangreen, inner sep=2pt, label=right:\tiny{\rl{اقتصاد}}] at (4, 2) {};
     
-    \node[below=3.5cm of goal, align=center, font= \small \color{iranred!70}] at (3,0) {نقشه حرارتی ریسک‌های استراتژیک};
+    \node[below=3.5cm of goal, align=center, font= \small \color{iranred!70}] at (3,0) {\rl{نقشه حرارتی ریسک‌های استراتژیک}};
 \end{tikzpicture}
-\captionof{figure}{ارزیابی توزیع ریسک‌های گذار}
+\captionof{figure}{\rl{ارزیابی توزیع ریسک‌های گذار}}
 \end{center}
 
 \begin{naghlbox}
@@ -38,11 +38,11 @@
     \draw[step=2cm, gray, thin] (0,0) grid (10,10);
     
     % Axes
-    \draw[thick, ->] (0,0) -- (10.5,0) node[right] {احتمال};
-    \draw[thick, ->] (0,0) -- (0,10.5) node[above] {تأثیر};
+    \draw[thick, ->] (0,0) -- (10.5,0) node[right] {\rl{احتمال}};
+    \draw[thick, ->] (0,0) -- (0,10.5) node[above] {\rl{تأثیر}};
     
     % Labels
-    \foreach \x/\label in {1/کم, 3/متوسط, 5/بالا, 7/بسیار بالا, 9/حداکثر} {
+    \foreach \x/\label in {1/\rl{کم}, 3/\rl{متوسط}, 5/\rl{بالا}, 7/\rl{بسیار بالا}, 9/\rl{حداکثر}} {
         \node[font=\tiny] at (\x, -0.3) {\label};
         \node[font=\tiny] at (-0.5, \x) {\label};
     }
@@ -55,32 +55,32 @@
     \fill[red!30] (8,4) rectangle (10,10);
     \fill[red!30] (4,8) rectangle (10,10);
     
-    % Risks
+    % Risks (R1-R5)
     \node[draw, circle, fill=white, font=\tiny] at (7, 9) {R1};
     \node[draw, circle, fill=white, font=\tiny] at (5, 7) {R2};
     \node[draw, circle, fill=white, font=\tiny] at (3, 8) {R3};
     \node[draw, circle, fill=white, font=\tiny] at (6, 5) {R4};
     \node[draw, circle, fill=white, font=\tiny] at (4, 3) {R5};
 \end{tikzpicture}
-\captionof{figure}{ماتریس ریسک ۵×۵}
+\captionof{figure}{\rl{ماتریس ریسک استراتژیک}}
 \end{center}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|C{1cm}|L{4cm}|C{2cm}|C{2cm}|}
+\begin{tabular}{|C{1.5cm}|R{6.5cm}|C{3cm}|C{3cm}|}
 \hline
 \rowcolor{iranred!20}
-\textbf{کد} & \textbf{ریسک} & \textbf{احتمال} & \textbf{تأثیر} \\
+\textbf{\rl{کد}} & \textbf{\rl{ریسک}} & \textbf{\rl{احتمال}} & \textbf{\rl{تأثیر}} \\
 \hline
-R1 & سرکوب خونین‌تر & بالا & حداکثر \\
+\rl{R1} & \rl{سرکوب خونین‌تر} & \rl{بالا} & \rl{حداکثر} \\
 \hline
-R2 & جنگ داخلی & متوسط & بسیار بالا \\
+\rl{R2} & \rl{جنگ داخلی} & \rl{متوسط} & \rl{بسیار بالا} \\
 \hline
-R3 & تجزیه کشور & کم & حداکثر \\
+\rl{R3} & \rl{تجزیه کشور} & \rl{کم} & \rl{حداکثر} \\
 \hline
-R4 & دیکتاتوری جدید & متوسط & بالا \\
+\rl{R4} & \rl{دیکتاتوری جدید} & \rl{متوسط} & \rl{بالا} \\
 \hline
-R5 & شکست اقتصادی & متوسط & متوسط \\
+\rl{R5} & \rl{شکست اقتصادی} & \rl{متوسط} & \rl{متوسط} \\
 \hline
 \end{tabular}
 \caption{فهرست ریسک‌های اصلی}
@@ -124,18 +124,18 @@ R5 & شکست اقتصادی & متوسط & متوسط \\
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|L{9cm}|}
+\begin{tabular}{|R{4cm}|R{11cm}|}
 \hline
 \rowcolor{olgoogreen!30}
-\textbf{ریسک} & \textbf{استراتژی کاهش} \\
+\textbf{\rl{ریسک}} & \textbf{\rl{استراتژی کاهش}} \\
 \hline
-سرکوب & تاکتیک‌های غیرمتمرکز، حمایت بین‌المللی \\
+\rl{سرکوب} & \rl{تاکتیک‌های غیرمتمرکز، حمایت بین‌المللی} \\
 \hline
-جنگ داخلی & وحدت اپوزیسیون، خلع سلاح \\
+\rl{جنگ داخلی} & \rl{وحدت اپوزیسیون، خلع سلاح} \\
 \hline
-تجزیه & فدرالیسم، حقوق برابر \\
+\rl{تجزیه} & \rl{فدرالیسم، حقوق برابر} \\
 \hline
-دیکتاتوری & نظارت بین‌المللی، نهادهای قوی \\
+\rl{دیکتاتوری} & \rl{نظارت بین‌المللی، نهادهای قوی} \\
 \hline
 \end{tabular}
 \caption{استراتژی‌های کاهش ریسک}

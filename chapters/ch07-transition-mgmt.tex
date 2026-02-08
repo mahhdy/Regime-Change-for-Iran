@@ -7,25 +7,25 @@
 \begin{center}
 \begin{tikzpicture}[scale=0.9, transform shape]
     % Transition Bridge
-    \draw[ultra thick, iranblue!30, fill=iranblue!5) (-5, -1) rectangle (5, 1);
-    \node[font=\small\bfseries] at (0, 0) {پل گذار (حکومت انتقالی)};
+    \draw[ultra thick, iranblue!30, fill=iranblue!5] (-5, -1) rectangle (5, 1);
+    \node[font=\small\bfseries] at (0, 0) {\rl{پل گذار (حکومت انتقالی)}};
     
     % Sides
-    \node[concept, scale=0.7, fill=iranred!20] at (-4, 2) {رژیم استبدادی};
-    \node[concept, scale=0.7, fill=irangreen!20] at (4, 2) {دموکراسی پایدار};
+    \node[concept, scale=0.7, fill=iranred!20] at (-4, 2) {\rl{رژیم استبدادی}};
+    \node[concept, scale=0.7, fill=irangreen!20] at (4, 2) {\rl{دموکراسی پایدار}};
     
     % Challenges (Arrows pushing down)
     \draw[connection, iranred] (-2, 2.5) -- (-2, 1.2);
-    \node[above, font=\tiny] at (-2, 2.5) {خطر هرج‌ومرج};
+    \node[above, font=\tiny] at (-2, 2.5) {\rl{خطر هرج‌ومرج}};
     
     \draw[connection, iranred] (2, 2.5) -- (2, 1.2);
-    \node[above, font=\tiny] at (2, 2.5) {فشار تندروها};
+    \node[above, font=\tiny] at (2, 2.5) {\rl{فشار تندروها}};
     
     % Support (Arrows pushing up)
     \draw[connection, iranblue] (0, -2.5) -- (0, -1.2);
-    \node[below, font=\tiny] at (0, -2.5) {حمایت بین‌المللی و وفاق ملی};
+    \node[below, font=\tiny] at (0, -2.5) {\rl{حمایت جهانی و وفاق ملی}};
 \end{tikzpicture}
-\captionof{figure}{مدل مدیریت تعادل در دوره گذار}
+\captionof{figure}{\rl{مدل مدیریت تعادل در دوره گذار}}
 \end{center}
 
 \begin{naghlbox}
@@ -47,16 +47,16 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|L{5cm}|L{4cm}|}
+\begin{tabular}{|R{4cm}|R{6cm}|R{5cm}|}
 \hline
 \rowcolor{iranred!20}
-\textbf{سناریوی خطر} & \textbf{عوامل} & \textbf{پیشگیری} \\
+\textbf{\rl{سناریوی خطر}} & \textbf{\rl{عوامل}} & \textbf{\rl{پیشگیری}} \\
 \hline
-جنگ داخلی & گروه‌های مسلح، شکاف قومی & خلع سلاح، وحدت ملی \\
+\rl{جنگ داخلی} & \rl{گروه‌های مسلح، شکاف قومی} & \rl{خلع سلاح، وحدت ملی} \\
 \hline
-هرج‌ومرج & فقدان نظم، انتقام & استقرار سریع امنیت \\
+\rl{هرج‌ومرج} & \rl{فقدان نظم، انتقام} & \rl{استقرار سریع امنیت} \\
 \hline
-تجزیه & جدایی‌طلبی & فدرالیسم، حقوق اقلیت‌ها \\
+\rl{تجزیه} & \rl{جدایی‌طلبی} & \rl{فدرالیسم، حقوق اقلیت‌ها} \\
 \hline
 \end{tabular}
 \caption{سناریوهای خطر و پیشگیری}
@@ -66,11 +66,11 @@
 
 \begin{center}
 \begin{tikzpicture}[node distance=1.5cm]
-    \node[block, fill=iranblue!40, minimum width=8cm] (council) {شورای انتقالی (۱۵-۲۱ نفر)};
-    \node[block, fill=iranblue!30, below=of council] (pm) {نخست‌وزیر انتقالی};
-    \node[block, fill=olgoogreen!30, below left=of pm] (cab) {کابینه تخصصی};
-    \node[block, fill=olgoogreen!30, below right=of pm] (sec) {شورای امنیت};
-    \node[block, fill=irangold!30, below=2.5cm of pm] (elect) {انتخابات آزاد (۱۲-۱۸ ماه)};
+    \node[block, fill=iranblue!40, minimum width=8cm] (council) {\rl{شورای انتقالی}};
+    \node[block, fill=iranblue!30, below=of council] (pm) {\rl{نخست‌وزیر انتقالی}};
+    \node[block, fill=olgoogreen!30, below left=of pm] (cab) {\rl{کابینه تخصصی}};
+    \node[block, fill=olgoogreen!30, below right=of pm] (sec) {\rl{شورای امنیت}};
+    \node[block, fill=irangold!30, below=2.5cm of pm] (elect) {\rl{انتخابات آزاد (۱۲-۱۸ ماه)}};
     
     \draw[arrow] (council) -- (pm);
     \draw[arrow] (pm) -- (cab);
@@ -78,7 +78,7 @@
     \draw[arrow] (cab) -- (elect);
     \draw[arrow] (sec) -- (elect);
 \end{tikzpicture}
-\captionof{figure}{ساختار حکومت انتقالی}
+\captionof{figure}{\rl{ساختار حکومت انتقالی}}
 \end{center}
 
 \section{نقش نیروهای مسلح}
@@ -108,20 +108,20 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|C{2cm}|L{10cm}|}
+\begin{tabular}{|C{3cm}|R{12cm}|}
 \hline
 \rowcolor{iranblue!20}
-\textbf{زمان} & \textbf{اقدامات کلیدی} \\
+\textbf{\rl{زمان}} & \textbf{\rl{اقدامات کلیدی}} \\
 \hline
-هفته ۱ & استقرار شورای انتقالی، اعلام قانون اساسی موقت \\
+\rl{هفته ۱} & \rl{استقرار شورای انتقالی، اعلام قانون اساسی موقت} \\
 \hline
-ماه ۱-۳ & تثبیت امنیت، بازگشایی اقتصاد، آزادی زندانیان \\
+\rl{ماه ۱-۳} & \rl{تثبیت امنیت، بازگشایی اقتصاد، آزادی زندانیان} \\
 \hline
-ماه ۳-۶ & تشکیل کمیسیون‌ها، آغاز اصلاحات \\
+\rl{ماه ۳-۶} & \rl{تشکیل کمیسیون‌ها، آغاز اصلاحات} \\
 \hline
-ماه ۶-۱۲ & آماده‌سازی انتخابات، تدوین قانون اساسی \\
+\rl{ماه ۶-۱۲} & \rl{آماده‌سازی انتخابات، تدوین قانون اساسی} \\
 \hline
-ماه ۱۲-۱۸ & انتخابات آزاد، انتقال به حکومت منتخب \\
+\rl{ماه ۱۲-۱۸} & \rl{انتخابات آزاد، انتقال به حکومت منتخب} \\
 \hline
 \end{tabular}
 \caption{جدول زمانی پیشنهادی}

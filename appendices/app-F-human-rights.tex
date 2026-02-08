@@ -5,23 +5,33 @@
 \label{app:human-rights}
 
 \begin{center}
-    \includegraphics[width=0.6\textwidth]{images/diagrams/human-rights.png}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    \node[concept, fill=iranred!10, draw=iranred] (hr) at (0,0) {\rl{حقوق بشر}};
+    \node[step, draw=iranred!50] (s1) at (-4, 2) {\rl{اعدام و شکنجه}};
+    \node[step, draw=iranred!50] (s2) at (4, 2) {\rl{سرکوب اقلیت‌ها}};
+    \node[step, draw=iranred!50] (s3) at (0, -3) {\rl{تبعیض جنسیتی}};
+    
+    \draw[connection, iranred!30] (hr) -- (s1);
+    \draw[connection, iranred!30] (hr) -- (s2);
+    \draw[connection, iranred!30] (hr) -- (s3);
+\end{tikzpicture}
+\captionof{figure}{\rl{تارنمای نقض حقوق بشر در ایران}}
 \end{center}
 
 \section{اعدام‌ها}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|C{2cm}|C{3cm}|L{6cm}|}
+\begin{tabular}{|C{3cm}|C{3cm}|R{9cm}|}
 \hline
 \rowcolor{iranred!20}
-\textbf{سال} & \textbf{تعداد} & \textbf{توضیح} \\
+\textbf{\rl{سال}} & \textbf{\rl{تعداد اعدام}} & \textbf{\rl{توضیح}} \\
 \hline
-۱۴۰۱ & ۵۸۲ & افزایش پس از جنبش مهسا \\
+\rl{۱۴۰۱} & \rl{۵۸۲} & \rl{افزایش پس از جنبش مهسا} \\
 \hline
-۱۴۰۲ & ۸۵۳ & بالاترین رقم در دهه اخیر \\
+\rl{۱۴۰۲} & \rl{۸۵۳} & \rl{بالاترین رقم در دهه اخیر} \\
 \hline
-۱۴۰۳ & ۶۰۰+ & ادامه روند \\
+\rl{۱۴۰۳} & \rl{۶۰۰+} & \rl{ادامه روند} \\
 \hline
 \end{tabular}
 \caption{آمار اعدام سالانه (منبع: ایران هیومن رایتس)}
@@ -63,20 +73,20 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|L{8cm}|}
+\begin{tabular}{|R{4cm}|R{11cm}|}
 \hline
 \rowcolor{empirepurple!20}
-\textbf{گروه} & \textbf{نوع سرکوب} \\
+\textbf{\rl{گروه}} & \textbf{\rl{نوع سرکوب}} \\
 \hline
-بهائیان & محرومیت از تحصیل، زندان، مصادره اموال \\
+\rl{بهائیان} & \rl{محرومیت از تحصیل، زندان، مصادره اموال} \\
 \hline
-سنی‌ها & ممنوعیت مسجد در تهران، تبعیض \\
+\rl{سنی‌ها} & \rl{ممنوعیت مسجد در تهران، تبعیض} \\
 \hline
-دراویش & سرکوب خشونت‌آمیز، زندان \\
+\rl{دراویش} & \rl{سرکوب خشونت‌آمیز، زندان} \\
 \hline
-کُردها & اعدام، زندان، سرکوب فرهنگی \\
+\rl{کُردها} & \rl{اعدام، زندان، سرکوب فرهنگی} \\
 \hline
-بلوچ‌ها & اعدام‌های گسترده، تبعیض \\
+\rl{بلوچ‌ها} & \rl{اعدام‌های گسترده، تبعیض} \\
 \hline
 \end{tabular}
 \caption{سرکوب اقلیت‌ها}

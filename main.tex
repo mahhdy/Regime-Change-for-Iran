@@ -35,21 +35,11 @@
         {\Huge\bfseries\color{iranblue} راهنمای عملی گذار}\\[0.8cm]
         {\LARGE\color{iranblue!80} استراتژی‌ها و سناریوهای رهایی از نظام استبدادی}\\[2cm]
         
-        % TikZ replacement for main-symbol.png
-        \begin{tikzpicture}[scale=1.5]
-            % Stylized Phoenix (Symbolic)
-            \begin{scope}[iranblue]
-                \draw[ultra thick, fill=iranblue!10] (0, 1) .. controls (-1.5, 2.5) and (-2, 0) .. (0,0) .. controls (2, 0) and (1.5, 2.5) .. (0,1);
-                \draw[thick] (0,1) -- (0, 1.5) node[above] {ققنوس آزادی};
-                % Wings
-                \draw[thick] (-0.5, 0.8) .. controls (-3, 3) and (-3, -1) .. (-1, 0.2);
-                \draw[thick] (0.5, 0.8) .. controls (3, 3) and (3, -1) .. (1, 0.2);
-                % Broken chain
-                \draw[gray, thick] (-1, -0.5) circle(0.15) (-0.7, -0.5) circle(0.15);
-                \draw[gray, thick] (1, -0.5) circle(0.15) (0.7, -0.5) circle(0.15);
-                \draw[iranred, thick] (-0.3, -0.5) -- (0.3, -0.5) node[midway, below=0.2cm, font=\tiny] {گسستن زنجیر};
-            \end{scope}
-        \end{tikzpicture}\\[2cm]
+        \begin{tikzpicture}[remember picture, overlay]
+            \node[below left=2cm and 2cm of current page.north east] {\booklogo[0.15\textwidth]};
+        \end{tikzpicture}
+        
+        \includegraphics[width=0.4\textwidth]{images/cover/main-symbol.png}\\[2cm]
         
         {\large نگارش: بهمن ۱۴۰۴}\\[0.5cm]
         {\normalsize ویرایش اول}
@@ -62,6 +52,8 @@
         \fill[irangreen] ([yshift=2.9cm]current page.south west) rectangle ([yshift=2.7cm]current page.south east);
         \fill[irangold] ([yshift=2.7cm]current page.south west) rectangle ([yshift=2.5cm]current page.south east);
         \fill[iranblue] ([yshift=2.5cm]current page.south west) rectangle ([yshift=2cm]current page.south east);
+        
+        \node[above left=0.5cm and 0.5cm of current page.south east] {\booklogo[0.05\textwidth]};
     \end{tikzpicture}
 \end{titlepage}
 

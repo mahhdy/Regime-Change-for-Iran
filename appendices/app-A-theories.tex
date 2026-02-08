@@ -5,88 +5,100 @@
 \label{app:theories}
 
 \begin{center}
-    \includegraphics[width=0.6\textwidth]{images/diagrams/theories.png}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    \node[concept] (base) at (0,0) {\rl{نظریات گذار}};
+    \node[step] (s1) at (-4, 2) {\rl{ساختارگرایی}};
+    \node[step] (s2) at (4, 2) {\rl{بسیج منابع}};
+    \node[step] (s3) at (0, -3) {\rl{گذارهای مذاکره‌ای}};
+    
+    \draw[connection] (base) -- (s1);
+    \draw[connection] (base) -- (s2);
+    \draw[connection] (base) -- (s3);
+    
+    \node[below=3.5cm of base, align=center, font=\small\color{iranblue!70}] {\rl{چارچوب‌های تئوریک مطالعه گذار سیاسی}};
+\end{tikzpicture}
+\captionof{figure}{\rl{تلفیق نظریه‌های کلیدی در مدل گذار ایران}}
 \end{center}
 
-\section{نظریه ساختاری اسکاچپول}
+\section{\rl{نظریه ساختاری اسکاچپول}}
 
-تدا اسکاچپول در کتاب «دولت‌ها و انقلاب‌های اجتماعی» (۱۹۷۹) استدلال می‌کند که انقلاب‌ها زمانی رخ می‌دهند که:
+\rl{تدا اسکاچپول در کتاب «دولت‌ها و انقلاب‌های اجتماعی» (۱۹۷۹) استدلال می‌کند که انقلاب‌ها زمانی رخ می‌دهند که:}
 
 \begin{itemize}
-    \item دولت دچار بحران مالی و نظامی شود
-    \item نخبگان از حکومت فاصله بگیرند
-    \item دهقانان/توده‌ها ظرفیت سازماندهی داشته باشند
+    \item \rl{دولت دچار بحران مالی و نظامی شود}
+    \item \rl{نخبگان از حکومت فاصله بگیرند}
+    \item \rl{دهقانان/توده‌ها ظرفیت سازماندهی داشته باشند}
 \end{itemize}
 
 \begin{noktebox}
-\textbf{کاربرد برای ایران:} بحران مالی و فشار بین‌المللی موجود است. شکاف نخبگان رو به افزایش. ظرفیت سازماندهی توده‌ها (به ویژه طبقه متوسط شهری) نسبتاً بالا.
+\textbf{\rl{کاربرد برای ایران:}} \rl{بحران مالی و فشار بین‌المللی موجود است. شکاف نخبگان رو به افزایش. ظرفیت سازماندهی توده‌ها (به ویژه طبقه متوسط شهری) نسبتاً بالا.}
 \end{noktebox}
 
-\section{نظریه بسیج منابع تیلی}
+\section{\rl{نظریه بسیج منابع تیلی}}
 
-چارلز تیلی تأکید می‌کند که جنبش‌های اجتماعی نیازمند:
+\rl{چارلز تیلی تأکید می‌کند که جنبش‌های اجتماعی نیازمند:}
 \begin{enumerate}
-    \item منابع (پول، نیرو، سازمان)
-    \item فرصت سیاسی
-    \item چارچوب‌بندی مناسب (Framing)
+    \item \rl{منابع (پول، نیرو، سازمان)}
+    \item \rl{فرصت سیاسی}
+    \item \rl{چارچوب‌بندی مناسب (Framing)}
 \end{enumerate}
 
-\section{۱۹۸ روش جین شارپ}
+\section{\rl{۱۹۸ روش جین شارپ}}
 
-جین شارپ در «از دیکتاتوری به دموکراسی» ۱۹۸ روش مبارزه غیرخشونت‌آمیز را فهرست کرده:
+\rl{جین شارپ در «از دیکتاتوری به دموکراسی» ۱۹۸ روش مبارزه غیرخشونت‌آمیز را فهرست کرده:}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|C{2cm}|L{6cm}|}
+\begin{tabular}{|R{6cm}|C{3cm}|R{7cm}|}
 \hline
 \rowcolor{olgoogreen!30}
-\textbf{دسته} & \textbf{تعداد} & \textbf{نمونه} \\
+\textbf{\rl{دسته}} & \textbf{\rl{تعداد روش‌ها}} & \textbf{\rl{نمونه}} \\
 \hline
-اعتراض نمادین & ۵۴ & تظاهرات، امضا، نمادها \\
+\rl{اعتراض نمادین} & \rl{۵۴} & \rl{تظاهرات، امضا، نمادها} \\
 \hline
-عدم همکاری اجتماعی & ۱۶ & تحریم، اعتصاب اجتماعی \\
+\rl{عدم همکاری اجتماعی} & \rl{۱۶} & \rl{اعتصاب اجتماعی} \\
 \hline
-عدم همکاری اقتصادی & ۴۹ & اعتصاب، تحریم خرید \\
+\rl{عدم همکاری اقتصادی} & \rl{۴۹} & \rl{اعتصاب، تحریم خرید} \\
 \hline
-عدم همکاری سیاسی & ۳۸ & تحریم انتخابات، نافرمانی \\
+\rl{عدم همکاری سیاسی} & \rl{۳۸} & \rl{تحریم انتخابات، نافرمانی} \\
 \hline
-مداخله غیرخشونت‌آمیز & ۴۱ & تحصن، اشغال \\
+\rl{مداخله غیرخشونت‌آمیز} & \rl{۴۱} & \rl{تحصن، اشغال} \\
 \hline
 \end{tabular}
-\caption{دسته‌بندی روش‌های جین شارپ}
+\caption{\rl{دسته‌بندی روش‌های جین شارپ}}
 \end{table}
 
-\section{انقلاب‌های مخملی: الزامات}
+\section{\rl{انقلاب‌های مخملی: الزامات}}
 
-تجربه اروپای شرقی نشان می‌دهد انقلاب موفق غیرخشونت‌آمیز نیازمند:
+\rl{تجربه اروپای شرقی نشان می‌دهد انقلاب موفق غیرخشونت‌آمیز نیازمند:}
 
 \begin{olgoobox}
 \begin{enumerate}
-    \item رهبری متحد و شناخته‌شده
-    \item سازمان‌های مدنی قوی
-    \item رسانه‌های مستقل
-    \item حمایت بین‌المللی
-    \item شکاف در نیروهای امنیتی
-    \item یک رویداد آغازگر
+    \item \rl{رهبری متحد و شناخته‌شده}
+    \item \rl{سازمان‌های مدنی قوی}
+    \item \rl{رسانه‌های مستقل}
+    \item \rl{حمایت بین‌المللی}
+    \item \rl{شکاف در نیروهای امنیتی}
+    \item \rl{یک رویداد آغازگر}
 \end{enumerate}
 \end{olgoobox}
 
-\section{نظریه گذار دموکراتیک}
+\section{\rl{نظریه گذار دموکراتیک}}
 
-اودانل و اشمیتر چهار مرحله گذار را تعریف کردند:
+\rl{اودانل و اشمیتر چهار مرحله گذار را تعریف کردند:}
 
 \begin{center}
-\begin{tikzpicture}[node distance=2.5cm]
-    \node[block, fill=iranred!30] (auth) {اقتدارگرایی};
-    \node[block, fill=irangold!30, right=of auth] (lib) {لیبرالیزاسیون};
-    \node[block, fill=iranblue!30, right=of lib] (trans) {گذار};
-    \node[block, fill=olgoogreen!50, right=of trans] (consol) {تثبیت دموکراسی};
+\begin{tikzpicture}[node distance=2cm]
+    \node[block, fill=iranred!30] (auth) {\rl{اقتدارگرایی}};
+    \node[block, fill=irangold!30, right=of auth] (lib) {\rl{لیبرالیزاسیون}};
+    \node[block, fill=iranblue!30, right=of lib] (trans) {\rl{گذار}};
+    \node[block, fill=olgoogreen!50, right=of trans] (consol) {\rl{تثبیت دموکراسی}};
     
     \draw[arrow] (auth) -- (lib);
     \draw[arrow] (lib) -- (trans);
     \draw[arrow] (trans) -- (consol);
 \end{tikzpicture}
-\captionof{figure}{مراحل گذار دموکراتیک}
+\captionof{figure}{\rl{مراحل گذار دموکراتیک}}
 \end{center}
 
 \section{چارچوب ترکیبی پیشنهادی}

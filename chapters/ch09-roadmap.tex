@@ -7,16 +7,16 @@
 \begin{center}
 \begin{tikzpicture}[scale=0.9, transform shape]
     % Roadmap Steps
-    \foreach \i/\label in {1/تثبیت, 2/ائتلاف, 3/بسیج, 4/اقدام} {
+    \foreach \i/\label in {1/\rl{تثبیت}, 2/\rl{ائتلاف}, 3/\rl{بسیج}, 4/\rl{اقدام}} {
         \node[step, minimum width=2.5cm, fill=iranblue!\the\numexpr\i*20\relax] (s\i) at (\i*3, 0) {\label};
     }
     \draw[connection] (s1) -- (s2);
     \draw[connection] (s2) -- (s3);
     \draw[connection] (s3) -- (s4);
     
-    \node[below=1.5cm of s2.south east, align=center, font= \small \color{iranblue!70}] {توالی زمانی مراحل عملیاتی};
+    \node[below=1.5cm of s2.south east, align=center, font= \small \color{iranblue!70}] {\rl{توالی زمانی مراحل عملیاتی}};
 \end{tikzpicture}
-\captionof{figure}{نقشه راه کلی عملیات گذار}
+\captionof{figure}{\rl{نقشه راه کلی عملیات گذار}}
 \end{center}
 
 \begin{naghlbox}
@@ -27,18 +27,18 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|C{0.5cm}|L{8cm}|C{2cm}|}
+\begin{tabular}{|C{1cm}|R{10cm}|C{3cm}|}
 \hline
 \rowcolor{iranblue!20}
-& \textbf{اقدام} & \textbf{مسئول} \\
+& \textbf{\rl{اقدام}} & \textbf{\rl{مسئول}} \\
 \hline
-$\square$ & تشکیل کمیته هماهنگی موقت & رهبران \\
+$\square$ & \rl{تشکیل کمیته هماهنگی موقت} & \rl{رهبران} \\
 \hline
-$\square$ & تعیین سخنگوی واحد & کمیته \\
+$\square$ & \rl{تعیین سخنگوی واحد} & \rl{کمیته} \\
 \hline
-$\square$ & راه‌اندازی کانال‌های ارتباطی امن & فنی \\
+$\square$ & \rl{راه‌اندازی کانال‌های ارتباطی امن} & \rl{فنی} \\
 \hline
-$\square$ & تدوین بیانیه اصول مشترک & همه \\
+$\square$ & \rl{تدوین بیانیه اصول مشترک} & \rl{همه} \\
 \hline
 \end{tabular}
 \caption{چک‌لیست مرحله تثبیت}
@@ -48,16 +48,16 @@ $\square$ & تدوین بیانیه اصول مشترک & همه \\
 
 \begin{center}
 \begin{tikzpicture}[node distance=2.5cm]
-    \node[block, fill=iranblue!20] (talks) {مذاکرات دوجانبه};
-    \node[block, fill=iranblue!30, right=of talks] (doc) {تدوین منشور};
-    \node[block, fill=iranblue!40, right=of doc] (sign) {امضای منشور};
-    \node[block, fill=olgoogreen!50, right=of sign] (announce) {اعلام عمومی};
+    \node[block, fill=iranblue!20] (talks) {\rl{مذاکرات دوجانبه}};
+    \node[block, fill=iranblue!30, right=of talks] (doc) {\rl{تدوین منشور}};
+    \node[block, fill=iranblue!40, right=of doc] (sign) {\rl{امضای منشور}};
+    \node[block, fill=olgoogreen!50, right=of sign] (announce) {\rl{اعلام عمومی}};
     
     \draw[arrow] (talks) -- (doc);
     \draw[arrow] (doc) -- (sign);
     \draw[arrow] (sign) -- (announce);
 \end{tikzpicture}
-\captionof{figure}{فرآیند ائتلاف‌سازی}
+\captionof{figure}{\rl{فرآیند ائتلاف‌سازی}}
 \end{center}
 
 \section{مرحله سوم: بسیج (۶-۱۸ ماه)}
@@ -86,18 +86,18 @@ $\square$ & تدوین بیانیه اصول مشترک & همه \\
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{4cm}|C{2cm}|L{5cm}|}
+\begin{tabular}{|R{4cm}|C{3cm}|R{8cm}|}
 \hline
 \rowcolor{irangold!20}
-\textbf{شاخص} & \textbf{هدف} & \textbf{وضعیت فعلی} \\
+\textbf{\rl{شاخص}} & \textbf{\rl{هدف}} & \textbf{\rl{وضعیت فعلی}} \\
 \hline
-تعداد جریانات در ائتلاف & ۵+ & در حال مذاکره \\
+\rl{تعداد جریانات در ائتلاف} & \rl{۵+} & \rl{در حال مذاکره} \\
 \hline
-بودجه سالانه & ۱۰M+ & نامشخص \\
+\rl{بودجه سالانه} & \rl{۱۰M+} & \rl{نامشخص} \\
 \hline
-حمایت دولت‌ها & ۳+ & ۱-۲ \\
+\rl{حمایت دولت‌ها} & \rl{۳+} & \rl{۱-۲} \\
 \hline
-ارتباط با داخل & فعال & محدود \\
+\rl{ارتباط با داخل} & \rl{فعال} & \rl{محدود} \\
 \hline
 \end{tabular}
 \caption{داشبورد پایش}
@@ -107,22 +107,22 @@ $\square$ & تدوین بیانیه اصول مشترک & همه \\
 
 \begin{center}
 \begin{tikzpicture}[node distance=2cm]
-    \node[decision] (d1) {ائتلاف ممکن؟};
-    \node[block, right=of d1] (continue) {ادامه مستقل};
-    \node[block, below=of d1] (coalition) {تشکیل ائتلاف};
+    \node[decision] (d1) {\rl{ائتلاف ممکن؟}};
+    \node[block, right=of d1] (continue) {\rl{ادامه مستقل}};
+    \node[block, below=of d1] (coalition) {\rl{تشکیل ائتلاف}};
     
-    \node[decision, below=of coalition] (d2) {بسیج کافی؟};
-    \node[block, right=of d2] (build) {ظرفیت‌سازی};
-    \node[block, below=of d2] (action) {اقدام};
+    \node[decision, below=of coalition] (d2) {\rl{بسیج کافی؟}};
+    \node[block, right=of d2] (build) {\rl{ظرفیت‌سازی}};
+    \node[block, below=of d2] (action) {\rl{اقدام}};
     
-    \draw[arrow] (d1) -- node[above] {خیر} (continue);
-    \draw[arrow] (d1) -- node[right] {بله} (coalition);
+    \draw[arrow] (d1) -- node[above] {\rl{خیر}} (continue);
+    \draw[arrow] (d1) -- node[right] {\rl{بله}} (coalition);
     \draw[arrow] (coalition) -- (d2);
-    \draw[arrow] (d2) -- node[above] {خیر} (build);
-    \draw[arrow] (d2) -- node[right] {بله} (action);
+    \draw[arrow] (d2) -- node[above] {\rl{خیر}} (build);
+    \draw[arrow] (d2) -- node[right] {\rl{بله}} (action);
     \draw[arrow] (build.south) |- ++(0,-0.5) -| (d2.east);
 \end{tikzpicture}
-\captionof{figure}{درخت تصمیم‌گیری}
+\captionof{figure}{\rl{درخت تصمیم‌گیری}}
 \end{center}
 
 \begin{kholasebox}[title=خلاصه فصل]

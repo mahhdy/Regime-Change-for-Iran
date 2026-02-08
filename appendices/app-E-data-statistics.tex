@@ -8,30 +8,30 @@
 \begin{tikzpicture}[scale=0.9, transform shape]
     % Simple bar chart or infographic for stats
     \draw[thick, iranblue!30, fill=noktegray!50] (-4, -2) rectangle (4, 2);
-    \node[concept, scale=0.8] at (0,0) {دیتا و آمار};
-    \node[below=2.2cm of goal, align=center, font= \small \color{iranblue!70}] at (0,0) {مرکز داده‌های استراتژیک گذار};
+    \node[concept, scale=0.8] at (0,0) {\rl{دیتا و آمار}};
+    \node[below=2.2cm of goal, align=center, font= \small \color{iranblue!70}] at (0,0) {\rl{مرکز داده‌های استراتژیک گذار}};
 \end{tikzpicture}
-\captionof{figure}{تجمیع داده‌های آماری و پایش وضعیت}
+\captionof{figure}{\rl{تجمیع داده‌های آماری و پایش وضعیت}}
 \end{center}
 
 \section{داده‌های جمعیتی}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{4cm}|C{3cm}|L{4cm}|}
+\begin{tabular}{|R{5cm}|C{3cm}|R{7cm}|}
 \hline
 \rowcolor{iranblue!20}
-\textbf{شاخص} & \textbf{مقدار} & \textbf{منبع} \\
+\textbf{\rl{شاخص}} & \textbf{\rl{مقدار}} & \textbf{\rl{منبع}} \\
 \hline
-جمعیت کل & ۸۸ میلیون & مرکز آمار ۱۴۰۳ \\
+\rl{جمعیت کل} & \rl{۸۸ میلیون} & \rl{مرکز آمار ۱۴۰۳} \\
 \hline
-زیر ۳۰ سال & ۴۵٪ & تخمین \\
+\rl{زیر ۳۰ سال} & \rl{۴۵٪} & \rl{تخمین} \\
 \hline
-شهرنشینی & ۷۶٪ & بانک جهانی \\
+\rl{شهرنشینی} & \rl{۷۶٪} & \rl{بانک جهانی} \\
 \hline
-باسوادی & ۸۵٪ & UNESCO \\
+\rl{باسوادی} & \rl{۸۵٪} & \rl{UNESCO} \\
 \hline
-دسترسی اینترنت & ۸۴٪ & ITU \\
+\rl{دسترسی اینترنت} & \rl{۸۴٪} & \rl{ITU} \\
 \hline
 \end{tabular}
 \caption{آمار جمعیتی کلیدی}
@@ -42,8 +42,8 @@
 \begin{center}
 \begin{tikzpicture}
     \begin{axis}[
-        ylabel={تورم سالانه (درصد)},
-        xlabel={سال},
+        ylabel={\rl{تورم سالانه (درصد)}},
+        xlabel={\rl{سال}},
         xmin=1398, xmax=1404,
         ymin=0, ymax=60,
         xtick={1398, 1399, 1400, 1401, 1402, 1403, 1404},
@@ -62,27 +62,27 @@
     };
     \end{axis}
 \end{tikzpicture}
-\captionof{figure}{روند تورم سالانه}
+\captionof{figure}{\rl{روند تورم سالانه}}
 \end{center}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{4cm}|C{3cm}|}
+\begin{tabular}{|R{6cm}|C{4cm}|}
 \hline
 \rowcolor{irangold!20}
-\textbf{شاخص} & \textbf{مقدار} \\
+\textbf{\rl{شاخص}} & \textbf{\rl{مقدار}} \\
 \hline
-GDP (PPP) & ۱.۵ تریلیون دلار \\
+\rl{GDP (PPP)} & \rl{۱.۵ تریلیون دلار} \\
 \hline
-GDP سرانه & ۱۷,۰۰۰ دلار \\
+\rl{GDP سرانه} & \rl{۱۷,۰۰۰ دلار} \\
 \hline
-بیکاری رسمی & ۱۲٪ \\
+\rl{بیکاری رسمی} & \rl{۱۲٪} \\
 \hline
-بیکاری واقعی (تخمین) & ۲۵-۳۰٪ \\
+\rl{بیکاری واقعی (تخمین)} & \rl{۲۵-۳۰٪} \\
 \hline
-صادرات نفت & ۱.۵ میلیون بشکه/روز \\
+\rl{صادرات نفت} & \rl{۱.۵ میلیون بشکه/روز} \\
 \hline
-بدهی عمومی & ۴۵٪ GDP \\
+\rl{بدهی عمومی} & \rl{۴۵٪ GDP} \\
 \hline
 \end{tabular}
 \caption{شاخص‌های اقتصادی}
@@ -92,18 +92,18 @@ GDP سرانه & ۱۷,۰۰۰ دلار \\
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{4cm}|C{3cm}|C{4cm}|}
+\begin{tabular}{|R{5cm}|C{3cm}|C{7cm}|}
 \hline
 \rowcolor{iranred!20}
-\textbf{نیرو} & \textbf{نفرات} & \textbf{بودجه تخمینی} \\
+\textbf{\rl{نیرو}} & \textbf{\rl{نفرات}} & \textbf{\rl{بودجه تخمینی}} \\
 \hline
-ارتش & ۳۵۰,۰۰۰ & ۸ میلیارد دلار \\
+\rl{ارتش} & \rl{۳۵۰,۰۰۰} & \rl{۸ میلیارد دلار} \\
 \hline
-سپاه & ۱۹۰,۰۰۰ & ۲۰+ میلیارد دلار \\
+\rl{سپاه} & \rl{۱۹۰,۰۰۰} & \rl{۲۰+ میلیارد دلار} \\
 \hline
-بسیج (فعال) & ۵۰۰,۰۰۰ & (در سپاه) \\
+\rl{بسیج (فعال)} & \rl{۵۰۰,۰۰۰} & \rl{(در سپاه)} \\
 \hline
-نیروی انتظامی & ۶۰,۰۰۰ & ۳ میلیارد دلار \\
+\rl{نیروی انتظامی} & \rl{۶۰,۰۰۰} & \rl{۳ میلیارد دلار} \\
 \hline
 \end{tabular}
 \caption{نیروهای مسلح}
@@ -113,16 +113,16 @@ GDP سرانه & ۱۷,۰۰۰ دلار \\
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|C{2cm}|C{2cm}|C{4cm}|}
+\begin{tabular}{|R{3cm}|C{3cm}|C{3cm}|R{6cm}|}
 \hline
 \rowcolor{iranred!10}
-\textbf{سال/رویداد} & \textbf{کشته} & \textbf{بازداشتی} & \textbf{منبع} \\
+\textbf{\rl{سال/رویداد}} & \textbf{\rl{کشته}} & \textbf{\rl{بازداشتی}} & \textbf{\rl{منبع}} \\
 \hline
-آبان ۹۸ & ۱۵۰۰+ & ۷۰۰۰+ & رویترز/عفو بین‌الملل \\
+\rl{آبان ۹۸} & \rl{۱۵۰۰+} & \rl{۷۰۰۰+} & \rl{رویترز/عفو بین‌الملل} \\
 \hline
-مهسا ۱۴۰۱ & ۵۰۰+ & ۲۰,۰۰۰+ & HRANA \\
+\rl{مهسا ۱۴۰۱} & \rl{۵۰۰+} & \rl{۲۰,۰۰۰+} & \rl{HRANA} \\
 \hline
-دی ۱۴۰۴ & در حال بررسی & در حال بررسی & - \\
+\rl{دی ۱۴۰۴} & \rl{در حال بررسی} & \rl{در حال بررسی} & - \\
 \hline
 \end{tabular}
 \caption{آمار سرکوب (تخمینی)}

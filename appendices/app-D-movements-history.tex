@@ -5,10 +5,20 @@
 \label{app:movements-history}
 
 \begin{center}
-    \includegraphics[width=0.7\textwidth]{images/diagrams/timeline.png}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    \node[concept] (hist) at (0,0) {\rl{تاریخ مبارزه}};
+    \node[step] (s1) at (-4, 2) {\rl{مشروطه و گذشته}};
+    \node[step] (s2) at (4, 2) {\rl{انقلاب ۵۷}};
+    \node[step] (s3) at (0, -3) {\rl{خیزش‌های نوین}};
+    
+    \draw[connection] (hist) -- (s1);
+    \draw[connection] (hist) -- (s2);
+    \draw[connection] (hist) -- (s3);
+\end{tikzpicture}
+\captionof{figure}{\rl{سیر تکامل جنبش‌های اعتراضی در ایران}}
 \end{center}
 
-\section{خط زمانی جنبش‌ها}
+\section{\rl{خط زمانی جنبش‌ها}}
 
 \begin{center}
 \begin{tikzpicture}[scale=0.9]
@@ -17,13 +27,13 @@
     
     % Events
     \foreach \x/\year/\event/\col in {
-        0/۵۷/انقلاب/iranred,
-        2/۷۸/۱۸ تیر/iranblue,
-        4/۸۸/جنبش سبز/olgoogreen,
-        7/۹۶/دی ۹۶/irangold,
-        9/۹۸/آبان ۹۸/iranred,
-        11/۱۴۰۱/مهسا/empirepurple,
-        13/۱۴۰۴/دی ۰۴/iranred
+        0/۵۷/\rl{انقلاب}/iranred,
+        2/۷۸/\rl{۱۸ تیر}/iranblue,
+        4/۸۸/\rl{جنبش سبز}/olgoogreen,
+        7/۹۶/\rl{دی ۹۶}/irangold,
+        9/۹۸/\rl{آبان ۹۸}/iranred,
+        11/۱۴۰۱/\rl{مهسا}/empirepurple,
+        13/۱۴۰۴/\rl{دی ۰۴}/iranred
     }{
         \draw[thick, \col] (\x, -0.3) -- (\x, 0.3);
         \fill[\col] (\x, 0) circle (0.15);
@@ -31,7 +41,7 @@
         \node[below, font=\tiny, text width=1.2cm, align=center] at (\x, -0.5) {\event};
     }
 \end{tikzpicture}
-\captionof{figure}{خط زمانی جنبش‌های اعتراضی}
+\captionof{figure}{\rl{خط زمانی جنبش‌های اعتراضی}}
 \end{center}
 
 \section{جنبش دانشجویی ۱۸ تیر ۱۳۷۸}
@@ -47,22 +57,22 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|L{8cm}|}
+\begin{tabular}{|R{4cm}|R{11cm}|}
 \hline
 \rowcolor{olgoogreen!30}
-\textbf{ویژگی} & \textbf{توضیح} \\
+\textbf{\rl{ویژگی}} & \textbf{\rl{توضیح}} \\
 \hline
-علت & تقلب انتخاباتی \\
+\rl{علت} & \rl{تقلب انتخاباتی} \\
 \hline
-رهبری & موسوی و کروبی \\
+\rl{رهبری} & \rl{موسوی و کروبی} \\
 \hline
-شعار & «رأی من کو؟» \\
+\rl{شعار} & \rl{«رأی من کو؟»} \\
 \hline
-گستره & میلیون‌ها نفر در تهران \\
+\rl{گستره} & \rl{میلیون‌ها نفر در تهران} \\
 \hline
-سرکوب & کهریزک، کشتار، زندان \\
+\rl{سرکوب} & \rl{کهریزک، کشتار، زندان} \\
 \hline
-نتیجه & شکست، حصر رهبران \\
+\rl{نتیجه} & \rl{شکست، حصر رهبران} \\
 \hline
 \end{tabular}
 \caption{مشخصات جنبش سبز}

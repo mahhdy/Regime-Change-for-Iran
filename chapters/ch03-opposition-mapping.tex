@@ -7,32 +7,35 @@
 \begin{center}
 \begin{tikzpicture}[scale=0.9, transform shape]
     % Axes
-    \draw[thick, <->] (-5, 0) -- (5, 0) node[right] {راست};
-    \draw[thick, <->] (0, -4) -- (0, 4) node[above] {سکولار};
-    \node at (-5.5, 0) {چپ};
-    \node at (0, -4.5) {مذهبی};
+    \draw[thick, <->] (-5, 0) -- (5, 0) node[right] {\rl{راست}};
+    \draw[thick, <->] (0, -4) -- (0, 4) node[above] {\rl{سکولار}};
+    \node at (-5.5, 0) {\rl{چپ}};
+    \node at (0, -4.5) {\rl{مذهبی}};
     
     % Spectrum Circles
     \fill[iranred!20, opacity=0.6] (-3, 2) circle (1.2cm);
-    \node[font=\footnotesize, align=center] at (-3, 2) {چپ\\سکولار};
+    \node[font=\footnotesize, align=center] at (-3, 2) {\rl{چپ سکولار}};
     
     \fill[iranblue!20, opacity=0.6] (3, 2) circle (1.5cm);
-    \node[font=\footnotesize, align=center] at (3, 2) {مشروطه و\\راست دموکرات};
+    \node[font=\footnotesize, align=center] at (3, 2) {\rl{مشروطه و}};
+    \node[font=\footnotesize, align=center, below=0.3cm] at (3, 2) {\rl{راست دموکرات}};
     
     \fill[irangold!20, opacity=0.6] (0, 2) circle (1cm);
-    \node[font=\footnotesize, align=center] at (0, 2) {جمهوری‌خواه\\میانه};
+    \node[font=\footnotesize, align=center] at (0, 2) {\rl{جمهوری‌خواه}};
+    \node[font=\footnotesize, align=center, below=0.3cm] at (0, 2) {\rl{میانه}};
     
     \fill[irangreen!20, opacity=0.6] (-1, -2) circle (1.2cm);
-    \node[font=\footnotesize, align=center] at (-1, -2) {ملی-مذهبی\\تحول‌خواه};
+    \node[font=\footnotesize, align=center] at (-1, -2) {\rl{ملی-مذهبی}};
+    \node[font=\footnotesize, align=center, below=0.3cm] at (-1, -2) {\rl{تحول‌خواه}};
     
     \fill[empirepurple!20, opacity=0.6] (3, -1) circle (1cm);
-    \node[font=\footnotesize, align=center] at (3, -1) {جنبش‌های\\قومی};
+    \node[font=\footnotesize, align=center] at (3, -1) {\rl{جنبش‌های قومی}};
     
     \draw[dashed, iranblue!30] (-5,-4) rectangle (5,4);
     
-    \node[below=4.5cm of goal, align=center, font= \small \color{iranblue!70}] at (0,0) {نقشه جریانات بر اساس ایدئولوژی و لائیسیته};
+    \node[below=4.5cm of goal, align=center, font= \small \color{iranblue!70}] at (0,0) {\rl{نقشه جریانات بر اساس ایدئولوژی و لائیسیته}};
 \end{tikzpicture}
-\captionof{figure}{طیف سیاسی نیروهای اپوزیسیون}
+\captionof{figure}{\rl{طیف سیاسی نیروهای اپوزیسیون}}
 \end{center}
 
 \vspace{0.5cm}
@@ -50,20 +53,20 @@
     \draw[thick, <->] (0, -5) -- (0, 5);
     
     % Labels
-    \node[font=\small] at (-6.5, -0.5) {چپ};
-    \node[font=\small] at (6.5, -0.5) {راست};
-    \node[font=\small, rotate=90] at (-0.5, 4.5) {سکولار};
-    \node[font=\small, rotate=90] at (-0.5, -4.5) {مذهبی};
+    \node[font=\small] at (-6.5, -0.5) {\rl{چپ}};
+    \node[font=\small] at (6.5, -0.5) {\rl{راست}};
+    \node[font=\small, rotate=90] at (-0.5, 4.5) {\rl{سکولار}};
+    \node[font=\small, rotate=90] at (-0.5, -4.5) {\rl{مذهبی}};
     
     % Political groups
-    \node[draw, circle, fill=iranred!30, minimum size=1.5cm, font=\tiny, align=center] (left) at (-5, 3) {کمونیست‌ها\\و چپ رادیکال};
-    \node[draw, circle, fill=irangold!50, minimum size=2cm, font=\tiny, align=center] (jomhori) at (-2, 3.5) {جمهوری‌خواهان\\سکولار};
-    \node[draw, circle, fill=iranblue!40, minimum size=2.5cm, font=\tiny, align=center] (mashroot) at (4, 3) {مشروطه‌خواهان\\پهلوی‌گرایان};
-    \node[draw, circle, fill=olgoogreen!50, minimum size=1.8cm, font=\tiny, align=center] (melli) at (-1, -2) {ملی-مذهبی‌ها\\اصلاح‌طلبان};
-    \node[draw, circle, fill=empirepurple!30, minimum size=1.5cm, font=\tiny, align=center] (ghomi) at (3, 0) {جنبش‌های\\قومی-ملی};
-    \node[draw, circle, fill=noktegray, minimum size=1.2cm, font=\tiny, align=center] (mojahed) at (-4, -3) {مجاهدین\\خلق};
+    \node[draw, circle, fill=iranred!30, minimum size=1.5cm, font=\tiny, align=center] (left) at (-5, 3) {\rl{کمونیست‌ها}};
+    \node[draw, circle, fill=irangold!50, minimum size=2cm, font=\tiny, align=center] (jomhori) at (-2, 3.5) {\rl{جمهوری‌خواهان}};
+    \node[draw, circle, fill=iranblue!40, minimum size=2.5cm, font=\tiny, align=center] (mashroot) at (4, 3) {\rl{مشروطه‌خواهان}};
+    \node[draw, circle, fill=olgoogreen!50, minimum size=1.8cm, font=\tiny, align=center] (melli) at (-1, -2) {\rl{ملی-مذهبی‌ها}};
+    \node[draw, circle, fill=empirepurple!30, minimum size=1.5cm, font=\tiny, align=center] (ghomi) at (3, 0) {\rl{جنبش‌های قومی}};
+    \node[draw, circle, fill=noktegray, minimum size=1.2cm, font=\tiny, align=center] (mojahed) at (-4, -3) {\rl{مجاهدین خلق}};
 \end{tikzpicture}
-\captionof{figure}{نقشه طیف سیاسی اپوزیسیون ایران}
+\captionof{figure}{\rl{نقشه طیف سیاسی اپوزیسیون ایران}}
 \end{center}
 
 \section{تحلیل هر جریان}
@@ -73,51 +76,51 @@
 \begin{table}[H]
 \centering
 \caption{تحلیل SWOT جریان مشروطه‌خواه}
-\begin{tabular}{|C{6cm}|C{6cm}|}
+\begin{tabular}{|C{7.5cm}|C{7.5cm}|}
 \hline
 \rowcolor{olgoogreen!30}
-\multicolumn{2}{|c|}{\textbf{نقاط قوت (Strengths)}} \\
+\multicolumn{2}{|c|}{\textbf{\rl{نقاط قوت}}} \\
 \hline
-\multicolumn{2}{|p{12cm}|}{
+\multicolumn{2}{|p{15cm}|}{
 \begin{itemize}[rightmargin=1em]
-    \item چهره شاخص (رضا پهلوی) با شناخت بالا
-    \item پایگاه اجتماعی قابل توجه در طبقه متوسط
-    \item ارتباطات بین‌المللی
-    \item پیام ساده و قابل فهم
+    \item \rl{چهره شاخص (رضا پهلوی) با شناخت بالا}
+    \item \rl{پایگاه اجتماعی قابل توجه در طبقه متوسط}
+    \item \rl{ارتباطات بین‌المللی}
+    \item \rl{پیام ساده و قابل فهم}
 \end{itemize}
 } \\
 \hline
 \rowcolor{iranred!20}
-\multicolumn{2}{|c|}{\textbf{نقاط ضعف (Weaknesses)}} \\
+\multicolumn{2}{|c|}{\textbf{\rl{نقاط ضعف}}} \\
 \hline
-\multicolumn{2}{|p{12cm}|}{
+\multicolumn{2}{|p{15cm}|}{
 \begin{itemize}[rightmargin=1em]
-    \item بار تاریخی رژیم گذشته
-    \item فقدان ساختار سازمانی قوی
-    \item اختلاف بر سر «پادشاهی» یا «جمهوری»
-    \item ضعف ارتباط با داخل کشور
+    \item \rl{بار تاریخی رژیم گذشته}
+    \item \rl{فقدان ساختار سازمانی قوی}
+    \item \rl{اختلاف بر سر «پادشاهی» یا «جمهوری»}
+    \item \rl{ضعف ارتباط با داخل کشور}
 \end{itemize}
 } \\
 \hline
 \rowcolor{iranblue!20}
-\multicolumn{2}{|c|}{\textbf{فرصت‌ها (Opportunities)}} \\
+\multicolumn{2}{|c|}{\textbf{\rl{فرصت‌ها}}} \\
 \hline
-\multicolumn{2}{|p{12cm}|}{
+\multicolumn{2}{|p{15cm}|}{
 \begin{itemize}[rightmargin=1em]
-    \item نوستالژی نسل جوان نسبت به دوره پهلوی
-    \item حمایت احتمالی غرب
-    \item امکان ائتلاف با جریانات دیگر
+    \item \rl{نوستالژی نسل جوان نسبت به دوره پهلوی}
+    \item \rl{حمایت احتمالی غرب}
+    \item \rl{امکان ائتلاف با جریانات دیگر}
 \end{itemize}
 } \\
 \hline
 \rowcolor{irangold!30}
-\multicolumn{2}{|c|}{\textbf{تهدیدها (Threats)}} \\
+\multicolumn{2}{|c|}{\textbf{\rl{تهدیدها}}} \\
 \hline
-\multicolumn{2}{|p{12cm}|}{
+\multicolumn{2}{|p{15cm}|}{
 \begin{itemize}[rightmargin=1em]
-    \item تبلیغات منفی نظام
-    \item مخالفت چپ‌ها و جمهوری‌خواهان
-    \item ریسک تفرقه درونی
+    \item \rl{تبلیغات منفی نظام}
+    \item \rl{مخالفت چپ‌ها و جمهوری‌خواهان}
+    \item \rl{ریسک تفرقه درونی}
 \end{itemize}
 } \\
 \hline
@@ -133,44 +136,44 @@
 \begin{table}[H]
 \centering
 \caption{تحلیل SWOT جمهوری‌خواهان سکولار}
-\begin{tabular}{|C{6cm}|C{6cm}|}
+\begin{tabular}{|C{7.5cm}|C{7.5cm}|}
 \hline
 \rowcolor{olgoogreen!30}
-\textbf{نقاط قوت} & \textbf{نقاط ضعف} \\
+\textbf{\rl{نقاط قوت}} & \textbf{\rl{نقاط ضعف}} \\
 \hline
-\begin{minipage}{5.8cm}
+\begin{minipage}{7.2cm}
 \begin{itemize}[rightmargin=0.5em, font=\small]
-    \item پایبندی به اصول دموکراتیک
-    \item کادرهای با تجربه سیاسی
-    \item مقبولیت در محافل آکادمیک
+    \item \rl{پایبندی به اصول دموکراتیک}
+    \item \rl{کادرهای با تجربه سیاسی}
+    \item \rl{مقبولیت در محافل آکادمیک}
 \end{itemize}
 \end{minipage}
 &
-\begin{minipage}{5.8cm}
+\begin{minipage}{7.2cm}
 \begin{itemize}[rightmargin=0.5em, font=\small]
-    \item پراکندگی و عدم انسجام
-    \item فقدان رهبر شاخص
-    \item ضعف در بسیج توده‌ای
+    \item \rl{پراکندگی و عدم انسجام}
+    \item \rl{فقدان رهبر شاخص}
+    \item \rl{ضعف در بسیج توده‌ای}
 \end{itemize}
 \end{minipage}
 \\
 \hline
 \rowcolor{iranblue!20}
-\textbf{فرصت‌ها} & \textbf{تهدیدها} \\
+\textbf{\rl{فرصت‌ها}} & \textbf{\rl{تهدیدها}} \\
 \hline
-\begin{minipage}{5.8cm}
+\begin{minipage}{7.2cm}
 \begin{itemize}[rightmargin=0.5em, font=\small]
-    \item موضع «نه سلطنت، نه استبداد»
-    \item جذب نیروهای میانه
-    \item تجربیات بین‌المللی
+    \item \rl{موضع «نه سلطنت، نه استبداد»}
+    \item \rl{جذب نیروهای میانه}
+    \item \rl{تجربیات بین‌المللی}
 \end{itemize}
 \end{minipage}
 &
-\begin{minipage}{5.8cm}
+\begin{minipage}{7.2cm}
 \begin{itemize}[rightmargin=0.5em, font=\small]
-    \item بین دو صندلی ماندن
-    \item فقدان منابع مالی
-    \item عدم شناخت عمومی
+    \item \rl{بین دو صندلی ماندن}
+    \item \rl{فقدان منابع مالی}
+    \item \rl{عدم شناخت عمومی}
 \end{itemize}
 \end{minipage}
 \\
@@ -204,18 +207,18 @@
 \begin{table}[H]
 \centering
 \caption{جنبش‌های قومی-ملی}
-\begin{tabular}{|R{2.5cm}|C{2.5cm}|L{7cm}|}
+\begin{tabular}{|R{3.5cm}|C{3cm}|R{9cm}|}
 \hline
 \rowcolor{empirepurple!20}
-\textbf{قومیت} & \textbf{جریانات اصلی} & \textbf{خواسته‌های کلیدی} \\
+\textbf{\rl{قومیت}} & \textbf{\rl{جریانات اصلی}} & \textbf{\rl{خواسته‌های کلیدی}} \\
 \hline
-کُرد & کومله، دموکرات & فدرالیسم، حقوق فرهنگی \\
+\rl{کُرد} & \rl{کومله، دموکرات} & \rl{فدرالیسم، حقوق فرهنگی} \\
 \hline
-عرب & احوازی‌ها & خودمختاری، حقوق زبانی \\
+\rl{عرب} & \rl{احوازی‌ها} & \rl{خودمختاری، حقوق زبانی} \\
 \hline
-بلوچ & جنبش آزادی‌بخش & پایان تبعیض، توسعه \\
+\rl{بلوچ} & \rl{جنبش آزادی‌بخش} & \rl{پایان تبعیض، توسعه} \\
 \hline
-آذری & ملی‌گرایان & حقوق زبانی، هویت \\
+\rl{آذری} & \rl{ملی‌گرایان} & \rl{حقوق زبانی، هویت} \\
 \hline
 \end{tabular}
 \end{table}
@@ -238,14 +241,14 @@
     \end{scope}
     
     % Labels
-    \node[font=\bfseries] at (-3.5, 1) {سکولاریسم};
-    \node[font=\bfseries] at (3.5, 1) {دموکراسی};
-    \node[font=\bfseries] at (0, -4) {یکپارچگی ایران};
+    \node[font=\bfseries] at (-3.5, 1) {\rl{سکولاریسم}};
+    \node[font=\bfseries] at (3.5, 1) {\rl{دموکراسی}};
+    \node[font=\bfseries] at (0, -4) {\rl{یکپارچگی ایران}};
     
     % Center - shared
-    \node[font=\small, align=center] at (0, -0.5) {سرنگونی\\نظام};
+    \node[font=\small, align=center] at (0, -0.5) {\rl{سرنگونی نظام}};
 \end{tikzpicture}
-\captionof{figure}{نقاط همگرایی اپوزیسیون}
+\captionof{figure}{\rl{نقاط همگرایی اپوزیسیون}}
 \end{center}
 
 \subsection{نقاط همگرایی}
@@ -264,20 +267,20 @@
 \begin{table}[H]
 \centering
 \caption{موضوعات اختلافی اصلی}
-\begin{tabular}{|R{3cm}|L{5cm}|L{5cm}|}
+\begin{tabular}{|R{4.5cm}|R{5.5cm}|R{5.5cm}|}
 \hline
 \rowcolor{iranred!10}
-\textbf{موضوع} & \textbf{موضع الف} & \textbf{موضع ب} \\
+\textbf{\rl{موضوع}} & \textbf{\rl{موضع الف}} & \textbf{\rl{موضع ب}} \\
 \hline
-شکل حکومت & پادشاهی مشروطه & جمهوری \\
+\rl{شکل حکومت} & \rl{پادشاهی مشروطه} & \rl{جمهوری} \\
 \hline
-ساختار کشور & متمرکز & فدرال/خودمختاری \\
+\rl{ساختار کشور} & \rl{متمرکز} & \rl{فدرال/خودمختاری} \\
 \hline
-اقتصاد & بازار آزاد & دولت رفاه \\
+\rl{اقتصاد} & \rl{بازار آزاد} & \rl{دولت رفاه} \\
 \hline
-عدالت انتقالی & عفو عمومی & محاکمه \\
+\rl{عدالت انتقالی} & \rl{عفو عمومی} & \rl{محاکمه} \\
 \hline
-رابطه با غرب & همکاری کامل & استقلال نسبی \\
+\rl{رابطه با غرب} & \rl{همکاری کامل} & \rl{استقلال نسبی} \\
 \hline
 \end{tabular}
 \end{table}
@@ -288,14 +291,14 @@
 \begin{tikzpicture}[
     block/.style={rectangle, rounded corners, draw, fill=enghelabred!30, minimum width=4cm, minimum height=1cm, align=center, font=\small}
 ]
-    \node[block] (ego) at (0, 4) {رقابت شخصی و خودخواهی};
-    \node[block] (hist) at (-5, 2) {بار تاریخی و خصومت‌های قدیمی};
-    \node[block] (ideo) at (5, 2) {اختلافات ایدئولوژیک عمیق};
-    \node[block] (trust) at (-5, 0) {بی‌اعتمادی متقابل};
-    \node[block] (struct) at (5, 0) {فقدان ساختار مشترک};
-    \node[block] (extern) at (0, -2) {عدم فشار خارجی برای اتحاد};
+    \node[block] (ego) at (0, 4) {\rl{رقابت شخصی}};
+    \node[block] (hist) at (-5, 2) {\rl{خصومت‌های قدیمی}};
+    \node[block] (ideo) at (5, 2) {\rl{اختلافات ایدئولوژیک}};
+    \node[block] (trust) at (-5, 0) {\rl{بی‌اعتمادی متقابل}};
+    \node[block] (struct) at (5, 0) {\rl{فقدان ساختار}};
+    \node[block] (extern) at (0, -2) {\rl{عدم فشار خارجی}};
     
-    \node[draw, circle, fill=iranred!50, minimum size=2cm] (center) at (0, 1) {شکست ائتلاف};
+    \node[draw, circle, fill=iranred!50, minimum size=2cm] (center) at (0, 1) {\rl{شکست ائتلاف}};
     
     \draw[thick, ->] (ego) -- (center);
     \draw[thick, ->] (hist) -- (center);
@@ -304,7 +307,7 @@
     \draw[thick, ->] (struct) -- (center);
     \draw[thick, ->] (extern) -- (center);
 \end{tikzpicture}
-\captionof{figure}{عوامل شکست ائتلاف‌سازی}
+\captionof{figure}{\rl{عوامل شکست ائتلاف‌سازی}}
 \end{center}
 
 \section{پتانسیل‌های ائتلاف‌سازی}
@@ -329,12 +332,12 @@
     \draw[thick, fill=iranblue!50] (0,0) circle (1cm);
     
     % Labels
-    \node[font=\small\bfseries, align=center] at (0, 0) {اصول\\مشترک};
-    \node[font=\tiny, align=center] at (0, 1.5) {ساختار\\هماهنگی};
-    \node[font=\tiny, align=center] at (0, 2.5) {جریانات\\اصلی};
-    \node[font=\tiny, align=center] at (0, 3.5) {حامیان\\عمومی};
+    \node[font=\small\bfseries, align=center] at (0, 0) {\rl{اصول مشترک}};
+    \node[font=\tiny, align=center] at (0, 1.5) {\rl{ساختار هماهنگی}};
+    \node[font=\tiny, align=center] at (0, 2.5) {\rl{جریانات اصلی}};
+    \node[font=\tiny, align=center] at (0, 3.5) {\rl{حامیان عمومی}};
 \end{tikzpicture}
-\captionof{figure}{مدل دایره‌ای ائتلاف}
+\captionof{figure}{\rl{مدل دایره‌ای ائتلاف}}
 \end{center}
 
 \section{توصیه‌های عملی برای هر جریان}
@@ -342,20 +345,20 @@
 \begin{table}[H]
 \centering
 \caption{توصیه‌های اختصاصی}
-\begin{tabular}{|R{3.5cm}|L{9cm}|}
+\begin{tabular}{|R{4.5cm}|R{11cm}|}
 \hline
 \rowcolor{iranblue!20}
-\textbf{جریان} & \textbf{توصیه کلیدی} \\
+\textbf{\rl{جریان}} & \textbf{\rl{توصیه کلیدی}} \\
 \hline
-مشروطه‌خواهان & موضع روشن درباره «پادشاهی یا جمهوری؟» - انعطاف بیشتر \\
+\rl{مشروطه‌خواهان} & \rl{موضع روشن درباره «پادشاهی یا جمهوری؟» - انعطاف بیشتر} \\
 \hline
-جمهوری‌خواهان & ایجاد ساختار متحد، معرفی چهره شاخص \\
+\rl{جمهوری‌خواهان} & \rl{ایجاد ساختار متحد، معرفی چهره شاخص} \\
 \hline
-چپ‌ها & فاصله از انگ تاریخی، تمرکز بر عدالت اجتماعی \\
+\rl{چپ‌ها} & \rl{فاصله از انگ تاریخی، تمرکز بر عدالت اجتماعی} \\
 \hline
-ملی-مذهبی‌ها & تعیین تکلیف نهایی با نظام، موضع شفاف \\
+\rl{ملی-مذهبی‌ها} & \rl{تعیین تکلیف نهایی با نظام، موضع شفاف} \\
 \hline
-جنبش‌های قومی & تضمین یکپارچگی ایران، مدل فدرالیسم دموکراتیک \\
+\rl{جنبش‌های قومی} & \rl{تضمین یکپارچگی ایران، مدل فدرالیسم دموکراتیک} \\
 \hline
 \end{tabular}
 \end{table}

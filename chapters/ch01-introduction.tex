@@ -12,17 +12,17 @@
     
     % Signpost
     \draw[ultra thick, brown] (0, 0.5) -- (0, -0.5);
-    \node[rectangle, draw=iranblue, fill=white, rounded corners, minimum width=3cm, rotate=15] at (2, 1.5) {دموکراسی و صلح};
-    \node[rectangle, draw=iranred, fill=white, rounded corners, minimum width=3cm, rotate=-15] at (-2, 1.5) {فروپاشی و جنگ};
+    \node[rectangle, draw=iranblue, fill=white, rounded corners, minimum width=3cm, rotate=15] at (2, 1.5) {\rl{دموکراسی و صلح}};
+    \node[rectangle, draw=iranred, fill=white, rounded corners, minimum width=3cm, rotate=-15] at (-2, 1.5) {\rl{فروپاشی و جنگ}};
     
     % Label
-    \node[concept, scale=0.7] at (0, -3) {ایران در\\دو راهی};
+    \node[concept, scale=0.7] at (0, -3) {\rl{ایران در دو راهی}};
     
     % Arrows showing choice
     \draw[connection, iranblue] (0, -1) .. controls (1, 0) .. (2, 1);
     \draw[connection, iranred] (0, -1) .. controls (-1, 0) .. (-2, 1);
 \end{tikzpicture}
-\captionof{figure}{ایران در دوراهی سرنوشت‌ساز}
+\captionof{figure}{\rl{ایران در دوراهی سرنوشت‌ساز}}
 \end{center}
 
 \vspace{1cm}
@@ -57,12 +57,12 @@
     
     % Events
     \foreach \x/\year/\event in {
-        0/۱۳۵۷/انقلاب,
-        2/۱۳۷۸/۱۸ تیر,
-        4/۱۳۸۸/جنبش سبز,
-        6.5/۱۳۹۶/دی‌ماه,
-        9/۱۴۰۱/مهسا,
-        12/۱۴۰۴/دی‌ماه
+        0/۱۳۵۷/\rl{انقلاب},
+        2/۱۳۷۸/\rl{۱۸ تیر},
+        4/۱۳۸۸/\rl{جنبش سبز},
+        6.5/۱۳۹۶/\rl{دی‌ماه},
+        9/۱۴۰۱/\rl{مهسا},
+        12/۱۴۰۴/\rl{دی‌ماه}
     }{
         \draw[thick, iranblue] (\x, -0.2) -- (\x, 0.2);
         \node[above, font=\small\bfseries] at (\x, 0.3) {\year};
@@ -72,7 +72,7 @@
     % Highlight last event
     \draw[fill=iranred, iranred] (12,0) circle (0.25);
 \end{tikzpicture}
-\captionof{figure}{خط زمانی اعتراضات مهم ایران}
+\captionof{figure}{\rl{خط زمانی اعتراضات مهم ایران}}
 \end{center}
 
 \subsection{چه اتفاقی افتاد؟}
@@ -109,12 +109,12 @@
     level 1 concept/.append style={sibling angle=72, font=\small},
     level 2/.append style={minimum size=1.2cm, sibling angle=45, font=\tiny}
 ]
-    \node[concept, scale=0.8] {مخاطبان}
-        child[concept color=irangreen!50] { node {فعالان\\سیاسی} }
-        child[concept color=irangold!50] { node {رهبران\\اپوزیسیون} }
-        child[concept color=empireborder!30] { node {پژوهشگران} }
-        child[concept color=iranred!30] { node {دیپلمات‌ها} }
-        child[concept color=nokteborder!30] { node {شهروندان\\علاقه‌مند} };
+    \node[concept, scale=0.8] {\rl{مخاطبان}}
+        child[concept color=irangreen!50] { node {\rl{فعالان سیاسی}} }
+        child[concept color=irangold!50] { node {\rl{رهبران اپوزیسیون}} }
+        child[concept color=empireborder!30] { node {\rl{پژوهشگران}} }
+        child[concept color=iranred!30] { node {\rl{دیپلمات‌ها}} }
+        child[concept color=nokteborder!30] { node {\rl{شهروندان علاقه‌مند}} };
 \end{tikzpicture}
 \end{center}
 
@@ -151,18 +151,18 @@
 \begin{table}[H]
 \centering
 \caption{نقشه راهنمای مطالعه}
-\begin{tabular}{|C{2cm}|L{6cm}|C{3cm}|}
+\begin{tabular}{|C{3cm}|R{9cm}|C{4cm}|}
 \hline
 \rowcolor{iranblue!20}
-\textbf{سطح} & \textbf{توضیح} & \textbf{فصول پیشنهادی} \\
+\textbf{\rl{سطح}} & \textbf{\rl{توضیح}} & \textbf{\rl{فصول پیشنهادی}} \\
 \hline
-سریع & خلاصه وضعیت و توصیه‌ها & فصل ۰ \\
+\rl{سریع} & \rl{خلاصه وضعیت و توصیه‌ها} & \rl{فصل ۰} \\
 \hline
-متوسط & درک کلی از وضعیت و سناریوها & فصول ۱-۴ \\
+\rl{متوسط} & \rl{درک کلی از وضعیت و سناریوها} & \rl{فصول ۱-۴} \\
 \hline
-عمیق & تحلیل جامع و آمادگی اجرایی & همه فصول \\
+\rl{عمیق} & \rl{تحلیل جامع و آمادگی اجرایی} & \rl{همه فصول} \\
 \hline
-تخصصی & پژوهش و ارجاع آکادمیک & پیوست‌ها \\
+\rl{تخصصی} & \rl{پژوهش و ارجاع آکادمیک} & \rl{پیوست‌ها} \\
 \hline
 \end{tabular}
 \end{table}

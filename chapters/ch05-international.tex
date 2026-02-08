@@ -10,15 +10,15 @@
     \draw[gray!20, fill=noktegray] (-5, -3) rectangle (5, 3);
     
     % Actors
-    \node[concept, scale=0.6, fill=iranblue!20] (usa) at (-3, 1) {آمریکا};
-    \node[concept, scale=0.6, fill=iranblue!15] (eu) at (-1, 1.5) {اتروپا};
-    \node[concept, scale=0.6, fill=iranred!15] (rus) at (2, 2) {روسیه};
-    \node[concept, scale=0.6, fill=iranred!20] (chn) at (4, 1.5) {چین};
-    \node[concept, scale=0.6, fill=irangold!20] (sa) at (1, -1) {عربستان};
-    \node[concept, scale=0.6, fill=iranred!10] (isr) at (-0.5, -0.5) {اسرائیل};
+    \node[concept, scale=0.6, fill=iranblue!20] (usa) at (-3, 1) {\rl{آمریکا}};
+    \node[concept, scale=0.6, fill=iranblue!15] (eu) at (-1, 1.5) {\rl{اروپا}};
+    \node[concept, scale=0.6, fill=iranred!15] (rus) at (2, 2) {\rl{روسیه}};
+    \node[concept, scale=0.6, fill=iranred!20] (chn) at (4, 1.5) {\rl{چین}};
+    \node[concept, scale=0.6, fill=irangold!20] (sa) at (1, -1) {\rl{عربستان}};
+    \node[concept, scale=0.6, fill=iranred!10] (isr) at (-0.5, -0.5) {\rl{اسرائیل}};
     
     % Center: Iran
-    \node[concept, scale=0.8, fill=white, draw=iranblue] (iran) at (0, 0.5) {ایران};
+    \node[concept, scale=0.8, fill=white, draw=iranblue] (iran) at (0, 0.5) {\rl{ایران}};
     
     % Lines (Support/Pressure)
     \draw[connection, iranred] (rus) -- (iran);
@@ -28,9 +28,9 @@
     \draw[connection, irangold] (sa) -- (iran);
     \draw[connection, iranblue] (isr) -- (iran);
     
-    \node[below=3.5cm of goal, align=center, font= \small \color{iranblue!70}] at (0,0) {شبکه تأثیرگذاری بازیگران بین‌المللی بر وضعیت ایران};
+    \node[below=3.5cm of goal, align=center, font= \small \color{iranblue!70}] at (0,0) {\rl{تأثیرگذاری بازیگران بر وضعیت ایران}};
 \end{tikzpicture}
-\captionof{figure}{نقشه بازیگران بین‌المللی و فشارهای دیپلماتیک}
+\captionof{figure}{\rl{نقشه بازیگران بین‌المللی و فشارهای دیپلماتیک}}
 \end{center}
 
 \begin{naghlbox}
@@ -42,22 +42,22 @@
 \begin{table}[H]
 \centering
 \caption{تحلیل بازیگران اصلی}
-\begin{tabular}{|R{2.5cm}|C{2cm}|L{7cm}|}
+\begin{tabular}{|R{3.5cm}|C{3cm}|R{9cm}|}
 \hline
 \rowcolor{iranblue!20}
-\textbf{بازیگر} & \textbf{موضع} & \textbf{منافع کلیدی} \\
+\textbf{\rl{بازیگر}} & \textbf{\rl{موضع}} & \textbf{\rl{منافع کلیدی}} \\
 \hline
-آمریکا & ضد نظام & جلوگیری از برنامه هسته‌ای، تضعیف نفوذ منطقه‌ای \\
+\rl{آمریکا} & \rl{ضد نظام} & \rl{جلوگیری از برنامه هسته‌ای، تضعیف نفوذ منطقه‌ای} \\
 \hline
-اسرائیل & ضد نظام & خنثی‌سازی تهدید، تضعیف نیروهای نیابتی \\
+\rl{اسرائیل} & \rl{ضد نظام} & \rl{خنثی‌سازی تهدید، تضعیف نیروهای نیابتی} \\
 \hline
-اتحادیه اروپا & محتاط & ثبات منطقه‌ای، تجارت، حقوق بشر \\
+\rl{اتحادیه اروپا} & \rl{محتاط} & \rl{ثبات منطقه‌ای، تجارت، حقوق بشر} \\
 \hline
-روسیه & حامی نظام & همکاری نظامی، مقابله با غرب \\
+\rl{روسیه} & \rl{حامی نظام} & \rl{همکاری نظامی، مقابله با غرب} \\
 \hline
-چین & حامی نظام & نفت، جاده ابریشم، موازنه قدرت \\
+\rl{چین} & \rl{حامی نظام} & \rl{نفت، جاده ابریشم، موازنه قدرت} \\
 \hline
-عربستان & ضد نظام & رقابت منطقه‌ای، امنیت \\
+\rl{عربستان} & \rl{ضد نظام} & \rl{رقابت منطقه‌ای، امنیت} \\
 \hline
 \end{tabular}
 \end{table}
@@ -103,18 +103,18 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|R{3cm}|L{8cm}|}
+\begin{tabular}{|R{4cm}|R{11cm}|}
 \hline
 \rowcolor{olgoogreen!30}
-\textbf{توصیه} & \textbf{توضیح} \\
+\textbf{\rl{توصیه}} & \textbf{\rl{توضیح}} \\
 \hline
-وحدت در پیام & یک صدای واحد در محافل بین‌المللی \\
+\rl{وحدت در پیام} & \rl{یک صدای واحد در محافل بین‌المللی} \\
 \hline
-استقلال & اجتناب از وابستگی به هر قدرت خارجی \\
+\rl{استقلال} & \rl{اجتناب از وابستگی به هر قدرت خارجی} \\
 \hline
-لابی مؤثر & حضور در پارلمان‌ها و نهادهای بین‌المللی \\
+\rl{لابی مؤثر} & \rl{حضور در پارلمان‌ها و نهادهای بین‌المللی} \\
 \hline
-بسیج دیاسپورا & فشار ایرانیان خارج بر دولت‌ها \\
+\rl{بسیج دیاسپورا} & \rl{فشار ایرانیان خارج بر دولت‌ها} \\
 \hline
 \end{tabular}
 \end{table}

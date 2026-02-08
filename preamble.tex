@@ -285,7 +285,7 @@
     font=small,
     labelfont=bf,
     format=hang,
-    justification=justified,       % ← اصلاح ۶: تغییر از raggedright
+    justification=centering,
     singlelinecheck=false
 }
 
@@ -343,4 +343,9 @@
     icon/.style={circle, draw=irangold, fill=irangold!20, minimum size=1cm},
     connection/.style={ultra thick, iranblue!30, -{Stealth[scale=1.5]}},
     background_rect/.style={fill=noktegray!50, rounded corners=15pt, draw=iranblue!20, dashed}
+}
+
+% Logo command for easy use
+\newcommand{\booklogo}[1][0.1\textwidth]{%
+    \includegraphics[width=#1]{images/cover/main-symbol.png}%
 }
