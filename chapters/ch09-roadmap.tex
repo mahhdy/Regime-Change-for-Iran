@@ -1,0 +1,135 @@
+% ch09-roadmap.tex
+% فصل نهم: نقشه راه عملیاتی
+
+\chapter{نقشه راه عملیاتی}
+\label{ch:roadmap}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    % Roadmap Steps
+    \foreach \i/\label in {1/تثبیت, 2/ائتلاف, 3/بسیج, 4/اقدام} {
+        \node[step, minimum width=2.5cm, fill=iranblue!\the\numexpr\i*20\relax] (s\i) at (\i*3, 0) {\label};
+    }
+    \draw[connection] (s1) -- (s2);
+    \draw[connection] (s2) -- (s3);
+    \draw[connection] (s3) -- (s4);
+    
+    \node[below=1.5cm of s2.south east, align=center, font= \small \color{iranblue!70}] {توالی زمانی مراحل عملیاتی};
+\end{tikzpicture}
+\captionof{figure}{نقشه راه کلی عملیات گذار}
+\end{center}
+
+\begin{naghlbox}
+«هدف بدون برنامه فقط یک آرزوست. برنامه بدون عمل فقط یک رویاست.»
+\end{naghlbox}
+
+\section{مرحله اول: تثبیت (۰-۳ ماه)}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|C{0.5cm}|L{8cm}|C{2cm}|}
+\hline
+\rowcolor{iranblue!20}
+& \textbf{اقدام} & \textbf{مسئول} \\
+\hline
+$\square$ & تشکیل کمیته هماهنگی موقت & رهبران \\
+\hline
+$\square$ & تعیین سخنگوی واحد & کمیته \\
+\hline
+$\square$ & راه‌اندازی کانال‌های ارتباطی امن & فنی \\
+\hline
+$\square$ & تدوین بیانیه اصول مشترک & همه \\
+\hline
+\end{tabular}
+\caption{چک‌لیست مرحله تثبیت}
+\end{table}
+
+\section{مرحله دوم: ائتلاف‌سازی (۳-۱۲ ماه)}
+
+\begin{center}
+\begin{tikzpicture}[node distance=2.5cm]
+    \node[block, fill=iranblue!20] (talks) {مذاکرات دوجانبه};
+    \node[block, fill=iranblue!30, right=of talks] (doc) {تدوین منشور};
+    \node[block, fill=iranblue!40, right=of doc] (sign) {امضای منشور};
+    \node[block, fill=olgoogreen!50, right=of sign] (announce) {اعلام عمومی};
+    
+    \draw[arrow] (talks) -- (doc);
+    \draw[arrow] (doc) -- (sign);
+    \draw[arrow] (sign) -- (announce);
+\end{tikzpicture}
+\captionof{figure}{فرآیند ائتلاف‌سازی}
+\end{center}
+
+\section{مرحله سوم: بسیج (۶-۱۸ ماه)}
+
+\begin{itemize}
+    \item ارتباط با شبکه‌های داخلی
+    \item کمپین‌های رسانه‌ای
+    \item لابی‌گری بین‌المللی
+    \item جذب منابع
+    \item آموزش کادرها
+\end{itemize}
+
+\section{مرحله چهارم: اقدام}
+
+\begin{empirebox}[title=شرایط آغاز]
+\begin{enumerate}
+    \item ائتلاف پایدار شکل گرفته
+    \item حمایت بین‌المللی تأمین شده
+    \item ظرفیت بسیج کافی
+    \item رویداد آغازگر (Trigger)
+    \item آمادگی برای حکومت انتقالی
+\end{enumerate}
+\end{empirebox}
+
+\section{شاخص‌های پایش پیشرفت}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|R{4cm}|C{2cm}|L{5cm}|}
+\hline
+\rowcolor{irangold!20}
+\textbf{شاخص} & \textbf{هدف} & \textbf{وضعیت فعلی} \\
+\hline
+تعداد جریانات در ائتلاف & ۵+ & در حال مذاکره \\
+\hline
+بودجه سالانه & ۱۰M+ & نامشخص \\
+\hline
+حمایت دولت‌ها & ۳+ & ۱-۲ \\
+\hline
+ارتباط با داخل & فعال & محدود \\
+\hline
+\end{tabular}
+\caption{داشبورد پایش}
+\end{table}
+
+\section{نقاط تصمیم‌گیری کلیدی}
+
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+    \node[decision] (d1) {ائتلاف ممکن؟};
+    \node[block, right=of d1] (continue) {ادامه مستقل};
+    \node[block, below=of d1] (coalition) {تشکیل ائتلاف};
+    
+    \node[decision, below=of coalition] (d2) {بسیج کافی؟};
+    \node[block, right=of d2] (build) {ظرفیت‌سازی};
+    \node[block, below=of d2] (action) {اقدام};
+    
+    \draw[arrow] (d1) -- node[above] {خیر} (continue);
+    \draw[arrow] (d1) -- node[right] {بله} (coalition);
+    \draw[arrow] (coalition) -- (d2);
+    \draw[arrow] (d2) -- node[above] {خیر} (build);
+    \draw[arrow] (d2) -- node[right] {بله} (action);
+    \draw[arrow] (build.south) |- ++(0,-0.5) -| (d2.east);
+\end{tikzpicture}
+\captionof{figure}{درخت تصمیم‌گیری}
+\end{center}
+
+\begin{kholasebox}[title=خلاصه فصل]
+\begin{itemize}
+    \item نقشه راه چهار مرحله‌ای: تثبیت، ائتلاف، بسیج، اقدام
+    \item هر مرحله اقدامات و مسئولین مشخص دارد
+    \item شاخص‌های پایش باید مرتب بررسی شوند
+    \item نقاط تصمیم‌گیری کلیدی را بشناسید
+\end{itemize}
+\end{kholasebox}

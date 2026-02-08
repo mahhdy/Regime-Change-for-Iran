@@ -1,0 +1,369 @@
+% ch02-regime-analysis.tex
+% فصل دوم: تشریح نظام حاکم
+
+\chapter{تشریح نظام حاکم}
+\label{ch:regime-analysis}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    % Tower of Power
+    \draw[thick, iranblue, fill=iranblue!10] (-3, 0) -- (3, 0) -- (1, 6) -- (-1, 6) -- cycle;
+    
+    % Core levels
+    \node[rectangle, draw=iranred, fill=iranred!10, minimum width=1.5cm, minimum height=0.8cm] at (0, 5.2) {رهبری};
+    \node[rectangle, draw=iranblue, fill=iranblue!20, minimum width=3cm, minimum height=0.8cm] at (0, 4) {سپاه و بسیج};
+    \node[rectangle, draw=irangold, fill=irangold!20, minimum width=4.5cm, minimum height=0.8cm] at (0, 2.5) {اقتصاد و رانت};
+    \node[rectangle, draw=irangreen, fill=irangreen!20, minimum width=5.5cm, minimum height=0.8cm] at (0, 1) {ایدئولوژی};
+    
+    % Pillars holding it up (symbolic)
+    \draw[ultra thick, gray] (-2.5, -1) -- (-2.5, 0);
+    \draw[ultra thick, gray] (2.5, -1) -- (2.5, 0);
+    \draw[ultra thick, gray] (0, -1) -- (0, 0);
+    
+    \node[below=1.2cm of goal, align=center, font= \small \color{iranred!70}] at (0,-1) {ستون‌های بقای رژیم};
+\end{tikzpicture}
+\captionof{figure}{ساختار عمودی قدرت در رژیم}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{naghlbox}
+«برای شکست دادن دشمن، ابتدا باید او را شناخت. هر نقطه قوت، نقطه ضعفی پنهان دارد.»
+\end{naghlbox}
+
+\section{ماهیت نظام: شبه‌تمامیت‌خواه}
+
+جمهوری اسلامی را نمی‌توان در دسته‌بندی‌های سنتی جای داد. این نظام ترکیبی از عناصر مختلف است:
+
+\begin{center}
+\begin{tikzpicture}[
+    every node/.style={font=\small},
+    box/.style={rectangle, rounded corners, draw, minimum width=3cm, minimum height=1cm, align=center}
+]
+    \node[box, fill=iranblue!20] (center) at (0,0) {جمهوری\\اسلامی};
+    
+    \node[box, fill=iranred!20] (theo) at (-4, 2) {تئوکراسی};
+    \node[box, fill=irangold!20] (auth) at (0, 3) {اقتدارگرایی};
+    \node[box, fill=empirepurple!20] (total) at (4, 2) {شبه‌تمامیت‌خواهی};
+    \node[box, fill=olgoogreen!20] (klept) at (-4, -2) {کلپتوکراسی};
+    \node[box, fill=noktegray] (preto) at (4, -2) {پرتوریانیسم\\(حکومت نظامی)};
+    
+    \draw[thick, ->] (center) -- (theo);
+    \draw[thick, ->] (center) -- (auth);
+    \draw[thick, ->] (center) -- (total);
+    \draw[thick, ->] (center) -- (klept);
+    \draw[thick, ->] (center) -- (preto);
+\end{tikzpicture}
+\captionof{figure}{ترکیب عناصر نظام جمهوری اسلامی}
+\end{center}
+
+\subsection{ویژگی‌های کلیدی}
+
+\begin{table}[H]
+\centering
+\caption{مشخصات نظام جمهوری اسلامی}
+\begin{tabular}{|R{3cm}|L{9cm}|}
+\hline
+\rowcolor{iranblue!20}
+\textbf{ویژگی} & \textbf{توضیح} \\
+\hline
+ولایت فقیه & رهبر دارای قدرت نامحدود و غیرپاسخگو \\
+\hline
+دوگانگی قدرت & نهادهای موازی انتخابی و انتصابی \\
+\hline
+ایدئولوژی مذهبی & اسلام سیاسی شیعی \\
+\hline
+اقتصاد رانتی & وابستگی به نفت و کنترل دولتی \\
+\hline
+سرکوب نظام‌یافته & دستگاه امنیتی گسترده \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{ستون‌های قدرت نظام}
+
+\begin{empirebox}[title=چارچوب تحلیلی]
+طبق نظریه جین شارپ، هر نظام استبدادی بر تعدادی «ستون قدرت» استوار است. تضعیف این ستون‌ها کلید سرنگونی نظام است.
+\end{empirebox}
+
+\subsection{ستون نظامی-امنیتی}
+
+\begin{center}
+\begin{tikzpicture}[
+    org/.style={rectangle, rounded corners, draw=iranblue, fill=kholaseblue, minimum width=2.5cm, minimum height=0.8cm, font=\small, align=center},
+    level 1/.style={sibling distance=4cm},
+    level 2/.style={sibling distance=2.5cm},
+    edge from parent/.style={draw, thick}
+]
+    \node[org, fill=iranblue!40] {رهبری}
+        child { node[org] {سپاه پاسداران}
+            child { node[org, font=\tiny] {نیروی\\قدس} }
+            child { node[org, font=\tiny] {بسیج} }
+        }
+        child { node[org] {ارتش}
+            child { node[org, font=\tiny] {نیروی\\زمینی} }
+            child { node[org, font=\tiny] {نیروی\\هوایی} }
+        }
+        child { node[org] {اطلاعات}
+            child { node[org, font=\tiny] {وزارت\\اطلاعات} }
+            child { node[org, font=\tiny] {اطلاعات\\سپاه} }
+        };
+\end{tikzpicture}
+\captionof{figure}{ساختار نیروهای نظامی-امنیتی}
+\end{center}
+
+\subsubsection{سپاه پاسداران انقلاب اسلامی}
+
+\begin{itemize}
+    \item \textbf{نفرات:} حدود ۱۹۰,۰۰۰ نفر (بدون بسیج)
+    \item \textbf{بودجه:} تخمین ۲۰-۳۰ میلیارد دلار سالانه
+    \item \textbf{امپراتوری اقتصادی:} کنترل بخش بزرگی از اقتصاد
+    \item \textbf{وابستگی به نظام:} کامل - سرنوشت سپاه به بقای نظام گره خورده
+\end{itemize}
+
+\subsubsection{بسیج مستضعفین}
+
+\begin{itemize}
+    \item \textbf{عضویت رسمی:} ۲۰ میلیون نفر (ادعای رسمی)
+    \item \textbf{نیروی فعال:} تخمین ۵۰۰,۰۰۰-۱,۰۰۰,۰۰۰ نفر
+    \item \textbf{نقش:} سرکوب داخلی، جاسوسی اجتماعی
+    \item \textbf{انگیزه:} ترکیبی از ایدئولوژی و منافع مادی
+\end{itemize}
+
+\subsection{ستون ایدئولوژیک-مذهبی}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|R{3cm}|C{2cm}|L{7cm}|}
+\hline
+\rowcolor{irangold!30}
+\textbf{نهاد} & \textbf{بودجه سالانه} & \textbf{نقش} \\
+\hline
+حوزه‌های علمیه & ۲ میلیارد دلار & تولید کادر مذهبی-سیاسی \\
+\hline
+صدا و سیما & ۱ میلیارد دلار & تبلیغات و کنترل اطلاعات \\
+\hline
+نهاد تبلیغات & ۵۰۰ میلیون دلار & گسترش ایدئولوژی \\
+\hline
+وزارت ارشاد & ۳۰۰ میلیون دلار & سانسور و کنترل فرهنگی \\
+\hline
+\end{tabular}
+\caption{نهادهای ایدئولوژیک و بودجه تخمینی}
+\end{table}
+
+\subsection{ستون اقتصادی-رانتی}
+
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        ybar,
+        ylabel={درصد از GDP},
+        symbolic x coords={نفت و گاز, سپاه و بنیادها, بخش خصوصی, بخش دولتی},
+        xtick=data,
+        nodes near coords,
+        nodes near coords align={vertical},
+        ymin=0,
+        ymax=50,
+        bar width=25pt,
+        x tick label style={rotate=45, anchor=east, font=\small},
+        width=12cm,
+        height=8cm
+    ]
+    \addplot[fill=iranblue!50] coordinates {
+        (نفت و گاز, 40)
+        (سپاه و بنیادها, 25)
+        (بخش خصوصی, 20)
+        (بخش دولتی, 15)
+    };
+    \end{axis}
+\end{tikzpicture}
+\captionof{figure}{توزیع تخمینی اقتصاد ایران}
+\end{center}
+
+\subsection{شبکه‌های وابستگی منطقه‌ای}
+
+\begin{table}[H]
+\centering
+\caption{نیروهای نیابتی جمهوری اسلامی}
+\begin{tabular}{|R{3cm}|C{2.5cm}|C{3cm}|L{3.5cm}|}
+\hline
+\rowcolor{iranred!20}
+\textbf{گروه} & \textbf{کشور} & \textbf{نفرات تخمینی} & \textbf{وضعیت فعلی} \\
+\hline
+حزب‌الله لبنان & لبنان & ۴۵,۰۰۰ & تضعیف شدید \\
+\hline
+حشد الشعبی & عراق & ۱۵۰,۰۰۰ & تحت فشار \\
+\hline
+حوثی‌ها & یمن & ۲۰۰,۰۰۰ & فعال \\
+\hline
+گروه‌های فلسطینی & غزه/... & متغیر & تضعیف شده \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{نقاط ضعف و شکاف‌ها}
+
+\begin{enghelabbox}[title=نقطه کلیدی]
+هر نظامی، هرقدر هم قدرتمند، دارای نقاط ضعف است. شناسایی و بهره‌برداری از این نقاط، اساس استراتژی گذار است.
+\end{enghelabbox}
+
+\subsection{بحران مشروعیت}
+
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel={سال},
+        ylabel={درصد رضایت (تخمینی)},
+        xmin=1378, xmax=1404,
+        ymin=0, ymax=100,
+        xtick={1378, 1388, 1396, 1401, 1404},
+        xticklabels={۱۳۷۸, ۱۳۸۸, ۱۳۹۶, ۱۴۰۱, ۱۴۰۴},
+        width=12cm,
+        height=7cm,
+        grid=major,
+        legend pos=north east
+    ]
+    \addplot[thick, color=iranblue, mark=*] coordinates {
+        (1378, 65)
+        (1388, 45)
+        (1396, 30)
+        (1401, 15)
+        (1404, 8)
+    };
+    \legend{رضایت از نظام}
+    \end{axis}
+\end{tikzpicture}
+\captionof{figure}{روند نزولی مشروعیت نظام (تخمینی)}
+\end{center}
+
+\subsection{بحران اقتصادی}
+
+\begin{itemize}
+    \item \textbf{تورم:} بیش از ۵۰٪ سالانه
+    \item \textbf{بیکاری:} رسمی ۱۲٪، واقعی ۲۵-۳۰٪
+    \item \textbf{فقر:} بیش از ۳۰٪ زیر خط فقر
+    \item \textbf{ارزش پول ملی:} سقوط ۹۰٪ در دهه گذشته
+\end{itemize}
+
+\subsection{شکاف نسلی}
+
+\begin{noktebox}
+بیش از ۶۰٪ جمعیت ایران زیر ۴۰ سال سن دارند. این نسل نه انقلاب ۵۷ را به یاد دارد و نه تعلقی به آرمان‌های نظام.
+\end{noktebox}
+
+\subsection{شکاف مرکز-پیرامون}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|R{3cm}|C{2.5cm}|L{6cm}|}
+\hline
+\rowcolor{olgoogreen!30}
+\textbf{منطقه} & \textbf{جمعیت تخمینی} & \textbf{موضوع اصلی} \\
+\hline
+کردستان & ۱۰ میلیون & خودمختاری، سرکوب فرهنگی \\
+\hline
+بلوچستان & ۳ میلیون & فقر، تبعیض، سرکوب \\
+\hline
+خوزستان & ۵ میلیون & آب، محیط زیست، تبعیض \\
+\hline
+آذربایجان & ۱۵ میلیون & حقوق زبانی، توسعه \\
+\hline
+\end{tabular}
+\caption{شکاف‌های منطقه‌ای}
+\end{table}
+
+\subsection{تنش‌های درون‌حکومتی}
+
+\begin{center}
+\begin{tikzpicture}[
+    faction/.style={ellipse, draw, minimum width=3cm, minimum height=1.5cm, align=center, font=\small}
+]
+    \node[faction, fill=iranblue!30] (asl) at (0, 2) {اصول‌گرایان\\سنتی};
+    \node[faction, fill=iranred!30] (tanad) at (4, 0) {تندروها\\(پایداری)};
+    \node[faction, fill=olgoogreen!30] (sepah) at (-4, 0) {جناح\\سپاه};
+    \node[faction, fill=irangold!30] (esl) at (0, -2) {اصلاح‌طلبان\\(حاشیه‌ای)};
+    
+    \draw[<->, thick, dashed, red] (asl) -- (tanad) node[midway, above right, font=\tiny] {رقابت};
+    \draw[<->, thick, dashed, red] (sepah) -- (tanad) node[midway, below, font=\tiny] {تنش};
+    \draw[<->, thick, dashed, orange] (asl) -- (sepah) node[midway, above left, font=\tiny] {همکاری محتاطانه};
+\end{tikzpicture}
+\captionof{figure}{تنش‌های جناحی درون نظام}
+\end{center}
+
+\section{ظرفیت سرکوب: تحلیل واقع‌بینانه}
+
+\begin{table}[H]
+\centering
+\caption{ماتریس ظرفیت سرکوب}
+\begin{tabular}{|R{3.5cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|}
+\hline
+\rowcolor{iranred!20}
+\textbf{نوع سرکوب} & \textbf{ظرفیت} & \textbf{اراده} & \textbf{هزینه} & \textbf{پایداری} \\
+\hline
+اعتراضات محدود & بالا & بالا & پایین & بالا \\
+\hline
+خیزش گسترده & متوسط & بالا & بالا & متوسط \\
+\hline
+اعتصاب سراسری & پایین & متوسط & بالا & پایین \\
+\hline
+شورش مسلحانه & بالا & بالا & بسیار بالا & متوسط \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{جمع‌بندی: پتانسیل فروپاشی}
+
+\begin{center}
+\begin{tikzpicture}
+    % SWOT-style matrix
+    \draw[thick] (0,0) rectangle (12,8);
+    \draw[thick] (6,0) -- (6,8);
+    \draw[thick] (0,4) -- (12,4);
+    
+    % Headers
+    \node[font=\large\bfseries, fill=olgoogreen!50, minimum width=5.8cm, minimum height=0.8cm] at (3, 7.6) {نقاط قوت};
+    \node[font=\large\bfseries, fill=iranred!30, minimum width=5.8cm, minimum height=0.8cm] at (9, 7.6) {نقاط ضعف};
+    \node[font=\large\bfseries, fill=iranblue!30, minimum width=5.8cm, minimum height=0.8cm] at (3, 3.6) {فرصت‌ها};
+    \node[font=\large\bfseries, fill=irangold!30, minimum width=5.8cm, minimum height=0.8cm] at (9, 3.6) {تهدیدها};
+    
+    % Content
+    \node[text width=5cm, align=right, font=\small] at (3, 5.8) {
+        • دستگاه امنیتی قوی\\
+        • انسجام نسبی رهبری\\
+        • منابع مالی (نفت)\\
+        • نیروهای نیابتی
+    };
+    
+    \node[text width=5cm, align=right, font=\small] at (9, 5.8) {
+        • بحران مشروعیت\\
+        • بحران اقتصادی\\
+        • شکاف نسلی\\
+        • انزوای بین‌المللی
+    };
+    
+    \node[text width=5cm, align=right, font=\small] at (3, 1.8) {
+        • فروپاشی از درون\\
+        • ریزش نیروها\\
+        • تحولات منطقه‌ای\\
+        • فشار بین‌المللی
+    };
+    
+    \node[text width=5cm, align=right, font=\small] at (9, 1.8) {
+        • سرکوب خونین\\
+        • جنگ داخلی\\
+        • مداخله خارجی منفی\\
+        • تجزیه کشور
+    };
+\end{tikzpicture}
+\captionof{figure}{تحلیل SWOT نظام جمهوری اسلامی}
+\end{center}
+
+\begin{kholasebox}[title=خلاصه فصل]
+\begin{itemize}
+    \item نظام جمهوری اسلامی ترکیبی از تئوکراسی، اقتدارگرایی و کلپتوکراسی است
+    \item ستون‌های اصلی قدرت: نظامی-امنیتی، ایدئولوژیک و اقتصادی
+    \item نظام با بحران‌های چندگانه مشروعیت، اقتصاد و شکاف نسلی مواجه است
+    \item ظرفیت سرکوب همچنان بالاست اما پایدار نیست
+    \item نقاط ضعف متعددی برای بهره‌برداری استراتژیک وجود دارد
+\end{itemize}
+\end{kholasebox}

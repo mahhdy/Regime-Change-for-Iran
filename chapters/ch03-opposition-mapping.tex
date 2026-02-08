@@ -1,0 +1,371 @@
+% ch03-opposition-mapping.tex
+% فصل سوم: طیف‌شناسی اپوزیسیون
+
+\chapter{طیف‌شناسی اپوزیسیون}
+\label{ch:opposition-mapping}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    % Axes
+    \draw[thick, <->] (-5, 0) -- (5, 0) node[right] {راست};
+    \draw[thick, <->] (0, -4) -- (0, 4) node[above] {سکولار};
+    \node at (-5.5, 0) {چپ};
+    \node at (0, -4.5) {مذهبی};
+    
+    % Spectrum Circles
+    \fill[iranred!20, opacity=0.6] (-3, 2) circle (1.2cm);
+    \node[font=\footnotesize, align=center] at (-3, 2) {چپ\\سکولار};
+    
+    \fill[iranblue!20, opacity=0.6] (3, 2) circle (1.5cm);
+    \node[font=\footnotesize, align=center] at (3, 2) {مشروطه و\\راست دموکرات};
+    
+    \fill[irangold!20, opacity=0.6] (0, 2) circle (1cm);
+    \node[font=\footnotesize, align=center] at (0, 2) {جمهوری‌خواه\\میانه};
+    
+    \fill[irangreen!20, opacity=0.6] (-1, -2) circle (1.2cm);
+    \node[font=\footnotesize, align=center] at (-1, -2) {ملی-مذهبی\\تحول‌خواه};
+    
+    \fill[empirepurple!20, opacity=0.6] (3, -1) circle (1cm);
+    \node[font=\footnotesize, align=center] at (3, -1) {جنبش‌های\\قومی};
+    
+    \draw[dashed, iranblue!30] (-5,-4) rectangle (5,4);
+    
+    \node[below=4.5cm of goal, align=center, font= \small \color{iranblue!70}] at (0,0) {نقشه جریانات بر اساس ایدئولوژی و لائیسیته};
+\end{tikzpicture}
+\captionof{figure}{طیف سیاسی نیروهای اپوزیسیون}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{naghlbox}
+«اتحاد در برابر دشمن مشترک، نه به معنای یکسان‌سازی، بلکه به معنای هم‌افزایی تفاوت‌هاست.»
+\end{naghlbox}
+
+\section{نقشه جریانات اپوزیسیون}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    % Political spectrum
+    \draw[thick, <->] (-7, 0) -- (7, 0);
+    \draw[thick, <->] (0, -5) -- (0, 5);
+    
+    % Labels
+    \node[font=\small] at (-6.5, -0.5) {چپ};
+    \node[font=\small] at (6.5, -0.5) {راست};
+    \node[font=\small, rotate=90] at (-0.5, 4.5) {سکولار};
+    \node[font=\small, rotate=90] at (-0.5, -4.5) {مذهبی};
+    
+    % Political groups
+    \node[draw, circle, fill=iranred!30, minimum size=1.5cm, font=\tiny, align=center] (left) at (-5, 3) {کمونیست‌ها\\و چپ رادیکال};
+    \node[draw, circle, fill=irangold!50, minimum size=2cm, font=\tiny, align=center] (jomhori) at (-2, 3.5) {جمهوری‌خواهان\\سکولار};
+    \node[draw, circle, fill=iranblue!40, minimum size=2.5cm, font=\tiny, align=center] (mashroot) at (4, 3) {مشروطه‌خواهان\\پهلوی‌گرایان};
+    \node[draw, circle, fill=olgoogreen!50, minimum size=1.8cm, font=\tiny, align=center] (melli) at (-1, -2) {ملی-مذهبی‌ها\\اصلاح‌طلبان};
+    \node[draw, circle, fill=empirepurple!30, minimum size=1.5cm, font=\tiny, align=center] (ghomi) at (3, 0) {جنبش‌های\\قومی-ملی};
+    \node[draw, circle, fill=noktegray, minimum size=1.2cm, font=\tiny, align=center] (mojahed) at (-4, -3) {مجاهدین\\خلق};
+\end{tikzpicture}
+\captionof{figure}{نقشه طیف سیاسی اپوزیسیون ایران}
+\end{center}
+
+\section{تحلیل هر جریان}
+
+\subsection{مشروطه‌خواهان و پهلوی‌گرایان}
+
+\begin{table}[H]
+\centering
+\caption{تحلیل SWOT جریان مشروطه‌خواه}
+\begin{tabular}{|C{6cm}|C{6cm}|}
+\hline
+\rowcolor{olgoogreen!30}
+\multicolumn{2}{|c|}{\textbf{نقاط قوت (Strengths)}} \\
+\hline
+\multicolumn{2}{|p{12cm}|}{
+\begin{itemize}[rightmargin=1em]
+    \item چهره شاخص (رضا پهلوی) با شناخت بالا
+    \item پایگاه اجتماعی قابل توجه در طبقه متوسط
+    \item ارتباطات بین‌المللی
+    \item پیام ساده و قابل فهم
+\end{itemize}
+} \\
+\hline
+\rowcolor{iranred!20}
+\multicolumn{2}{|c|}{\textbf{نقاط ضعف (Weaknesses)}} \\
+\hline
+\multicolumn{2}{|p{12cm}|}{
+\begin{itemize}[rightmargin=1em]
+    \item بار تاریخی رژیم گذشته
+    \item فقدان ساختار سازمانی قوی
+    \item اختلاف بر سر «پادشاهی» یا «جمهوری»
+    \item ضعف ارتباط با داخل کشور
+\end{itemize}
+} \\
+\hline
+\rowcolor{iranblue!20}
+\multicolumn{2}{|c|}{\textbf{فرصت‌ها (Opportunities)}} \\
+\hline
+\multicolumn{2}{|p{12cm}|}{
+\begin{itemize}[rightmargin=1em]
+    \item نوستالژی نسل جوان نسبت به دوره پهلوی
+    \item حمایت احتمالی غرب
+    \item امکان ائتلاف با جریانات دیگر
+\end{itemize}
+} \\
+\hline
+\rowcolor{irangold!30}
+\multicolumn{2}{|c|}{\textbf{تهدیدها (Threats)}} \\
+\hline
+\multicolumn{2}{|p{12cm}|}{
+\begin{itemize}[rightmargin=1em]
+    \item تبلیغات منفی نظام
+    \item مخالفت چپ‌ها و جمهوری‌خواهان
+    \item ریسک تفرقه درونی
+\end{itemize}
+} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{noktebox}
+\textbf{پایگاه اجتماعی:} طبقه متوسط شهری، نسل جوان حافظه تاریخی ندار، ایرانیان خارج از کشور
+\end{noktebox}
+
+\subsection{جمهوری‌خواهان سکولار}
+
+\begin{table}[H]
+\centering
+\caption{تحلیل SWOT جمهوری‌خواهان سکولار}
+\begin{tabular}{|C{6cm}|C{6cm}|}
+\hline
+\rowcolor{olgoogreen!30}
+\textbf{نقاط قوت} & \textbf{نقاط ضعف} \\
+\hline
+\begin{minipage}{5.8cm}
+\begin{itemize}[rightmargin=0.5em, font=\small]
+    \item پایبندی به اصول دموکراتیک
+    \item کادرهای با تجربه سیاسی
+    \item مقبولیت در محافل آکادمیک
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}{5.8cm}
+\begin{itemize}[rightmargin=0.5em, font=\small]
+    \item پراکندگی و عدم انسجام
+    \item فقدان رهبر شاخص
+    \item ضعف در بسیج توده‌ای
+\end{itemize}
+\end{minipage}
+\\
+\hline
+\rowcolor{iranblue!20}
+\textbf{فرصت‌ها} & \textbf{تهدیدها} \\
+\hline
+\begin{minipage}{5.8cm}
+\begin{itemize}[rightmargin=0.5em, font=\small]
+    \item موضع «نه سلطنت، نه استبداد»
+    \item جذب نیروهای میانه
+    \item تجربیات بین‌المللی
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}{5.8cm}
+\begin{itemize}[rightmargin=0.5em, font=\small]
+    \item بین دو صندلی ماندن
+    \item فقدان منابع مالی
+    \item عدم شناخت عمومی
+\end{itemize}
+\end{minipage}
+\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{چپ‌ها و سوسیالیست‌ها}
+
+\begin{itemize}
+    \item \textbf{طیف:} از سوسیال‌دموکرات‌ها تا کمونیست‌ها
+    \item \textbf{تاریخچه:} سرکوب شدید در دهه ۶۰، بازسازی تدریجی
+    \item \textbf{نقاط قوت:} تجربه سازمانی، ارتباط با جنبش کارگری
+    \item \textbf{نقاط ضعف:} انگ تاریخی، اختلافات ایدئولوژیک، بار شوروی
+\end{itemize}
+
+\subsection{ملی-مذهبی‌ها و اصلاح‌طلبان خارج‌نشین}
+
+\begin{enghelabbox}[title=هشدار]
+این جریان پس از رویدادهای دی‌ماه ۱۴۰۴ با بحران هویتی عمیقی مواجه است. بسیاری از چهره‌های شاخص آن به مواضع رادیکال‌تر نزدیک شده‌اند.
+\end{enghelabbox}
+
+\begin{itemize}
+    \item \textbf{ویژگی:} سابقه درون‌نظامی، تلاش برای اصلاح از درون (شکست‌خورده)
+    \item \textbf{چهره‌ها:} برخی اصلاح‌طلبان سابق، ملی-مذهبی‌ها
+    \item \textbf{موضع فعلی:} در حال گذار به اپوزیسیون برانداز
+\end{itemize}
+
+\subsection{جنبش‌های قومی-ملی}
+
+\begin{table}[H]
+\centering
+\caption{جنبش‌های قومی-ملی}
+\begin{tabular}{|R{2.5cm}|C{2.5cm}|L{7cm}|}
+\hline
+\rowcolor{empirepurple!20}
+\textbf{قومیت} & \textbf{جریانات اصلی} & \textbf{خواسته‌های کلیدی} \\
+\hline
+کُرد & کومله، دموکرات & فدرالیسم، حقوق فرهنگی \\
+\hline
+عرب & احوازی‌ها & خودمختاری، حقوق زبانی \\
+\hline
+بلوچ & جنبش آزادی‌بخش & پایان تبعیض، توسعه \\
+\hline
+آذری & ملی‌گرایان & حقوق زبانی، هویت \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{سازمان مجاهدین خلق}
+
+\begin{enghelabbox}[title=موضع بحث‌برانگیز]
+این سازمان به دلیل همکاری با عراق در جنگ و ساختار فرقه‌ای، مورد مناقشه است. اکثر جریانات اپوزیسیون از ائتلاف با آن پرهیز می‌کنند.
+\end{enghelabbox}
+
+\section{نقاط همگرایی و واگرایی}
+
+\begin{center}
+\begin{tikzpicture}
+    % Venn diagram style
+    \begin{scope}[blend group=soft light]
+        \fill[iranblue!40] (-2,0) circle (3cm);
+        \fill[irangold!40] (2,0) circle (3cm);
+        \fill[olgoogreen!40] (0,-2.5) circle (3cm);
+    \end{scope}
+    
+    % Labels
+    \node[font=\bfseries] at (-3.5, 1) {سکولاریسم};
+    \node[font=\bfseries] at (3.5, 1) {دموکراسی};
+    \node[font=\bfseries] at (0, -4) {یکپارچگی ایران};
+    
+    % Center - shared
+    \node[font=\small, align=center] at (0, -0.5) {سرنگونی\\نظام};
+\end{tikzpicture}
+\captionof{figure}{نقاط همگرایی اپوزیسیون}
+\end{center}
+
+\subsection{نقاط همگرایی}
+
+\begin{olgoobox}[title=اشتراکات]
+\begin{enumerate}
+    \item \textbf{سرنگونی نظام:} تقریباً همه جریانات (به جز اصلاح‌طلبان افراطی) موافقند
+    \item \textbf{دموکراسی:} توافق کلی بر ضرورت نظام دموکراتیک
+    \item \textbf{حقوق بشر:} اجماع بر رعایت حقوق بنیادین
+    \item \textbf{جدایی دین از دولت:} توافق قابل توجه
+\end{enumerate}
+\end{olgoobox}
+
+\subsection{نقاط واگرایی}
+
+\begin{table}[H]
+\centering
+\caption{موضوعات اختلافی اصلی}
+\begin{tabular}{|R{3cm}|L{5cm}|L{5cm}|}
+\hline
+\rowcolor{iranred!10}
+\textbf{موضوع} & \textbf{موضع الف} & \textbf{موضع ب} \\
+\hline
+شکل حکومت & پادشاهی مشروطه & جمهوری \\
+\hline
+ساختار کشور & متمرکز & فدرال/خودمختاری \\
+\hline
+اقتصاد & بازار آزاد & دولت رفاه \\
+\hline
+عدالت انتقالی & عفو عمومی & محاکمه \\
+\hline
+رابطه با غرب & همکاری کامل & استقلال نسبی \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{چرا ائتلاف شکل نمی‌گیرد؟}
+
+\begin{center}
+\begin{tikzpicture}[
+    block/.style={rectangle, rounded corners, draw, fill=enghelabred!30, minimum width=4cm, minimum height=1cm, align=center, font=\small}
+]
+    \node[block] (ego) at (0, 4) {رقابت شخصی و خودخواهی};
+    \node[block] (hist) at (-5, 2) {بار تاریخی و خصومت‌های قدیمی};
+    \node[block] (ideo) at (5, 2) {اختلافات ایدئولوژیک عمیق};
+    \node[block] (trust) at (-5, 0) {بی‌اعتمادی متقابل};
+    \node[block] (struct) at (5, 0) {فقدان ساختار مشترک};
+    \node[block] (extern) at (0, -2) {عدم فشار خارجی برای اتحاد};
+    
+    \node[draw, circle, fill=iranred!50, minimum size=2cm] (center) at (0, 1) {شکست ائتلاف};
+    
+    \draw[thick, ->] (ego) -- (center);
+    \draw[thick, ->] (hist) -- (center);
+    \draw[thick, ->] (ideo) -- (center);
+    \draw[thick, ->] (trust) -- (center);
+    \draw[thick, ->] (struct) -- (center);
+    \draw[thick, ->] (extern) -- (center);
+\end{tikzpicture}
+\captionof{figure}{عوامل شکست ائتلاف‌سازی}
+\end{center}
+
+\section{پتانسیل‌های ائتلاف‌سازی}
+
+\begin{empirebox}[title=فرصت‌های پیش رو]
+\begin{enumerate}
+    \item \textbf{منشور مهسا:} تلاش برای ایجاد پلتفرم مشترک
+    \item \textbf{فشار نسل جوان:} خواست عملگرایی به جای ایدئولوژی
+    \item \textbf{شکست نظام:} هرچه نظام ضعیف‌تر، انگیزه اتحاد بیشتر
+    \item \textbf{مدل حداقلی:} توافق بر اصول پایه بدون حل همه اختلافات
+\end{enumerate}
+\end{empirebox}
+
+\subsection{مدل پیشنهادی ائتلاف}
+
+\begin{center}
+\begin{tikzpicture}
+    % Concentric circles
+    \draw[thick, fill=iranblue!10] (0,0) circle (4cm);
+    \draw[thick, fill=iranblue!20] (0,0) circle (3cm);
+    \draw[thick, fill=iranblue!30] (0,0) circle (2cm);
+    \draw[thick, fill=iranblue!50] (0,0) circle (1cm);
+    
+    % Labels
+    \node[font=\small\bfseries, align=center] at (0, 0) {اصول\\مشترک};
+    \node[font=\tiny, align=center] at (0, 1.5) {ساختار\\هماهنگی};
+    \node[font=\tiny, align=center] at (0, 2.5) {جریانات\\اصلی};
+    \node[font=\tiny, align=center] at (0, 3.5) {حامیان\\عمومی};
+\end{tikzpicture}
+\captionof{figure}{مدل دایره‌ای ائتلاف}
+\end{center}
+
+\section{توصیه‌های عملی برای هر جریان}
+
+\begin{table}[H]
+\centering
+\caption{توصیه‌های اختصاصی}
+\begin{tabular}{|R{3.5cm}|L{9cm}|}
+\hline
+\rowcolor{iranblue!20}
+\textbf{جریان} & \textbf{توصیه کلیدی} \\
+\hline
+مشروطه‌خواهان & موضع روشن درباره «پادشاهی یا جمهوری؟» - انعطاف بیشتر \\
+\hline
+جمهوری‌خواهان & ایجاد ساختار متحد، معرفی چهره شاخص \\
+\hline
+چپ‌ها & فاصله از انگ تاریخی، تمرکز بر عدالت اجتماعی \\
+\hline
+ملی-مذهبی‌ها & تعیین تکلیف نهایی با نظام، موضع شفاف \\
+\hline
+جنبش‌های قومی & تضمین یکپارچگی ایران، مدل فدرالیسم دموکراتیک \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{kholasebox}[title=خلاصه فصل]
+\begin{itemize}
+    \item اپوزیسیون ایران طیف متنوعی از جریانات را شامل می‌شود
+    \item نقاط همگرایی (سرنگونی نظام، دموکراسی) بیش از واگرایی‌هاست
+    \item ائتلاف‌سازی تاکنون به دلایل متعدد شکست خورده
+    \item مدل «توافق حداقلی» واقع‌بینانه‌ترین مسیر است
+    \item هر جریان نیاز به بازنگری و انعطاف دارد
+\end{itemize}
+\end{kholasebox}

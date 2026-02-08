@@ -1,0 +1,390 @@
+% ch04-transition-scenarios.tex
+% فصل چهارم: سناریوهای گذار
+
+\chapter{سناریوهای گذار}
+\label{ch:transition-scenarios}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    % Radar/Spider Chart representation
+    \foreach \x/\label in {0/احتمال, 72/سرعت, 144/پایداری, 216/هزینه انسانی, 288/مقبولیت} {
+        \draw[gray!30] (0,0) -- (\x:4);
+        \node[font=\tiny] at (\x:4.4) {\label};
+    }
+    \foreach \r in {1,2,3,4} \draw[gray!20] circle (\r);
+    
+    % Scenario 1: Non-violent (Blue)
+    \draw[thick, iranblue, fill=iranblue, fill opacity=0.3] (0:3) -- (72:2.5) -- (144:3.5) -- (216:2) -- (288:4) -- cycle;
+    \node[iranblue, font=\tiny\bfseries] at (144:4) {انقلاب مسالمت‌آمیز};
+    
+    % Scenario 2: Armed (Red)
+    \draw[thick, iranred, fill=iranred, fill opacity=0.3] (0:1.5) -- (72:1) -- (144:1) -- (216:4) -- (288:1) -- cycle;
+    \node[iranred, font=\tiny\bfseries] at (216:4.5) {مقاومت مسلحانه};
+    
+    \node[below=4.5cm of goal, align=center, font= \small \color{iranblue!70}] at (0,0) {ارزیابی کیفی سناریوها (نمایه راداری)};
+\end{tikzpicture}
+\captionof{figure}{مقایسه چندبعدی سناریوهای اصلی}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{naghlbox}
+«آینده قابل پیش‌بینی نیست، اما می‌توان برای سناریوهای مختلف آماده شد. هنر استراتژی، انتخاب بهترین مسیر در میان ناشناخته‌هاست.»
+\end{naghlbox}
+
+\section{چارچوب تحلیل سناریوها}
+
+\begin{noktebox}
+هر سناریو بر اساس چهار معیار اصلی ارزیابی می‌شود:
+\begin{enumerate}
+    \item \textbf{احتمال وقوع:} چقدر محتمل است؟
+    \item \textbf{هزینه انسانی:} چه تعداد قربانی؟
+    \item \textbf{مدت زمان:} چقدر طول می‌کشد؟
+    \item \textbf{پایداری نتیجه:} آیا دموکراسی پایدار خواهد بود؟
+\end{enumerate}
+\end{noktebox}
+
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel={هزینه},
+        ylabel={احتمال موفقیت},
+        xmin=0, xmax=10,
+        ymin=0, ymax=10,
+        width=12cm,
+        height=10cm,
+        grid=major,
+        xtick={2,4,6,8},
+        ytick={2,4,6,8},
+        xticklabels={پایین, متوسط, بالا, بسیار بالا},
+        yticklabels={پایین, متوسط, بالا, بسیار بالا},
+    ]
+    % Scenarios as bubbles
+    \addplot[only marks, mark=*, mark size=15pt, fill=iranblue!50, opacity=0.7] coordinates {(5, 6)};
+    \node[font=\tiny] at (axis cs:5,6) {انقلاب مسالمت‌آمیز};
+    
+    \addplot[only marks, mark=*, mark size=12pt, fill=iranred!50, opacity=0.7] coordinates {(9, 3)};
+    \node[font=\tiny] at (axis cs:9,3) {مقاومت مسلحانه};
+    
+    \addplot[only marks, mark=*, mark size=10pt, fill=irangold!50, opacity=0.7] coordinates {(4, 3)};
+    \node[font=\tiny] at (axis cs:4,3) {کودتا};
+    
+    \addplot[only marks, mark=*, mark size=13pt, fill=olgoogreen!50, opacity=0.7] coordinates {(6, 5)};
+    \node[font=\tiny] at (axis cs:6,5) {فروپاشی};
+    
+    \addplot[only marks, mark=*, mark size=8pt, fill=empirepurple!50, opacity=0.7] coordinates {(2, 2)};
+    \node[font=\tiny] at (axis cs:2,2) {مذاکره};
+    \end{axis}
+\end{tikzpicture}
+\captionof{figure}{موقعیت سناریوها در ماتریس هزینه-احتمال}
+\end{center}
+
+\newpage
+
+\section{سناریوی اول: انقلاب مردمی خشونت‌پرهیز}
+
+\begin{scenariobox}{iranblue}{سناریوی ۱: انقلاب مردمی}
+
+\subsection*{توصیف}
+خیزش گسترده مردمی با تاکتیک‌های غیرخشونت‌آمیز که به سقوط نظام منجر می‌شود. الهام‌گرفته از انقلاب‌های مخملی اروپای شرقی.
+
+\subsection*{پیش‌نیازها}
+\begin{itemize}
+    \item ائتلاف گسترده اپوزیسیون
+    \item رهبری منسجم و قابل اعتماد
+    \item یک رویداد آغازگر (Trigger Event)
+    \item بسیج میلیونی در شهرهای بزرگ
+    \item شکاف در نیروهای سرکوب
+\end{itemize}
+
+\subsection*{مراحل اجرا}
+
+\begin{center}
+\begin{tikzpicture}[node distance=1.8cm]
+    \node[block, fill=iranblue!20] (prep) {آماده‌سازی\\(۶-۱۲ ماه)};
+    \node[block, fill=iranblue!30, left=of prep] (trigger) {رویداد آغازگر};
+    \node[block, fill=iranblue!40, left=of trigger] (mass) {بسیج توده‌ای};
+    \node[block, fill=iranblue!50, below=of mass] (split) {شکاف در نظام};
+    \node[block, fill=iranblue!60, right=of split] (fall) {سقوط نظام};
+    \node[block, fill=olgoogreen!50, right=of fall] (trans) {حکومت انتقالی};
+    
+    \draw[arrow] (prep) -- (trigger);
+    \draw[arrow] (trigger) -- (mass);
+    \draw[arrow] (mass) -- (split);
+    \draw[arrow] (split) -- (fall);
+    \draw[arrow] (fall) -- (trans);
+\end{tikzpicture}
+\end{center}
+
+\end{scenariobox}
+
+\begin{table}[H]
+\centering
+\caption{تحلیل هزینه-فایده سناریوی انقلاب مردمی}
+\begin{tabular}{|R{3cm}|C{3cm}|L{6cm}|}
+\hline
+\rowcolor{iranblue!20}
+\textbf{معیار} & \textbf{ارزیابی} & \textbf{توضیح} \\
+\hline
+احتمال & ۳۵٪ & نیازمند شرایط خاص \\
+\hline
+هزینه انسانی & متوسط تا بالا & خطر سرکوب خونین \\
+\hline
+مدت & ۶-۱۸ ماه & پس از آغاز \\
+\hline
+پایداری & بالا & اگر حکومت انتقالی موفق باشد \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{ریسک‌های اصلی}
+
+\begin{enghelabbox}[title=خطرات جدی]
+\begin{itemize}
+    \item سرکوب خونین مشابه دی‌ماه ۱۴۰۴ یا بدتر
+    \item شکست در بسیج کافی
+    \item عدم شکاف در نیروهای امنیتی
+    \item رقابت‌های درونی اپوزیسیون در لحظه حساس
+\end{itemize}
+\end{enghelabbox}
+
+\newpage
+
+\section{سناریوی دوم: مقاومت مسلحانه}
+
+\begin{scenariobox}{iranred}{سناریوی ۲: مقاومت مسلحانه}
+
+\subsection*{توصیف}
+مبارزه مسلحانه علیه نظام، از چریکی تا شورش گسترده. این سناریو پرریسک‌ترین و پرهزینه‌ترین گزینه است.
+
+\subsection*{اشکال مختلف}
+\begin{enumerate}
+    \item \textbf{چریکی شهری:} عملیات کوچک و پراکنده
+    \item \textbf{شورش منطقه‌ای:} کنترل بخش‌هایی از کشور
+    \item \textbf{جنگ داخلی:} درگیری تمام‌عیار
+\end{enumerate}
+
+\end{scenariobox}
+
+\begin{table}[H]
+\centering
+\caption{تحلیل هزینه-فایده سناریوی مسلحانه}
+\begin{tabular}{|R{3cm}|C{3cm}|L{6cm}|}
+\hline
+\rowcolor{iranred!20}
+\textbf{معیار} & \textbf{ارزیابی} & \textbf{توضیح} \\
+\hline
+احتمال موفقیت & ۱۵٪ & بسیار پایین \\
+\hline
+هزینه انسانی & بسیار بالا & صدها هزار تا میلیون‌ها \\
+\hline
+مدت & نامشخص & سال‌ها تا دهه‌ها \\
+\hline
+پایداری & پایین & ریسک دیکتاتوری نظامی \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{enghelabbox}[title=هشدار جدی]
+\textbf{این سناریو توصیه نمی‌شود.} تجربه سوریه و لیبی نشان می‌دهد که مسلح شدن مردم معمولاً به جنگ داخلی، ویرانی و مداخله خارجی منجر می‌شود.
+\end{enghelabbox}
+
+\section{سناریوی سوم: کودتای نظامی}
+
+\begin{scenariobox}{irangold}{سناریوی ۳: کودتای نظامی}
+
+\subsection*{توصیف}
+گروهی از نظامیان (احتمالاً از ارتش یا حتی سپاه) علیه رهبری قیام می‌کنند.
+
+\subsection*{پیش‌نیازها}
+\begin{itemize}
+    \item نارضایتی گسترده در نیروهای مسلح
+    \item شکاف بین فرماندهان و رهبری
+    \item فشار اقتصادی بر نظامیان
+    \item حمایت یا سکوت قدرت‌های خارجی
+\end{itemize}
+
+\end{scenariobox}
+
+\begin{noktebox}
+\textbf{نمونه تاریخی:} انقلاب میخک پرتغال (۱۹۷۴) نشان می‌دهد که کودتای نظامی می‌تواند به دموکراسی منجر شود، اما این استثناست نه قاعده.
+\end{noktebox}
+
+\begin{table}[H]
+\centering
+\caption{تحلیل سناریوی کودتا}
+\begin{tabular}{|R{3cm}|C{3cm}|L{6cm}|}
+\hline
+\rowcolor{irangold!20}
+\textbf{معیار} & \textbf{ارزیابی} & \textbf{توضیح} \\
+\hline
+احتمال & ۱۰٪ & وابستگی شدید نظامیان به نظام \\
+\hline
+هزینه & متوسط & اگر سریع باشد \\
+\hline
+مدت & سریع & روزها تا هفته‌ها \\
+\hline
+پایداری & متوسط & ریسک دیکتاتوری نظامی \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{سناریوی چهارم: فروپاشی از درون}
+
+\begin{scenariobox}{olgoogreen}{سناریوی ۴: فروپاشی}
+
+\subsection*{توصیف}
+نظام به دلیل تضادها و بحران‌های درونی از هم می‌پاشد. مشابه فروپاشی شوروی.
+
+\subsection*{عوامل محرک}
+\begin{itemize}
+    \item بحران جانشینی رهبری
+    \item ورشکستگی اقتصادی
+    \item شورش‌های توده‌ای پی‌درپی
+    \item تشدید تنش‌های جناحی
+    \item از دست دادن متحدان منطقه‌ای
+\end{itemize}
+
+\end{scenariobox}
+
+\begin{center}
+\begin{tikzpicture}
+    % Domino effect visualization
+    \foreach \i/\label in {0/بحران اقتصادی, 1/از دست دادن متحدان, 2/شورش‌های داخلی, 3/شکاف جناحی, 4/بحران جانشینی} {
+        \draw[fill=iranblue!\the\numexpr30+\i*15\relax, rotate=\i*5] (\i*2, 0) rectangle (\i*2+0.8, 2.5);
+        \node[font=\tiny, rotate=90] at (\i*2+0.4, 1.25) {\label};
+    }
+    \draw[thick, ->] (10, 1.25) -- (11, 1.25) node[right] {سقوط};
+\end{tikzpicture}
+\captionof{figure}{اثر دومینویی فروپاشی}
+\end{center}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|R{3cm}|C{3cm}|L{6cm}|}
+\hline
+\rowcolor{olgoogreen!30}
+\textbf{معیار} & \textbf{ارزیابی} & \textbf{توضیح} \\
+\hline
+احتمال & ۲۵٪ & بستگی به تحولات داخلی \\
+\hline
+هزینه & بالا & خطر هرج‌ومرج \\
+\hline
+مدت & متغیر & ماه‌ها تا سال‌ها \\
+\hline
+پایداری & متوسط & نیازمند آمادگی اپوزیسیون \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{سناریوی پنجم: گذار مذاکره‌ای}
+
+\begin{scenariobox}{empireborder}{سناریوی ۵: گذار مذاکره‌ای}
+
+\subsection*{توصیف}
+نظام تحت فشار به مذاکره با اپوزیسیون تن می‌دهد و انتقال قدرت تدریجی صورت می‌گیرد.
+
+\subsection*{پیش‌نیازها}
+\begin{itemize}
+    \item تغییر در محاسبات هزینه-فایده نظام
+    \item تضمین‌های امنیتی برای مقامات
+    \item فشار بین‌المللی هماهنگ
+    \item اپوزیسیون متحد و مشروع به عنوان طرف مذاکره
+\end{itemize}
+
+\end{scenariobox}
+
+\begin{noktebox}
+\textbf{نمونه موفق:} آفریقای جنوبی، جایی که نظام آپارتاید پس از سال‌ها مذاکره قدرت را واگذار کرد. اما شرایط ایران بسیار متفاوت است.
+\end{noktebox}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|R{3cm}|C{3cm}|L{6cm}|}
+\hline
+\rowcolor{empirepurple!20}
+\textbf{معیار} & \textbf{ارزیابی} & \textbf{توضیح} \\
+\hline
+احتمال & ۱۵٪ & نظام اراده‌ای برای مذاکره ندارد \\
+\hline
+هزینه & پایین & کم‌خشونت‌ترین گزینه \\
+\hline
+مدت & طولانی & سال‌ها \\
+\hline
+پایداری & بالا & اگر توافق جامع باشد \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{سناریوی ترکیبی: واقع‌بینانه‌ترین مسیر}
+
+\begin{empirebox}[title=تحلیل کلیدی]
+در عمل، گذار احتمالاً ترکیبی از چند سناریو خواهد بود. محتمل‌ترین مسیر:
+
+\textbf{فشار مردمی + فروپاشی تدریجی + احتمالاً مذاکره در مراحل پایانی}
+\end{empirebox}
+
+\begin{center}
+\begin{tikzpicture}[node distance=2cm, scale=0.9, transform shape]
+    % Multiple paths converging
+    \node[block, fill=iranblue!30] (pressure) at (0, 3) {فشار مردمی\\(اعتراضات، نافرمانی)};
+    \node[block, fill=olgoogreen!30] (fracture) at (0, 0) {شکاف درونی\\(اقتصاد، جناح‌ها)};
+    \node[block, fill=irangold!30] (intl) at (0, -3) {فشار بین‌المللی\\(تحریم، انزوا)};
+    
+    \node[block, fill=iranred!20] (crisis) at (6, 0) {بحران سیستمی};
+    
+    \node[decision] (dec) at (10, 0) {واکنش نظام؟};
+    
+    \node[block, fill=empirepurple!30] (negotiate) at (13, 2) {مذاکره برای خروج};
+    \node[block, fill=iranred!30] (collapse) at (13, -2) {فروپاشی};
+    
+    \node[block, fill=olgoogreen!50] (trans) at (16, 0) {حکومت انتقالی};
+    
+    \draw[arrow] (pressure) -- (crisis);
+    \draw[arrow] (fracture) -- (crisis);
+    \draw[arrow] (intl) -- (crisis);
+    \draw[arrow] (crisis) -- (dec);
+    \draw[arrow] (dec) -- node[above, font=\tiny] {عقلانی} (negotiate);
+    \draw[arrow] (dec) -- node[below, font=\tiny] {لجاجت} (collapse);
+    \draw[arrow] (negotiate) -- (trans);
+    \draw[arrow] (collapse) -- (trans);
+\end{tikzpicture}
+\captionof{figure}{مسیر ترکیبی احتمالی گذار}
+\end{center}
+
+\section{ماتریس مقایسه‌ای سناریوها}
+
+\begin{table}[H]
+\centering
+\caption{جدول مقایسه‌ای کامل سناریوها}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|R{3cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|C{2.5cm}|}
+\hline
+\rowcolor{iranblue!30}
+\textbf{سناریو} & \textbf{احتمال} & \textbf{هزینه} & \textbf{سرعت} & \textbf{پایداری} & \textbf{توصیه} \\
+\hline
+انقلاب خشونت‌پرهیز & ۳۵٪ & متوسط & ۶-۱۸ ماه & بالا & \cellcolor{olgoogreen!30}اولویت \\
+\hline
+مقاومت مسلحانه & ۱۵٪ & بسیار بالا & نامشخص & پایین & \cellcolor{iranred!30}اجتناب \\
+\hline
+کودتا & ۱۰٪ & متوسط & سریع & متوسط & \cellcolor{irangold!30}غیرقابل برنامه‌ریزی \\
+\hline
+فروپاشی & ۲۵٪ & بالا & متغیر & متوسط & \cellcolor{iranblue!20}آمادگی \\
+\hline
+مذاکره & ۱۵٪ & پایین & طولانی & بالا & \cellcolor{empirepurple!20}در صورت امکان \\
+\hline
+\textbf{ترکیبی} & - & متوسط & - & بالا & \cellcolor{olgoogreen!50}\textbf{واقع‌بینانه} \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+\begin{kholasebox}[title=خلاصه فصل]
+\begin{itemize}
+    \item پنج سناریوی اصلی برای گذار قابل تصور است
+    \item انقلاب خشونت‌پرهیز بیشترین احتمال موفقیت را دارد
+    \item مقاومت مسلحانه به شدت توصیه نمی‌شود
+    \item سناریوی ترکیبی واقع‌بینانه‌ترین مسیر است
+    \item آمادگی برای چندین سناریو ضروری است
+\end{itemize}
+\end{kholasebox}

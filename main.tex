@@ -1,0 +1,131 @@
+% main.tex - راهنمای عملی گذار
+% Main Document Entry Point
+
+\input{preamble}
+
+\begin{document}
+
+% ============================================
+% TITLE PAGE
+% ============================================
+\begin{titlepage}
+    \begin{tikzpicture}[remember picture, overlay]
+        % Background gradient
+        \fill[top color=iranblue!20, bottom color=white] 
+            (current page.south west) rectangle (current page.north east);
+        
+        % Decorative elements (TikZ replacement for cover-bg.png)
+        \node[opacity=0.1] at (current page.center) {
+            \begin{tikzpicture}[remember picture, overlay]
+                \foreach \i in {1,...,20} {
+                    \draw[iranblue, ultra thin] (current page.south west) ++(\i*1, \i*2) .. controls +(2,5) and +(-2,-5) .. (current page.north east);
+                }
+            \end{tikzpicture}
+        };
+        
+        % Top decorative bar
+        \fill[iranblue] ([yshift=-2cm]current page.north west) rectangle ([yshift=-2.5cm]current page.north east);
+        \fill[irangold] ([yshift=-2.5cm]current page.north west) rectangle ([yshift=-2.7cm]current page.north east);
+        \fill[irangreen] ([yshift=-2.7cm]current page.north west) rectangle ([yshift=-2.9cm]current page.north east);
+    \end{tikzpicture}
+    
+    \vspace*{4cm}
+    
+    \begin{center}
+        {\Huge\bfseries\color{iranblue} راهنمای عملی گذار}\\[0.8cm]
+        {\LARGE\color{iranblue!80} استراتژی‌ها و سناریوهای رهایی از نظام استبدادی}\\[2cm]
+        
+        % TikZ replacement for main-symbol.png
+        \begin{tikzpicture}[scale=1.5]
+            % Stylized Phoenix (Symbolic)
+            \begin{scope}[iranblue]
+                \draw[ultra thick, fill=iranblue!10] (0, 1) .. controls (-1.5, 2.5) and (-2, 0) .. (0,0) .. controls (2, 0) and (1.5, 2.5) .. (0,1);
+                \draw[thick] (0,1) -- (0, 1.5) node[above] {ققنوس آزادی};
+                % Wings
+                \draw[thick] (-0.5, 0.8) .. controls (-3, 3) and (-3, -1) .. (-1, 0.2);
+                \draw[thick] (0.5, 0.8) .. controls (3, 3) and (3, -1) .. (1, 0.2);
+                % Broken chain
+                \draw[gray, thick] (-1, -0.5) circle(0.15) (-0.7, -0.5) circle(0.15);
+                \draw[gray, thick] (1, -0.5) circle(0.15) (0.7, -0.5) circle(0.15);
+                \draw[iranred, thick] (-0.3, -0.5) -- (0.3, -0.5) node[midway, below=0.2cm, font=\tiny] {گسستن زنجیر};
+            \end{scope}
+        \end{tikzpicture}\\[2cm]
+        
+        {\large نگارش: بهمن ۱۴۰۴}\\[0.5cm]
+        {\normalsize ویرایش اول}
+    \end{center}
+    
+    \vfill
+    
+    \begin{tikzpicture}[remember picture, overlay]
+        % Bottom decorative bar
+        \fill[irangreen] ([yshift=2.9cm]current page.south west) rectangle ([yshift=2.7cm]current page.south east);
+        \fill[irangold] ([yshift=2.7cm]current page.south west) rectangle ([yshift=2.5cm]current page.south east);
+        \fill[iranblue] ([yshift=2.5cm]current page.south west) rectangle ([yshift=2cm]current page.south east);
+    \end{tikzpicture}
+\end{titlepage}
+
+% ============================================
+% FRONT MATTER
+% ============================================
+\frontmatter
+
+% Copyright/Disclaimer Page
+\thispagestyle{empty}
+\vspace*{5cm}
+\begin{center}
+    \begin{minipage}{0.8\textwidth}
+        \begin{noktebox}
+            \textbf{تذکر مهم:} این راهنما صرفاً جهت تحلیل آکادمیک و مطالعات گذار سیاسی تهیه شده است. هرگونه استفاده از محتوای این کتاب بر عهده خواننده است.
+        \end{noktebox}
+    \end{minipage}
+\end{center}
+\newpage
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+% List of Figures
+\listoffigures
+\newpage
+
+% List of Tables
+\listoftables
+\newpage
+
+% ============================================
+% MAIN MATTER
+% ============================================
+\mainmatter
+
+% Chapters
+\include{chapters/ch00-executive-summary}
+\include{chapters/ch01-introduction}
+\include{chapters/ch02-regime-analysis}
+\include{chapters/ch03-opposition-mapping}
+\include{chapters/ch04-transition-scenarios}
+\include{chapters/ch05-international}
+\include{chapters/ch06-strengthening}
+\include{chapters/ch07-transition-mgmt}
+\include{chapters/ch08-risk-analysis}
+\include{chapters/ch09-roadmap}
+\include{chapters/ch10-conclusion}
+
+% ============================================
+% BACK MATTER
+% ============================================
+
+% Appendices
+\appendix
+\include{appendices/app-A-theories}
+\include{appendices/app-B-case-studies}
+\include{appendices/app-C-power-structure}
+\include{appendices/app-D-movements-history}
+\include{appendices/app-E-data-statistics}
+\include{appendices/app-F-human-rights}
+\include{appendices/app-G-bibliography}
+
+\backmatter
+
+\end{document}

@@ -1,0 +1,110 @@
+% app-D-movements-history.tex
+% پیوست د: تاریخ جنبش‌های ایران
+
+\chapter{تاریخ جنبش‌های ایران}
+\label{app:movements-history}
+
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{images/diagrams/timeline.png}
+\end{center}
+
+\section{خط زمانی جنبش‌ها}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % Timeline
+    \draw[thick, iranblue] (0,0) -- (14,0);
+    
+    % Events
+    \foreach \x/\year/\event/\col in {
+        0/۵۷/انقلاب/iranred,
+        2/۷۸/۱۸ تیر/iranblue,
+        4/۸۸/جنبش سبز/olgoogreen,
+        7/۹۶/دی ۹۶/irangold,
+        9/۹۸/آبان ۹۸/iranred,
+        11/۱۴۰۱/مهسا/empirepurple,
+        13/۱۴۰۴/دی ۰۴/iranred
+    }{
+        \draw[thick, \col] (\x, -0.3) -- (\x, 0.3);
+        \fill[\col] (\x, 0) circle (0.15);
+        \node[above, font=\small\bfseries] at (\x, 0.4) {\year};
+        \node[below, font=\tiny, text width=1.2cm, align=center] at (\x, -0.5) {\event};
+    }
+\end{tikzpicture}
+\captionof{figure}{خط زمانی جنبش‌های اعتراضی}
+\end{center}
+
+\section{جنبش دانشجویی ۱۸ تیر ۱۳۷۸}
+
+\begin{itemize}
+    \item \textbf{علت:} بسته شدن روزنامه سلام
+    \item \textbf{گستره:} دانشگاه تهران، سپس سایر شهرها
+    \item \textbf{سرکوب:} حمله انصار حزب‌الله
+    \item \textbf{درس:} اهمیت گسترش به خارج از دانشگاه
+\end{itemize}
+
+\section{جنبش سبز ۱۳۸۸}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|R{3cm}|L{8cm}|}
+\hline
+\rowcolor{olgoogreen!30}
+\textbf{ویژگی} & \textbf{توضیح} \\
+\hline
+علت & تقلب انتخاباتی \\
+\hline
+رهبری & موسوی و کروبی \\
+\hline
+شعار & «رأی من کو؟» \\
+\hline
+گستره & میلیون‌ها نفر در تهران \\
+\hline
+سرکوب & کهریزک، کشتار، زندان \\
+\hline
+نتیجه & شکست، حصر رهبران \\
+\hline
+\end{tabular}
+\caption{مشخصات جنبش سبز}
+\end{table}
+
+\section{خیزش دی‌ماه ۱۳۹۶}
+
+اولین جنبش ضدنظام (نه اصلاح‌طلبانه):
+\begin{itemize}
+    \item شعار «اصلاح‌طلب، اصول‌گرا، دیگه تمومه ماجرا»
+    \item گستره: شهرستان‌ها، طبقات پایین
+    \item سرکوب سریع
+\end{itemize}
+
+\section{خیزش آبان ۱۳۹۸}
+
+\begin{enghelabbox}[title=خونین‌ترین سرکوب]
+\begin{itemize}
+    \item علت: افزایش قیمت بنزین
+    \item کشته: ۱۵۰۰+ (طبق رویترز)
+    \item قطع اینترنت: ۱ هفته
+    \item گستره: سراسری
+\end{itemize}
+\end{enghelabbox}
+
+\section{جنبش مهسا ۱۴۰۱}
+
+\begin{itemize}
+    \item علت: کشته شدن مهسا امینی توسط گشت ارشاد
+    \item شعار: «زن، زندگی، آزادی»
+    \item ویژگی: رهبری زنان، نسل Z
+    \item گستره: سراسری، همه اقشار
+    \item مدت: چندین ماه
+\end{itemize}
+
+\section{روند تحول جنبش‌ها}
+
+\begin{olgoobox}
+\begin{enumerate}
+    \item \textbf{از اصلاح به براندازی:} شعارها رادیکال‌تر شده
+    \item \textbf{از نخبگان به توده:} شهرستان‌ها و طبقات پایین
+    \item \textbf{از مردان به زنان:} نقش پیشتاز زنان
+    \item \textbf{از ترس به شجاعت:} کاهش ترس از نظام
+\end{enumerate}
+\end{olgoobox}

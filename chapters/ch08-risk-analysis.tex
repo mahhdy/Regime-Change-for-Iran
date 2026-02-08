@@ -1,0 +1,151 @@
+% ch08-risk-analysis.tex
+% فصل هشتم: تحلیل ریسک
+
+\chapter{تحلیل ریسک}
+\label{ch:risk-analysis}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    % Heatmap background
+    \fill[iranred!20] (0,3) rectangle (3,6); % High impact, high probability
+    \fill[irangold!20] (0,0) rectangle (3,3); % Low impact, high probability
+    \fill[irangold!20] (3,3) rectangle (6,6); % High impact, low probability
+    \fill[irangreen!20] (3,0) rectangle (6,3); % Low impact, low probability
+    
+    \draw[thick, <->] (0, 0) -- (6.5, 0) node[right] {احتمال};
+    \draw[thick, <->] (0, 0) -- (0, 6.5) node[above] {تأثیر};
+    
+    % Points
+    \node[circle, fill=iranred, inner sep=2pt, label=right:\tiny{سرکوب}] at (2, 5.5) {};
+    \node[circle, fill=iranred!70, inner sep=2pt, label=right:\tiny{جنگ داخلی}] at (1, 5) {};
+    \node[circle, fill=irangold, inner sep=2pt, label=right:\tiny{تجزیه}] at (0.5, 5.8) {};
+    \node[circle, fill=irangreen, inner sep=2pt, label=right:\tiny{اقتصاد}] at (4, 2) {};
+    
+    \node[below=3.5cm of goal, align=center, font= \small \color{iranred!70}] at (3,0) {نقشه حرارتی ریسک‌های استراتژیک};
+\end{tikzpicture}
+\captionof{figure}{ارزیابی توزیع ریسک‌های گذار}
+\end{center}
+
+\begin{naghlbox}
+«مدیریت ریسک یعنی آمادگی برای بدترین و تلاش برای بهترین.»
+\end{naghlbox}
+
+\section{ماتریس ریسک}
+
+\begin{center}
+\begin{tikzpicture}
+    % Grid
+    \draw[step=2cm, gray, thin] (0,0) grid (10,10);
+    
+    % Axes
+    \draw[thick, ->] (0,0) -- (10.5,0) node[right] {احتمال};
+    \draw[thick, ->] (0,0) -- (0,10.5) node[above] {تأثیر};
+    
+    % Labels
+    \foreach \x/\label in {1/کم, 3/متوسط, 5/بالا, 7/بسیار بالا, 9/حداکثر} {
+        \node[font=\tiny] at (\x, -0.3) {\label};
+        \node[font=\tiny] at (-0.5, \x) {\label};
+    }
+    
+    % Color zones
+    \fill[green!20] (0,0) rectangle (4,4);
+    \fill[yellow!30] (4,0) rectangle (10,4);
+    \fill[yellow!30] (0,4) rectangle (4,10);
+    \fill[orange!30] (4,4) rectangle (8,8);
+    \fill[red!30] (8,4) rectangle (10,10);
+    \fill[red!30] (4,8) rectangle (10,10);
+    
+    % Risks
+    \node[draw, circle, fill=white, font=\tiny] at (7, 9) {R1};
+    \node[draw, circle, fill=white, font=\tiny] at (5, 7) {R2};
+    \node[draw, circle, fill=white, font=\tiny] at (3, 8) {R3};
+    \node[draw, circle, fill=white, font=\tiny] at (6, 5) {R4};
+    \node[draw, circle, fill=white, font=\tiny] at (4, 3) {R5};
+\end{tikzpicture}
+\captionof{figure}{ماتریس ریسک ۵×۵}
+\end{center}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|C{1cm}|L{4cm}|C{2cm}|C{2cm}|}
+\hline
+\rowcolor{iranred!20}
+\textbf{کد} & \textbf{ریسک} & \textbf{احتمال} & \textbf{تأثیر} \\
+\hline
+R1 & سرکوب خونین‌تر & بالا & حداکثر \\
+\hline
+R2 & جنگ داخلی & متوسط & بسیار بالا \\
+\hline
+R3 & تجزیه کشور & کم & حداکثر \\
+\hline
+R4 & دیکتاتوری جدید & متوسط & بالا \\
+\hline
+R5 & شکست اقتصادی & متوسط & متوسط \\
+\hline
+\end{tabular}
+\caption{فهرست ریسک‌های اصلی}
+\end{table}
+
+\section{سناریوهای بدترین حالت}
+
+\subsection{سناریو ۱: سرکوب خونین}
+
+\begin{enghelabbox}
+نظام با استفاده از تمام ظرفیت سرکوب، اعتراضات را سرکوب می‌کند.
+\begin{itemize}
+    \item \textbf{تلفات:} هزاران تا ده‌ها هزار
+    \item \textbf{پیامد:} سکوت موقت، خشم انباشته
+    \item \textbf{کاهش:} تاکتیک‌های پراکنده، اجتناب از تجمعات متمرکز
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{سناریو ۲: جنگ داخلی}
+
+\begin{enghelabbox}
+درگیری مسلحانه بین گروه‌های مختلف.
+\begin{itemize}
+    \item \textbf{تلفات:} صدها هزار
+    \item \textbf{پیامد:} ویرانی، مداخله خارجی
+    \item \textbf{کاهش:} اجتناب از مسلح شدن، وحدت اپوزیسیون
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{سناریو ۳: تجزیه}
+
+\begin{enghelabbox}
+جدایی مناطق قومی.
+\begin{itemize}
+    \item \textbf{احتمال:} پایین اما موجود
+    \item \textbf{کاهش:} تضمین حقوق اقلیت‌ها، فدرالیسم
+\end{itemize}
+\end{enghelabbox}
+
+\section{استراتژی‌های کاهش ریسک}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|R{3cm}|L{9cm}|}
+\hline
+\rowcolor{olgoogreen!30}
+\textbf{ریسک} & \textbf{استراتژی کاهش} \\
+\hline
+سرکوب & تاکتیک‌های غیرمتمرکز، حمایت بین‌المللی \\
+\hline
+جنگ داخلی & وحدت اپوزیسیون، خلع سلاح \\
+\hline
+تجزیه & فدرالیسم، حقوق برابر \\
+\hline
+دیکتاتوری & نظارت بین‌المللی، نهادهای قوی \\
+\hline
+\end{tabular}
+\caption{استراتژی‌های کاهش ریسک}
+\end{table}
+
+\begin{kholasebox}[title=خلاصه فصل]
+\begin{itemize}
+    \item ریسک‌های جدی وجود دارند و باید مدیریت شوند
+    \item سرکوب خونین محتمل‌ترین ریسک است
+    \item جنگ داخلی و تجزیه باید به شدت از آنها اجتناب شود
+    \item استراتژی‌های کاهش از قبل باید آماده باشند
+\end{itemize}
+\end{kholasebox}

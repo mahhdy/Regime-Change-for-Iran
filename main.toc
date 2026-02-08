@@ -1,0 +1,168 @@
+\contentsline {chapter}{خلاصه مدیریتی}{1}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}مقدمه}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}چرا این راهنما؟}{7}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}ضرورت و فوریت}{7}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}رویداد دی‌ماه ۱۴۰۴: نقطه عطف}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}چه اتفاقی افتاد؟}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}پیامدها}{8}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}مخاطبان این راهنما}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.4}روش‌شناسی و رویکرد}{9}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}منابع مورد استفاده}{9}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}رویکرد تحلیلی}{9}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}محدودیت‌ها و هشدارها}{10}{section.1.5}%
+\contentsline {section}{\numberline {1.6}نحوه استفاده از این کتاب}{10}{section.1.6}%
+\contentsline {chapter}{\numberline {2}تشریح نظام حاکم}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}ماهیت نظام: شبه‌تمامیت‌خواه}{11}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}ویژگی‌های کلیدی}{12}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}ستون‌های قدرت نظام}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}ستون نظامی-امنیتی}{13}{subsection.2.2.1}%
+\contentsline {subsubsection}{سپاه پاسداران انقلاب اسلامی}{13}{subsubsection*.9}%
+\contentsline {subsubsection}{بسیج مستضعفین}{13}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {2.2.2}ستون ایدئولوژیک-مذهبی}{14}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}ستون اقتصادی-رانتی}{14}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}شبکه‌های وابستگی منطقه‌ای}{15}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}نقاط ضعف و شکاف‌ها}{15}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}بحران مشروعیت}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}بحران اقتصادی}{15}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}شکاف نسلی}{16}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}شکاف مرکز-پیرامون}{16}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}تنش‌های درون‌حکومتی}{16}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}ظرفیت سرکوب: تحلیل واقع‌بینانه}{17}{section.2.4}%
+\contentsline {section}{\numberline {2.5}جمع‌بندی: پتانسیل فروپاشی}{17}{section.2.5}%
+\contentsline {chapter}{\numberline {3}طیف‌شناسی اپوزیسیون}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}نقشه جریانات اپوزیسیون}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}تحلیل هر جریان}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}مشروطه‌خواهان و پهلوی‌گرایان}{20}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}جمهوری‌خواهان سکولار}{21}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}چپ‌ها و سوسیالیست‌ها}{21}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}ملی-مذهبی‌ها و اصلاح‌طلبان خارج‌نشین}{21}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}جنبش‌های قومی-ملی}{22}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}سازمان مجاهدین خلق}{22}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}نقاط همگرایی و واگرایی}{22}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}نقاط همگرایی}{23}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}نقاط واگرایی}{23}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}چرا ائتلاف شکل نمی‌گیرد؟}{23}{section.3.4}%
+\contentsline {section}{\numberline {3.5}پتانسیل‌های ائتلاف‌سازی}{24}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}مدل پیشنهادی ائتلاف}{24}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}توصیه‌های عملی برای هر جریان}{25}{section.3.6}%
+\contentsline {chapter}{\numberline {4}سناریوهای گذار}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}چارچوب تحلیل سناریوها}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}سناریوی اول: انقلاب مردمی خشونت‌پرهیز}{28}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}ریسک‌های اصلی}{28}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}سناریوی دوم: مقاومت مسلحانه}{29}{section.4.3}%
+\contentsline {section}{\numberline {4.4}سناریوی سوم: کودتای نظامی}{30}{section.4.4}%
+\contentsline {section}{\numberline {4.5}سناریوی چهارم: فروپاشی از درون}{31}{section.4.5}%
+\contentsline {section}{\numberline {4.6}سناریوی پنجم: گذار مذاکره‌ای}{32}{section.4.6}%
+\contentsline {section}{\numberline {4.7}سناریوی ترکیبی: واقع‌بینانه‌ترین مسیر}{33}{section.4.7}%
+\contentsline {section}{\numberline {4.8}ماتریس مقایسه‌ای سناریوها}{33}{section.4.8}%
+\contentsline {chapter}{\numberline {5}سناریوهای گذار}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}چارچوب تحلیل سناریوها}{36}{section.5.1}%
+\contentsline {section}{\numberline {5.2}سناریوی اول: انقلاب مردمی خشونت‌پرهیز}{37}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}ریسک‌های اصلی}{37}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}سناریوی دوم: مقاومت مسلحانه}{38}{section.5.3}%
+\contentsline {section}{\numberline {5.4}سناریوی سوم: کودتای نظامی}{39}{section.5.4}%
+\contentsline {section}{\numberline {5.5}سناریوی چهارم: فروپاشی از درون}{40}{section.5.5}%
+\contentsline {section}{\numberline {5.6}سناریوی پنجم: گذار مذاکره‌ای}{41}{section.5.6}%
+\contentsline {section}{\numberline {5.7}سناریوی ترکیبی: واقع‌بینانه‌ترین مسیر}{42}{section.5.7}%
+\contentsline {section}{\numberline {5.8}ماتریس مقایسه‌ای سناریوها}{42}{section.5.8}%
+\contentsline {chapter}{\numberline {6}بُعد بین‌المللی}{45}{chapter.6}%
+\contentsline {section}{\numberline {6.1}بازیگران کلیدی}{46}{section.6.1}%
+\contentsline {section}{\numberline {6.2}انواع مداخله}{46}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}تحریم‌ها و فشار اقتصادی}{46}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}حمایت دیپلماتیک}{46}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}کمک غیرنظامی}{46}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}مداخله نظامی}{47}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}فرصت‌های کنونی}{47}{section.6.3}%
+\contentsline {section}{\numberline {6.4}توصیه‌ها برای دیپلماسی اپوزیسیون}{47}{section.6.4}%
+\contentsline {chapter}{\numberline {7}تقویت اپوزیسیون}{48}{chapter.7}%
+\contentsline {section}{\numberline {7.1}چگونه ما قوی‌تر شویم؟}{48}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}ائتلاف‌سازی عملی}{48}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}ساختارسازی سازمانی}{49}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}ارتباط با داخل کشور}{49}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}چگونه حکومت ضعیف‌تر شود؟}{49}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}شکستن ستون‌های قدرت}{50}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}نافرمانی مدنی}{50}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}استراتژی‌های ارتباطی و رسانه‌ای}{50}{section.7.3}%
+\contentsline {section}{\numberline {7.4}نقش دیاسپورا}{51}{section.7.4}%
+\contentsline {section}{\numberline {7.5}اولویت‌بندی اقدامات}{51}{section.7.5}%
+\contentsline {chapter}{\numberline {8}مدیریت دوره گذار}{52}{chapter.8}%
+\contentsline {section}{\numberline {8.1}چالش‌های «روز بعد»}{52}{section.8.1}%
+\contentsline {section}{\numberline {8.2}جلوگیری از سوریه‌ای شدن}{52}{section.8.2}%
+\contentsline {section}{\numberline {8.3}مدل حکومت انتقالی}{53}{section.8.3}%
+\contentsline {section}{\numberline {8.4}نقش نیروهای مسلح}{53}{section.8.4}%
+\contentsline {section}{\numberline {8.5}عدالت انتقالی}{53}{section.8.5}%
+\contentsline {section}{\numberline {8.6}جدول زمانی دوره گذار}{54}{section.8.6}%
+\contentsline {chapter}{\numberline {9}تحلیل ریسک}{55}{chapter.9}%
+\contentsline {section}{\numberline {9.1}ماتریس ریسک}{56}{section.9.1}%
+\contentsline {section}{\numberline {9.2}سناریوهای بدترین حالت}{56}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}سناریو ۱: سرکوب خونین}{57}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}سناریو ۲: جنگ داخلی}{57}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}سناریو ۳: تجزیه}{57}{subsection.9.2.3}%
+\contentsline {section}{\numberline {9.3}استراتژی‌های کاهش ریسک}{58}{section.9.3}%
+\contentsline {chapter}{\numberline {10}نقشه راه عملیاتی}{59}{chapter.10}%
+\contentsline {section}{\numberline {10.1}مرحله اول: تثبیت (۰-۳ ماه)}{59}{section.10.1}%
+\contentsline {section}{\numberline {10.2}مرحله دوم: ائتلاف‌سازی (۳-۱۲ ماه)}{59}{section.10.2}%
+\contentsline {section}{\numberline {10.3}مرحله سوم: بسیج (۶-۱۸ ماه)}{60}{section.10.3}%
+\contentsline {section}{\numberline {10.4}مرحله چهارم: اقدام}{60}{section.10.4}%
+\contentsline {section}{\numberline {10.5}شاخص‌های پایش پیشرفت}{60}{section.10.5}%
+\contentsline {section}{\numberline {10.6}نقاط تصمیم‌گیری کلیدی}{61}{section.10.6}%
+\contentsline {chapter}{\numberline {11}جمع‌بندی}{62}{chapter.11}%
+\contentsline {section}{\numberline {11.1}ده پیام کلیدی}{62}{section.11.1}%
+\contentsline {section}{\numberline {11.2}فراخوان عمل}{63}{section.11.2}%
+\contentsline {section}{\numberline {11.3}کلام آخر: امید واقع‌بینانه}{63}{section.11.3}%
+\contentsline {chapter}{\numberline {آ}نظریه‌های انقلاب و گذار}{65}{appendix.Alph1}%
+\contentsline {section}{\numberline {آ.1}نظریه ساختاری اسکاچپول}{65}{section.Alph1.1}%
+\contentsline {section}{\numberline {آ.2}نظریه بسیج منابع تیلی}{65}{section.Alph1.2}%
+\contentsline {section}{\numberline {آ.3}۱۹۸ روش جین شارپ}{66}{section.Alph1.3}%
+\contentsline {section}{\numberline {آ.4}انقلاب‌های مخملی: الزامات}{66}{section.Alph1.4}%
+\contentsline {section}{\numberline {آ.5}نظریه گذار دموکراتیک}{67}{section.Alph1.5}%
+\contentsline {section}{\numberline {آ.6}چارچوب ترکیبی پیشنهادی}{67}{section.Alph1.6}%
+\contentsline {chapter}{\numberline {ب}مطالعات موردی}{68}{appendix.Alph2}%
+\contentsline {section}{\numberline {ب.1}نمونه‌های موفق}{68}{section.Alph2.1}%
+\contentsline {subsection}{\numberline {ب.1.1}لهستان: جنبش همبستگی (۱۹۸۰-۱۹۸۹)}{68}{subsection.Alph2.1.1}%
+\contentsline {subsection}{\numberline {ب.1.2}چکسلواکی: انقلاب مخملی (۱۹۸۹)}{69}{subsection.Alph2.1.2}%
+\contentsline {subsection}{\numberline {ب.1.3}آفریقای جنوبی (۱۹۹۰-۱۹۹۴)}{69}{subsection.Alph2.1.3}%
+\contentsline {subsection}{\numberline {ب.1.4}پرتغال: انقلاب میخک (۱۹۷۴)}{69}{subsection.Alph2.1.4}%
+\contentsline {section}{\numberline {ب.2}نمونه‌های ناموفق}{69}{section.Alph2.2}%
+\contentsline {subsection}{\numberline {ب.2.1}سوریه (۲۰۱۱-حال)}{69}{subsection.Alph2.2.1}%
+\contentsline {subsection}{\numberline {ب.2.2}ونزوئلا}{70}{subsection.Alph2.2.2}%
+\contentsline {section}{\numberline {ب.3}جدول مقایسه‌ای}{70}{section.Alph2.3}%
+\contentsline {section}{\numberline {ب.4}نتیجه‌گیری}{70}{section.Alph2.4}%
+\contentsline {chapter}{\numberline {پ}ساختار قدرت جمهوری اسلامی}{71}{appendix.Alph3}%
+\contentsline {section}{\numberline {پ.1}نمودار سازمانی}{71}{section.Alph3.1}%
+\contentsline {section}{\numberline {پ.2}بیت رهبری}{72}{section.Alph3.2}%
+\contentsline {section}{\numberline {پ.3}سپاه پاسداران}{72}{section.Alph3.3}%
+\contentsline {section}{\numberline {پ.4}شبکه‌های اقتصادی}{72}{section.Alph3.4}%
+\contentsline {section}{\numberline {پ.5}نقاط آسیب‌پذیری}{73}{section.Alph3.5}%
+\contentsline {chapter}{\numberline {ت}تاریخ جنبش‌های ایران}{74}{appendix.Alph4}%
+\contentsline {section}{\numberline {ت.1}خط زمانی جنبش‌ها}{74}{section.Alph4.1}%
+\contentsline {section}{\numberline {ت.2}جنبش دانشجویی ۱۸ تیر ۱۳۷۸}{74}{section.Alph4.2}%
+\contentsline {section}{\numberline {ت.3}جنبش سبز ۱۳۸۸}{75}{section.Alph4.3}%
+\contentsline {section}{\numberline {ت.4}خیزش دی‌ماه ۱۳۹۶}{75}{section.Alph4.4}%
+\contentsline {section}{\numberline {ت.5}خیزش آبان ۱۳۹۸}{75}{section.Alph4.5}%
+\contentsline {section}{\numberline {ت.6}جنبش مهسا ۱۴۰۱}{75}{section.Alph4.6}%
+\contentsline {section}{\numberline {ت.7}روند تحول جنبش‌ها}{76}{section.Alph4.7}%
+\contentsline {chapter}{\numberline {ث}آمار و داده‌ها}{77}{appendix.Alph5}%
+\contentsline {section}{\numberline {ث.1}داده‌های جمعیتی}{77}{section.Alph5.1}%
+\contentsline {section}{\numberline {ث.2}داده‌های اقتصادی}{78}{section.Alph5.2}%
+\contentsline {section}{\numberline {ث.3}داده‌های نظامی}{79}{section.Alph5.3}%
+\contentsline {section}{\numberline {ث.4}آمار سرکوب}{79}{section.Alph5.4}%
+\contentsline {chapter}{\numberline {ج}مستندات حقوق بشری}{80}{appendix.Alph6}%
+\contentsline {section}{\numberline {ج.1}اعدام‌ها}{80}{section.Alph6.1}%
+\contentsline {section}{\numberline {ج.2}زندانیان سیاسی}{80}{section.Alph6.2}%
+\contentsline {section}{\numberline {ج.3}شکنجه و بدرفتاری}{81}{section.Alph6.3}%
+\contentsline {section}{\numberline {ج.4}سرکوب زنان}{81}{section.Alph6.4}%
+\contentsline {section}{\numberline {ج.5}سرکوب اقلیت‌ها}{81}{section.Alph6.5}%
+\contentsline {section}{\numberline {ج.6}منابع مستندسازی}{82}{section.Alph6.6}%
+\contentsline {section}{\numberline {ج.7}اهمیت مستندسازی}{82}{section.Alph6.7}%
+\contentsline {chapter}{\numberline {چ}کتاب‌شناسی}{83}{appendix.Alph7}%
+\contentsline {section}{\numberline {چ.1}منابع فارسی}{83}{section.Alph7.1}%
+\contentsline {subsection}{\numberline {چ.1.1}جنبش‌های اجتماعی}{83}{subsection.Alph7.1.1}%
+\contentsline {subsection}{\numberline {چ.1.2}تحلیل سیاسی}{83}{subsection.Alph7.1.2}%
+\contentsline {section}{\numberline {چ.2}منابع انگلیسی}{83}{section.Alph7.2}%
+\contentsline {subsection}{\numberline {چ.2.1}نظریه انقلاب}{83}{subsection.Alph7.2.1}%
+\contentsline {subsection}{\numberline {چ.2.2}گذار دموکراتیک}{83}{subsection.Alph7.2.2}%
+\contentsline {subsection}{\numberline {چ.2.3}ایران معاصر}{84}{subsection.Alph7.2.3}%
+\contentsline {section}{\numberline {چ.3}گزارش‌ها و مستندات}{84}{section.Alph7.3}%
+\contentsline {section}{\numberline {چ.4}منابع آنلاین}{84}{section.Alph7.4}%
+\contentsline {section}{\numberline {چ.5}پایگاه‌های داده}{84}{section.Alph7.5}%

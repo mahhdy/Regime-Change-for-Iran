@@ -1,0 +1,346 @@
+% preamble.tex - Persian RTL Book Configuration
+% راهنمای عملی گذار
+% *** نسخه اصلاح‌شده ***
+
+% ============================================
+% DOCUMENT CLASS SETTINGS
+% ============================================
+\documentclass[12pt, letterpaper, openany]{book}
+
+% ============================================
+% CORE PACKAGES (ترتیب مهم است!)
+% ============================================
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}        % ← اصلاح ۱: گزینه table برای \rowcolor
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{hyperref}
+
+% ============================================
+% TikZ LIBRARIES
+% ============================================
+\usetikzlibrary{
+    shapes.geometric,
+    arrows.meta,
+    positioning,
+    calc,
+    backgrounds,
+    fit,
+    decorations.pathreplacing,
+    matrix,
+    shadows,
+    mindmap                        % ← اصلاح ۲: اضافه شد برای concept و mindmap
+}
+\pgfplotsset{compat=1.18}
+\tcbuselibrary{skins, breakable, theorems}
+
+% ============================================
+% PAGE GEOMETRY
+% ============================================
+\geometry{
+    top=2.5cm,
+    bottom=2.5cm,
+    left=2cm,
+    right=2.5cm,
+    headheight=15pt                % ← اصلاح ۳: از ۱۴pt به ۱۵pt
+}
+
+% ============================================
+% *** xepersian — حتماً آخرین پکیج! ***
+% ============================================
+\usepackage{xepersian}             % ← اصلاح ۴: منتقل شد به آخر
+
+% ============================================
+% PERSIAN FONT SETTINGS
+% (باید بعد از xepersian باشد)
+% ============================================
+\settextfont[Scale=1.1]{XB Zar}
+\setlatintextfont{Times New Roman}
+\setdigitfont{XB Zar}
+
+% Fallback if XB Zar not available - uncomment below:
+% \settextfont[Scale=1.1]{Vazirmatn}
+% \setdigitfont{Vazirmatn}
+
+% ============================================
+% COLOR DEFINITIONS
+% ============================================
+% Primary Colors
+\definecolor{iranblue}{RGB}{0, 56, 147}
+\definecolor{irangold}{RGB}{218, 165, 32}
+\definecolor{irangreen}{RGB}{34, 139, 34}
+\definecolor{iranred}{RGB}{200, 16, 46}
+
+% Box Colors
+\definecolor{kholaseblue}{RGB}{230, 240, 250}
+\definecolor{kholaseborder}{RGB}{70, 130, 180}
+\definecolor{naghlgold}{RGB}{255, 248, 220}
+\definecolor{naghlborder}{RGB}{218, 165, 32}
+\definecolor{olgoogreen}{RGB}{232, 245, 233}
+\definecolor{olgooborder}{RGB}{46, 125, 50}
+\definecolor{enghelabred}{RGB}{255, 235, 238}
+\definecolor{enghelabborder}{RGB}{198, 40, 40}
+\definecolor{empirepurple}{RGB}{243, 229, 245}
+\definecolor{empireborder}{RGB}{123, 31, 162}
+\definecolor{noktegray}{RGB}{245, 245, 245}
+\definecolor{nokteborder}{RGB}{117, 117, 117}
+
+% ============================================
+% CUSTOM COLORED BOXES
+% ============================================
+
+% خلاصه (Summary) - Blue Box
+\newtcolorbox{kholasebox}[1][]{
+    enhanced,
+    breakable,
+    colback=kholaseblue,
+    colframe=kholaseborder,
+    arc=4pt,
+    boxrule=1.5pt,
+    left=10pt,
+    right=10pt,
+    top=10pt,
+    bottom=10pt,
+    fonttitle=\bfseries\large,
+    title={خلاصه},
+    attach boxed title to top right={yshift=-3mm, xshift=-5mm},
+    boxed title style={colback=kholaseborder, colframe=kholaseborder},
+    #1
+}
+
+% نقل قول (Quote) - Gold Box
+\newtcolorbox{naghlbox}[1][]{
+    enhanced,
+    breakable,
+    colback=naghlgold,
+    colframe=naghlborder,
+    arc=4pt,
+    boxrule=1.5pt,
+    left=15pt,
+    right=15pt,
+    top=10pt,
+    bottom=10pt,
+    borderline east={4pt}{0pt}{naghlborder},  % ← اصلاح ۵: east به‌جای west برای RTL
+    #1
+}
+
+% الگو (Pattern/Lesson) - Green Box
+\newtcolorbox{olgoobox}[1][]{
+    enhanced,
+    breakable,
+    colback=olgoogreen,
+    colframe=olgooborder,
+    arc=4pt,
+    boxrule=1.5pt,
+    left=10pt,
+    right=10pt,
+    top=10pt,
+    bottom=10pt,
+    fonttitle=\bfseries\large,
+    title={الگو و درس},
+    attach boxed title to top right={yshift=-3mm, xshift=-5mm},
+    boxed title style={colback=olgooborder, colframe=olgooborder},
+    #1
+}
+
+% هشدار/انقلاب (Warning/Risk) - Red Box
+\newtcolorbox{enghelabbox}[1][]{
+    enhanced,
+    breakable,
+    colback=enghelabred,
+    colframe=enghelabborder,
+    arc=4pt,
+    boxrule=2pt,
+    left=10pt,
+    right=10pt,
+    top=10pt,
+    bottom=10pt,
+    fonttitle=\bfseries\large,
+    title={هشدار},
+    attach boxed title to top right={yshift=-3mm, xshift=-5mm},
+    boxed title style={colback=enghelabborder, colframe=enghelabborder},
+    #1
+}
+
+% نکته استراتژیک (Strategic Note) - Purple Box
+\newtcolorbox{empirebox}[1][]{
+    enhanced,
+    breakable,
+    colback=empirepurple,
+    colframe=empireborder,
+    arc=4pt,
+    boxrule=1.5pt,
+    left=10pt,
+    right=10pt,
+    top=10pt,
+    bottom=10pt,
+    fonttitle=\bfseries\large,
+    title={نکته استراتژیک},
+    attach boxed title to top right={yshift=-3mm, xshift=-5mm},
+    boxed title style={colback=empireborder, colframe=empireborder},
+    #1
+}
+
+% نکته فنی (Technical Note) - Gray Box
+\newtcolorbox{noktebox}[1][]{
+    enhanced,
+    breakable,
+    colback=noktegray,
+    colframe=nokteborder,
+    arc=4pt,
+    boxrule=1pt,
+    left=10pt,
+    right=10pt,
+    top=8pt,
+    bottom=8pt,
+    #1
+}
+
+% ============================================
+% CHAPTER AND SECTION STYLING
+% ============================================
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries\color{iranblue}}
+    {\chaptertitlename\ \thechapter}
+    {20pt}
+    {\Huge}
+    
+\titleformat{\section}
+    {\normalfont\Large\bfseries\color{iranblue}}
+    {\thesection}
+    {1em}
+    {}
+
+\titleformat{\subsection}
+    {\normalfont\large\bfseries\color{iranblue!80}}
+    {\thesubsection}
+    {1em}
+    {}
+
+% ============================================
+% HEADER AND FOOTER
+% ============================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ============================================
+% HYPERREF SETTINGS
+% ============================================
+\hypersetup{
+    colorlinks=true,
+    linkcolor=iranblue,
+    filecolor=irangreen,
+    urlcolor=iranblue!70,
+    citecolor=irangreen,
+    pdftitle={راهنمای عملی گذار},
+    pdfauthor={},
+    pdfsubject={استراتژی‌ها و سناریوهای رهایی از نظام استبدادی},
+    pdfkeywords={ایران، گذار، دموکراسی، اپوزیسیون}
+}
+
+% ============================================
+% CUSTOM COMMANDS
+% ============================================
+\newcommand{\keyword}[1]{\textbf{\textcolor{iranblue}{#1}}}
+\newcommand{\important}[1]{\textbf{\textcolor{iranred}{#1}}}
+\newcommand{\scenario}[1]{\textit{\textcolor{empireborder}{#1}}}
+
+% ============================================
+% TABLE STYLING
+% ============================================
+\renewcommand{\arraystretch}{1.4}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% ============================================
+% LIST STYLING
+% ============================================
+\setlist[itemize]{rightmargin=2em, itemsep=0.3em}
+\setlist[enumerate]{rightmargin=2em, itemsep=0.3em}
+
+% ============================================
+% CAPTION STYLING
+% ============================================
+\captionsetup{
+    font=small,
+    labelfont=bf,
+    format=hang,
+    justification=justified,       % ← اصلاح ۶: تغییر از raggedright
+    singlelinecheck=false
+}
+
+% ============================================
+% CUSTOM ENVIRONMENTS FOR SCENARIOS
+% ============================================
+\newenvironment{scenariobox}[2][]{
+    \begin{tcolorbox}[
+        enhanced,
+        breakable,
+        colback=white,
+        colframe=#1,
+        arc=6pt,
+        boxrule=2pt,
+        left=12pt,
+        right=12pt,
+        top=12pt,
+        bottom=12pt,
+        fonttitle=\bfseries\Large,
+        title={#2},
+        attach boxed title to top right={yshift=-3mm, xshift=-5mm},
+        boxed title style={colback=#1, colframe=#1, arc=3pt},
+        shadow={2mm}{-2mm}{0mm}{black!30}
+    ]
+}{
+    \end{tcolorbox}
+}
+
+% SWOT Table Environment
+\newenvironment{swottable}{
+    \begin{center}
+    \begin{tabular}{|C{0.45\textwidth}|C{0.45\textwidth}|}
+    \hline
+    \rowcolor{olgoogreen} \textbf{نقاط قوت (S)} & \textbf{نقاط ضعف (W)} \\
+    \hline
+}{
+    \hline
+    \end{tabular}
+    \end{center}
+}
+
+% ============================================
+% TIKZ STYLES FOR DIAGRAMS
+% ← اصلاح ۷: تغییر از \tikzstyle (منسوخ) به \tikzset
+% ============================================
+\tikzset{
+    block/.style={rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=iranblue, fill=kholaseblue, font=\bfseries},
+    arrow/.style={thick, ->, >=stealth, color=iranblue},
+    decision/.style={diamond, aspect=2, draw=irangold, fill=naghlgold, text centered, font=\bfseries},
+    process/.style={rectangle, draw=irangreen, fill=olgoogreen, text centered, minimum width=2.5cm, minimum height=1cm},
+    warning/.style={rectangle, rounded corners, draw=iranred, fill=enghelabred, text centered, font=\bfseries},
+    % New Infographic Styles
+    concept/.style={circle, draw=iranblue, fill=iranblue!10, text centered, minimum size=2cm, font=\bfseries},
+    step/.style={rectangle, rounded corners=10pt, draw=iranblue!50, fill=white, text centered, minimum width=4cm, minimum height=1.5cm, thick},
+    icon/.style={circle, draw=irangold, fill=irangold!20, minimum size=1cm},
+    connection/.style={ultra thick, iranblue!30, -{Stealth[scale=1.5]}},
+    background_rect/.style={fill=noktegray!50, rounded corners=15pt, draw=iranblue!20, dashed}
+}

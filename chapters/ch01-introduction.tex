@@ -1,0 +1,178 @@
+% ch01-introduction.tex
+% فصل اول: مقدمه
+
+\chapter{مقدمه}
+\label{ch:introduction}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    % Road
+    \draw[thick, iranblue!30, fill=noktegray] (-5, -2) -- (5, -2) -- (1, 3) -- (-1, 3) -- cycle;
+    \draw[dashed, iranblue!50] (0, -2) -- (0, 3);
+    
+    % Signpost
+    \draw[ultra thick, brown] (0, 0.5) -- (0, -0.5);
+    \node[rectangle, draw=iranblue, fill=white, rounded corners, minimum width=3cm, rotate=15] at (2, 1.5) {دموکراسی و صلح};
+    \node[rectangle, draw=iranred, fill=white, rounded corners, minimum width=3cm, rotate=-15] at (-2, 1.5) {فروپاشی و جنگ};
+    
+    % Label
+    \node[concept, scale=0.7] at (0, -3) {ایران در\\دو راهی};
+    
+    % Arrows showing choice
+    \draw[connection, iranblue] (0, -1) .. controls (1, 0) .. (2, 1);
+    \draw[connection, iranred] (0, -1) .. controls (-1, 0) .. (-2, 1);
+\end{tikzpicture}
+\captionof{figure}{ایران در دوراهی سرنوشت‌ساز}
+\end{center}
+
+\vspace{1cm}
+
+\begin{naghlbox}
+«تاریخ به ما می‌آموزد که هیچ نظام استبدادی ابدی نیست. سوال این نیست که آیا تغییر خواهد آمد، بلکه سوال این است که چگونه و با چه هزینه‌ای.»
+\end{naghlbox}
+
+\section{چرا این راهنما؟}
+
+ایران در مقطعی تاریخی قرار گرفته که نیازمند تحلیل دقیق و برنامه‌ریزی استراتژیک است. این راهنما با هدف پر کردن خلأ موجود در ادبیات فارسی درباره \keyword{استراتژی‌های گذار} تهیه شده است.
+
+\subsection{ضرورت و فوریت}
+
+\begin{itemize}
+    \item \textbf{بحران مشروعیت نظام:} جمهوری اسلامی با عمیق‌ترین بحران مشروعیت تاریخ خود مواجه است
+    \item \textbf{تغییر نسلی:} نسل جوان فاقد هرگونه وابستگی به نظام است
+    \item \textbf{فشار بین‌المللی:} محیط بین‌المللی نسبت به گذشته مساعدتر است
+    \item \textbf{خلأ استراتژیک:} اپوزیسیون فاقد نقشه راه منسجم است
+\end{itemize}
+
+\begin{olgoobox}[title=درس تاریخی]
+تجربه انقلاب ۱۳۵۷ نشان می‌دهد که سرنگونی یک نظام بدون برنامه‌ریزی برای «روز بعد» می‌تواند به استبداد جدیدی منجر شود. این راهنما تلاش دارد از تکرار آن اشتباه جلوگیری کند.
+\end{olgoobox}
+
+\section{رویداد دی‌ماه ۱۴۰۴: نقطه عطف}
+
+\begin{center}
+\begin{tikzpicture}
+    % Timeline
+    \draw[thick, iranblue] (0,0) -- (14,0);
+    
+    % Events
+    \foreach \x/\year/\event in {
+        0/۱۳۵۷/انقلاب,
+        2/۱۳۷۸/۱۸ تیر,
+        4/۱۳۸۸/جنبش سبز,
+        6.5/۱۳۹۶/دی‌ماه,
+        9/۱۴۰۱/مهسا,
+        12/۱۴۰۴/دی‌ماه
+    }{
+        \draw[thick, iranblue] (\x, -0.2) -- (\x, 0.2);
+        \node[above, font=\small\bfseries] at (\x, 0.3) {\year};
+        \node[below, font=\footnotesize, text width=1.5cm, align=center] at (\x, -0.4) {\event};
+    }
+    
+    % Highlight last event
+    \draw[fill=iranred, iranred] (12,0) circle (0.25);
+\end{tikzpicture}
+\captionof{figure}{خط زمانی اعتراضات مهم ایران}
+\end{center}
+
+\subsection{چه اتفاقی افتاد؟}
+
+رویدادهای دی‌ماه ۱۴۰۴ از نظر شدت سرکوب و گستردگی اعتراضات، نقطه عطفی در تاریخ جمهوری اسلامی محسوب می‌شود:
+
+\begin{enghelabbox}[title=آمار تکان‌دهنده]
+\begin{itemize}
+    \item بیش از ۱۵۰۰ کشته (طبق گزارش‌های مستقل)
+    \item هزاران بازداشتی
+    \item قطع کامل اینترنت به مدت یک هفته
+    \item استفاده از تیراندازی مستقیم به معترضان
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{پیامدها}
+
+\begin{enumerate}
+    \item \textbf{قطع رابطه نهایی ملت و حکومت:} حتی معتقدان به اصلاحات درون‌نظام دیگر امیدی ندارند
+    \item \textbf{افزایش فشار بین‌المللی:} کشورهای غربی موضع سخت‌تری گرفتند
+    \item \textbf{بحران اقتصادی عمیق‌تر:} تحریم‌های جدید و فرار سرمایه
+    \item \textbf{شکاف در درون نظام:} تنش بین جناح‌ها تشدید شد
+\end{enumerate}
+
+\section{مخاطبان این راهنما}
+
+این راهنما برای طیف گسترده‌ای از مخاطبان نوشته شده است:
+
+\begin{center}
+\begin{tikzpicture}[
+    mindmap,
+    concept color=iranblue!50,
+    every node/.style={concept, circular drop shadow, minimum size=2cm},
+    level 1 concept/.append style={sibling angle=72, font=\small},
+    level 2/.append style={minimum size=1.2cm, sibling angle=45, font=\tiny}
+]
+    \node[concept, scale=0.8] {مخاطبان}
+        child[concept color=irangreen!50] { node {فعالان\\سیاسی} }
+        child[concept color=irangold!50] { node {رهبران\\اپوزیسیون} }
+        child[concept color=empireborder!30] { node {پژوهشگران} }
+        child[concept color=iranred!30] { node {دیپلمات‌ها} }
+        child[concept color=nokteborder!30] { node {شهروندان\\علاقه‌مند} };
+\end{tikzpicture}
+\end{center}
+
+\section{روش‌شناسی و رویکرد}
+
+\subsection{منابع مورد استفاده}
+
+\begin{itemize}
+    \item \textbf{نظریه‌های آکادمیک:} اسکاچپول، تیلی، شارپ و نظریه‌های گذار دموکراتیک
+    \item \textbf{مطالعات موردی:} تحلیل ۱۲ نمونه گذار در تاریخ معاصر
+    \item \textbf{داده‌های میدانی:} گزارش‌های سازمان‌های حقوق بشری
+    \item \textbf{مصاحبه‌ها:} گفتگو با فعالان و کارشناسان (محرمانه)
+\end{itemize}
+
+\subsection{رویکرد تحلیلی}
+
+\begin{noktebox}
+این راهنما از رویکرد \textbf{واقع‌گرایانه} پیروی می‌کند: نه خوش‌بینی بی‌اساس و نه بدبینی فلج‌کننده. هدف ارائه تحلیلی است که بتواند مبنای تصمیم‌گیری عملی قرار گیرد.
+\end{noktebox}
+
+\section{محدودیت‌ها و هشدارها}
+
+\begin{enghelabbox}[title=هشدارهای مهم]
+\begin{enumerate}
+    \item \textbf{عدم قطعیت:} آینده‌نگاری سیاسی همواره با عدم قطعیت همراه است
+    \item \textbf{پویایی وضعیت:} شرایط به سرعت تغییر می‌کند؛ این تحلیل بر اساس داده‌های بهمن ۱۴۰۴ است
+    \item \textbf{ریسک امنیتی:} استفاده از این راهنما در داخل ایران می‌تواند خطرناک باشد
+    \item \textbf{عدم مسئولیت:} نویسندگان مسئولیتی در قبال استفاده عملی از این راهنما ندارند
+\end{enumerate}
+\end{enghelabbox}
+
+\section{نحوه استفاده از این کتاب}
+
+\begin{table}[H]
+\centering
+\caption{نقشه راهنمای مطالعه}
+\begin{tabular}{|C{2cm}|L{6cm}|C{3cm}|}
+\hline
+\rowcolor{iranblue!20}
+\textbf{سطح} & \textbf{توضیح} & \textbf{فصول پیشنهادی} \\
+\hline
+سریع & خلاصه وضعیت و توصیه‌ها & فصل ۰ \\
+\hline
+متوسط & درک کلی از وضعیت و سناریوها & فصول ۱-۴ \\
+\hline
+عمیق & تحلیل جامع و آمادگی اجرایی & همه فصول \\
+\hline
+تخصصی & پژوهش و ارجاع آکادمیک & پیوست‌ها \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{kholasebox}[title=خلاصه فصل]
+\begin{itemize}
+    \item این راهنما ابزاری برای تفکر استراتژیک درباره گذار سیاسی در ایران است
+    \item رویدادهای اخیر نقطه عطفی در تاریخ جمهوری اسلامی هستند
+    \item هدف ارائه تحلیل واقع‌بینانه، نه خوش‌بینانه یا بدبینانه است
+    \item مخاطبان متنوعی می‌توانند از این راهنما بهره ببرند
+    \item امنیت شخصی در استفاده از این کتاب را جدی بگیرید
+\end{itemize}
+\end{kholasebox}

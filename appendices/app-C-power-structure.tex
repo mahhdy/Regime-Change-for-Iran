@@ -1,0 +1,102 @@
+% app-C-power-structure.tex
+% پیوست ج: ساختار قدرت ج.ا.
+
+\chapter{ساختار قدرت جمهوری اسلامی}
+\label{app:power-structure}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{images/diagrams/power-structure.png}
+\end{center}
+
+\section{نمودار سازمانی}
+
+\begin{center}
+\begin{tikzpicture}[
+    org/.style={rectangle, rounded corners, draw, minimum width=2.5cm, minimum height=0.7cm, font=\small, align=center},
+    scale=0.8, transform shape
+]
+    % Top - Leader
+    \node[org, fill=iranred!40] (leader) at (0, 0) {رهبر};
+    
+    % Second level
+    \node[org, fill=iranblue!30] (sepah) at (-5, -2) {سپاه};
+    \node[org, fill=iranblue!30] (judiciary) at (-2, -2) {قوه قضائیه};
+    \node[org, fill=irangold!30] (expediency) at (2, -2) {مجمع تشخیص};
+    \node[org, fill=irangold!30] (guardian) at (5, -2) {شورای نگهبان};
+    
+    % President path
+    \node[org, fill=olgoogreen!30] (president) at (0, -4) {رئیس‌جمهور};
+    \node[org, fill=olgoogreen!20] (cabinet) at (0, -5.5) {هیئت دولت};
+    
+    % Parliament
+    \node[org, fill=empirepurple!30] (majlis) at (-5, -4) {مجلس};
+    
+    % Connections
+    \draw[thick, ->] (leader) -- (sepah);
+    \draw[thick, ->] (leader) -- (judiciary);
+    \draw[thick, ->] (leader) -- (expediency);
+    \draw[thick, ->] (leader) -- (guardian);
+    \draw[thick, ->] (leader) -- (president);
+    \draw[thick, ->] (president) -- (cabinet);
+    \draw[thick, dashed, ->] (guardian) -- (majlis);
+    \draw[thick, dashed, ->] (guardian) -- (president);
+\end{tikzpicture}
+\captionof{figure}{ساختار قدرت رسمی}
+\end{center}
+
+\section{بیت رهبری}
+
+مرکز اصلی قدرت که شامل:
+\begin{itemize}
+    \item دفتر رهبری
+    \item مشاوران ارشد
+    \item نمایندگان ولی فقیه در نهادها
+    \item شبکه‌های مالی (ستاد اجرایی فرمان امام)
+\end{itemize}
+
+\section{سپاه پاسداران}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|R{3cm}|L{8cm}|}
+\hline
+\rowcolor{iranred!20}
+\textbf{بخش} & \textbf{وظیفه} \\
+\hline
+نیروی زمینی & کنترل داخلی، سرکوب \\
+\hline
+نیروی دریایی & خلیج فارس \\
+\hline
+نیروی هوافضا & موشک‌ها، پهپادها \\
+\hline
+نیروی قدس & عملیات خارجی، نیروهای نیابتی \\
+\hline
+بسیج & سرکوب داخلی، جاسوسی \\
+\hline
+اطلاعات سپاه & جاسوسی، ضداطلاعات \\
+\hline
+خاتم‌الانبیا & امپراتوری اقتصادی \\
+\hline
+\end{tabular}
+\caption{بخش‌های سپاه پاسداران}
+\end{table}
+
+\section{شبکه‌های اقتصادی}
+
+\begin{itemize}
+    \item \textbf{ستاد اجرایی فرمان امام:} تخمین ۲۰۰ میلیارد دلار
+    \item \textbf{بنیاد مستضعفان:} تخمین ۱۰۰ میلیارد دلار
+    \item \textbf{شرکت‌های سپاه:} تخمین ۵۰ میلیارد دلار
+\end{itemize}
+
+\section{نقاط آسیب‌پذیری}
+
+\begin{enghelabbox}
+\begin{enumerate}
+    \item \textbf{جانشینی رهبری:} فقدان جانشین واضح
+    \item \textbf{وابستگی به نفت:} تحریم‌پذیری
+    \item \textbf{تنش جناحی:} رقابت‌های درونی
+    \item \textbf{فساد سیستماتیک:} بی‌اعتمادی عمومی
+    \item \textbf{انزوای بین‌المللی:} کاهش متحدان
+\end{enumerate}
+\end{enghelabbox}

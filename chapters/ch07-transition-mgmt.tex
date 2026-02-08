@@ -1,0 +1,137 @@
+% ch07-transition-mgmt.tex
+% فصل هفتم: مدیریت دوره گذار
+
+\chapter{مدیریت دوره گذار}
+\label{ch:transition-mgmt}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9, transform shape]
+    % Transition Bridge
+    \draw[ultra thick, iranblue!30, fill=iranblue!5) (-5, -1) rectangle (5, 1);
+    \node[font=\small\bfseries] at (0, 0) {پل گذار (حکومت انتقالی)};
+    
+    % Sides
+    \node[concept, scale=0.7, fill=iranred!20] at (-4, 2) {رژیم استبدادی};
+    \node[concept, scale=0.7, fill=irangreen!20] at (4, 2) {دموکراسی پایدار};
+    
+    % Challenges (Arrows pushing down)
+    \draw[connection, iranred] (-2, 2.5) -- (-2, 1.2);
+    \node[above, font=\tiny] at (-2, 2.5) {خطر هرج‌ومرج};
+    
+    \draw[connection, iranred] (2, 2.5) -- (2, 1.2);
+    \node[above, font=\tiny] at (2, 2.5) {فشار تندروها};
+    
+    % Support (Arrows pushing up)
+    \draw[connection, iranblue] (0, -2.5) -- (0, -1.2);
+    \node[below, font=\tiny] at (0, -2.5) {حمایت بین‌المللی و وفاق ملی};
+\end{tikzpicture}
+\captionof{figure}{مدل مدیریت تعادل در دوره گذار}
+\end{center}
+
+\begin{naghlbox}
+«سخت‌ترین بخش انقلاب، نه سرنگونی که ساختن است. روز بعد از پیروزی آغاز آزمون واقعی است.»
+\end{naghlbox}
+
+\section{چالش‌های «روز بعد»}
+
+\begin{enghelabbox}[title=خطرات فوری]
+\begin{itemize}
+    \item \textbf{خلأ قدرت:} فقدان نهادهای تصمیم‌گیری
+    \item \textbf{امنیت:} خطر شورش، غارت، انتقام‌جویی
+    \item \textbf{اقتصاد:} بحران ارز، کمبود کالا
+    \item \textbf{انتقام:} خطر کشتار عوامل نظام
+\end{itemize}
+\end{enghelabbox}
+
+\section{جلوگیری از سوریه‌ای شدن}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|R{3cm}|L{5cm}|L{4cm}|}
+\hline
+\rowcolor{iranred!20}
+\textbf{سناریوی خطر} & \textbf{عوامل} & \textbf{پیشگیری} \\
+\hline
+جنگ داخلی & گروه‌های مسلح، شکاف قومی & خلع سلاح، وحدت ملی \\
+\hline
+هرج‌ومرج & فقدان نظم، انتقام & استقرار سریع امنیت \\
+\hline
+تجزیه & جدایی‌طلبی & فدرالیسم، حقوق اقلیت‌ها \\
+\hline
+\end{tabular}
+\caption{سناریوهای خطر و پیشگیری}
+\end{table}
+
+\section{مدل حکومت انتقالی}
+
+\begin{center}
+\begin{tikzpicture}[node distance=1.5cm]
+    \node[block, fill=iranblue!40, minimum width=8cm] (council) {شورای انتقالی (۱۵-۲۱ نفر)};
+    \node[block, fill=iranblue!30, below=of council] (pm) {نخست‌وزیر انتقالی};
+    \node[block, fill=olgoogreen!30, below left=of pm] (cab) {کابینه تخصصی};
+    \node[block, fill=olgoogreen!30, below right=of pm] (sec) {شورای امنیت};
+    \node[block, fill=irangold!30, below=2.5cm of pm] (elect) {انتخابات آزاد (۱۲-۱۸ ماه)};
+    
+    \draw[arrow] (council) -- (pm);
+    \draw[arrow] (pm) -- (cab);
+    \draw[arrow] (pm) -- (sec);
+    \draw[arrow] (cab) -- (elect);
+    \draw[arrow] (sec) -- (elect);
+\end{tikzpicture}
+\captionof{figure}{ساختار حکومت انتقالی}
+\end{center}
+
+\section{نقش نیروهای مسلح}
+
+\begin{itemize}
+    \item \textbf{ارتش:} حفظ با پاکسازی فرماندهان + نظارت
+    \item \textbf{سپاه:} انحلال یا ادغام تدریجی
+    \item \textbf{پلیس:} بازسازی با اولویت
+\end{itemize}
+
+\section{عدالت انتقالی}
+
+\begin{olgoobox}[title=اصول عدالت انتقالی]
+\begin{enumerate}
+    \item \textbf{حقیقت‌یابی:} کمیسیون حقیقت
+    \item \textbf{محاکمه:} رهبران اصلی جنایات
+    \item \textbf{جبران:} غرامت به قربانیان
+    \item \textbf{اصلاحات:} تغییر نهادها
+\end{enumerate}
+\end{olgoobox}
+
+\begin{noktebox}
+\textbf{تعادل:} عدالت باید با ثبات متوازن شود. عفو محدود برای عوامل رده پایین ممکن است ضروری باشد.
+\end{noktebox}
+
+\section{جدول زمانی دوره گذار}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|C{2cm}|L{10cm}|}
+\hline
+\rowcolor{iranblue!20}
+\textbf{زمان} & \textbf{اقدامات کلیدی} \\
+\hline
+هفته ۱ & استقرار شورای انتقالی، اعلام قانون اساسی موقت \\
+\hline
+ماه ۱-۳ & تثبیت امنیت، بازگشایی اقتصاد، آزادی زندانیان \\
+\hline
+ماه ۳-۶ & تشکیل کمیسیون‌ها، آغاز اصلاحات \\
+\hline
+ماه ۶-۱۲ & آماده‌سازی انتخابات، تدوین قانون اساسی \\
+\hline
+ماه ۱۲-۱۸ & انتخابات آزاد، انتقال به حکومت منتخب \\
+\hline
+\end{tabular}
+\caption{جدول زمانی پیشنهادی}
+\end{table}
+
+\begin{kholasebox}[title=خلاصه فصل]
+\begin{itemize}
+    \item «روز بعد» سخت‌تر از سرنگونی است
+    \item آمادگی قبلی برای حکومت انتقالی ضروری است
+    \item نیروهای مسلح باید مدیریت شوند نه نابود
+    \item عدالت انتقالی باید با ثبات متوازن باشد
+\end{itemize}
+\end{kholasebox}
